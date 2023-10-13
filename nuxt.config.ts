@@ -62,4 +62,10 @@ export default defineNuxtConfig({
 			mode: 'client'
 		},
 	],
+	modules: [
+		'@nuxtjs/color-mode'
+	],
+	colorMode: {
+		classSuffix: ''
+	}
 })

@@ -12,8 +12,8 @@
 	<div class="container">
 		<div class="space-y-6">
 			<div class="space-y-6">
-				<div class="bg-white shadow-sm rounded-lg h-fit border dark:bg-gray-800">
-					<div class="flex flex-wrap divide-x divide-gray-100 dark:divide-gray-700 relative">
+				<div class="bg-white shadow-sm rounded-lg h-fit border dark:bg-gray-900 dark:border-gray-800">
+					<div class="flex flex-wrap divide-x divide-gray-100 dark:divide-gray-800 relative">
 						<div class="p-5 flex justify-center items-center">
 							<div class="uppercase bg-gray-100 text-gray-500 rounded-full w-32 h-32 p-4 flex justify-center items-center text-5xl font-semibold dark:bg-gray-700 dark:text-gray-400"> 
 								MP
@@ -129,10 +129,10 @@
 					</div>
 
 					<div class="col-span-1 xl:col-span-9 md:col-span-9 space-y-6" data-te-spy="scroll" data-te-target="#scrollspy1" data-te-offset="200">
-						<div id="profile" class="bg-white shadow-sm rounded-lg divide-y divide-gray-100 h-fit border dark:bg-gray-800 dark:divide-gray-700">
+						<div id="profile" class="bg-white shadow-sm rounded-lg divide-y divide-gray-100 h-fit border dark:bg-gray-900 dark:divide-gray-700 dark:border-gray-800">
 							<div class="relative p-2">
 								<details class="group [&_summary::-webkit-details-marker]:hidden" open>
-									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-primary-800 dark:text-gray-200 dark:hover:text-gray-100">
+									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">General Details</h4>
 										<div>
 											<button type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
@@ -189,7 +189,7 @@
 
 							<div class="relative p-2">
 								<details class="group [&_summary::-webkit-details-marker]:hidden">
-									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-primary-800 dark:text-gray-200 dark:hover:text-gray-100">
+									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Workspace</h4>
 										<div>
 											<button type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
@@ -238,7 +238,7 @@
 			
 							<div class="relative p-2">
 								<details class="group [&_summary::-webkit-details-marker]:hidden">
-									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-primary-800 dark:text-gray-200 dark:hover:text-gray-100">
+									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Contact Information</h4>
 										<div>
 											<button type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
@@ -277,7 +277,7 @@
 			
 							<div class="relative p-2">
 								<details class="group [&_summary::-webkit-details-marker]:hidden">
-									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-primary-800 dark:text-gray-200 dark:hover:text-gray-100">
+									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Address</h4>
 										<div>
 											<button type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
@@ -311,7 +311,7 @@
 
 							<div class="relative p-2">
 								<details class="group [&_summary::-webkit-details-marker]:hidden">
-									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-primary-800 dark:text-gray-200 dark:hover:text-gray-100">
+									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Government ID</h4>
 										<div>
 											<button type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
@@ -355,10 +355,10 @@
 			
 						</div>
 
-						<div id="educational" class="bg-white shadow-sm rounded-lg divide-y divide-gray-100 h-fit border dark:bg-gray-800 dark:divide-gray-700">
+						<div id="educational" class="bg-white shadow-sm rounded-lg divide-y divide-gray-100 h-fit border dark:bg-gray-900 dark:divide-gray-700 dark:border-gray-800">
 							<div class="relative p-2">
 								<details class="group [&_summary::-webkit-details-marker]:hidden" open>
-									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-primary-800 dark:text-gray-200 dark:hover:text-gray-100">
+									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Elementary</h4>
 										<div>
 											<button type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
@@ -395,7 +395,7 @@
 
 							<div class="relative p-2">
 								<details class="group [&_summary::-webkit-details-marker]:hidden">
-									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-primary-800 dark:text-gray-200 dark:hover:text-gray-100">
+									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Secondary</h4>
 										<div>
 											<button type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
@@ -432,7 +432,7 @@
 			
 							<div class="relative p-2">
 								<details class="group [&_summary::-webkit-details-marker]:hidden">
-									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-primary-800 dark:text-gray-200 dark:hover:text-gray-100">
+									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Vocational</h4>
 										<div>
 											<button type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
@@ -469,7 +469,7 @@
 			
 							<div class="relative p-2">
 								<details class="group [&_summary::-webkit-details-marker]:hidden">
-									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-primary-800 dark:text-gray-200 dark:hover:text-gray-100">
+									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">College</h4>
 										<div>
 											<button type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
@@ -506,7 +506,7 @@
 
 							<div class="relative p-2">
 								<details class="group [&_summary::-webkit-details-marker]:hidden">
-									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-primary-800 dark:text-gray-200 dark:hover:text-gray-100">
+									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Graduate Studies</h4>
 										<div>
 											<button type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
@@ -543,10 +543,10 @@
 			
 						</div>
 
-						<div id="career-service" class="bg-white shadow-sm rounded-lg divide-y divide-gray-100 h-fit border dark:bg-gray-800 dark:divide-gray-700">
+						<div id="career-service" class="bg-white shadow-sm rounded-lg divide-y divide-gray-100 h-fit border dark:bg-gray-900 dark:divide-gray-700 dark:border-gray-800">
 							<div class="relative p-2">
 								<details class="group [&_summary::-webkit-details-marker]:hidden" open>
-									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-primary-800 dark:text-gray-200 dark:hover:text-gray-100">
+									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Career Service Certification</h4>
 										<div>
 											<button type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
@@ -582,10 +582,10 @@
 							</div>
 						</div>
 
-						<div id="work-experience" class="bg-white shadow-sm rounded-lg divide-y divide-gray-100 h-fit border dark:bg-gray-800 dark:divide-gray-700">
+						<div id="work-experience" class="bg-white shadow-sm rounded-lg divide-y divide-gray-100 h-fit border dark:bg-gray-900 dark:divide-gray-700 dark:border-gray-800">
 							<div class="relative p-2">
 								<details class="group [&_summary::-webkit-details-marker]:hidden" open>
-									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-primary-800 dark:text-gray-200 dark:hover:text-gray-100">
+									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Work Experience</h4>
 										<div>
 											<button type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
@@ -621,10 +621,10 @@
 							</div>
 						</div>
 
-						<div id="training-programs" class="bg-white shadow-sm rounded-lg divide-y divide-gray-100 h-fit border dark:bg-gray-800 dark:divide-gray-700">
+						<div id="training-programs" class="bg-white shadow-sm rounded-lg divide-y divide-gray-100 h-fit border dark:bg-gray-900 dark:divide-gray-700 dark:border-gray-800">
 							<div class="relative p-2">
 								<details class="group [&_summary::-webkit-details-marker]:hidden" open>
-									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-primary-800 dark:text-gray-200 dark:hover:text-gray-100">
+									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Training Programs</h4>
 										<div>
 											<button type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
@@ -660,10 +660,10 @@
 							</div>
 						</div>
 
-						<div id="other" class="bg-white shadow-sm rounded-lg divide-y divide-gray-100 h-fit border dark:bg-gray-800 dark:divide-gray-700">
+						<div id="other" class="bg-white shadow-sm rounded-lg divide-y divide-gray-100 h-fit border dark:bg-gray-900 dark:divide-gray-700 dark:border-gray-800">
 							<div class="relative p-2">
 								<details class="group [&_summary::-webkit-details-marker]:hidden" open>
-									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-primary-800 dark:text-gray-200 dark:hover:text-gray-100">
+									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Other Information</h4>
 										<div>
 											<button type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">

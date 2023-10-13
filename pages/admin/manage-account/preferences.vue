@@ -12,7 +12,7 @@
 	<div class="container">
 		<div class="space-y-6">
 			<div class="space-y-6">
-				<div class="bg-white shadow-sm rounded-lg h-fit border dark:bg-gray-800">
+				<div class="bg-white shadow-sm rounded-lg h-fit border dark:bg-gray-900 dark:border-gray-800">
 					<div class="flex flex-wrap divide-x divide-gray-100 dark:divide-gray-700 relative">
 						<div class="p-5 flex justify-center items-center">
 							<div class="uppercase bg-gray-100 text-gray-500 rounded-full w-32 h-32 p-4 flex justify-center items-center text-5xl font-semibold dark:bg-gray-700 dark:text-gray-400"> 
@@ -78,8 +78,10 @@
 				
 				<div class="flex flex-col gap-2">
 					<h2 class="text-lg font-semibold text-gray-700 dark:text-gray-100">Theme Preferences</h2>
-					<div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
-						
+					<div class="card">
+						<div class="card-body">
+							<ColorModePicker />
+						</div>
 					</div>
 				</div>
 

@@ -1,10 +1,7 @@
 <script setup>
-	// import { onMounted } from "vue";
-	// import { Dropdown, Modal, Select, initTE } from "tw-elements";
-
-	// onMounted(() => {
-	// 	initTE({ Dropdown, Modal, Select });
-	// });
+	definePageMeta({
+	   colorMode: 'light',
+	})
 </script>
 
 <template>
