@@ -4,7 +4,7 @@
 	})
 
 	useSeoMeta({
-        title: 'Profile - Admin',
+        title: 'Preferences - Admin',
     })
 </script>
 
@@ -60,7 +60,7 @@
 									Profile
 								</NuxtLink>
 			
-								<NuxtLink to="/admin/manage-account/change-password" class="inline-flex shrink-0 items-center gap-2 px-1 pb-4 text-sm font-medium text-primary-600 dark:text-gray-400 border-b-2 border-b-primary-500">
+								<NuxtLink to="/admin/manage-account/change-password" class="inline-flex shrink-0 items-center gap-2 px-1 pb-4 text-sm font-medium text-gray-600 dark:text-gray-400">
 									Change Password
 								</NuxtLink>
 	
@@ -68,44 +68,18 @@
 									QR Code
 								</a>
 
-								<NuxtLink to="/admin/manage-account/preferences" class="inline-flex shrink-0 items-center gap-2 px-1 pb-4 text-sm font-medium text-gray-600 dark:text-gray-400">
+								<NuxtLink to="/admin/manage-account/preferences" class="inline-flex shrink-0 items-center gap-2 px-1 pb-4 text-sm font-medium text-primary-600 dark:text-gray-400 border-b-2 border-b-primary-500">
 									Preferences
 								</NuxtLink>
 							</nav>
 						</div>
 					</div>
 				</div>
-	
-				<div class="card">
-					<div class="card-body">
-						<h2 class="font-semibold text-gray-700 text-lg dark:text-gray-300">Change Password</h2>
-						<p class="text-sm text-gray-500 dark:text-gray-400">Ensure your account is using a long, random password to stay secure.</p>
-	
-						<form class="mt-4 space-y-4 form" action="#" method="POST">
-							<div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 gap-4">
-								<div class="form-group">
-									<label for="current_password" class="form-label">Current Password</label>
-									<div class="relative">
-										<input id="current_password" class="form-control password" type="password" name="current_password" required autofocus autocomplete="current-password" />
-										<div class="absolute top-0 end-0 my-3 mx-4 password-btn text-sm cursor-pointer">
-											<span class="password-icon">Show</span>
-										</div>
-									</div>
-								</div>
-	
-								<div class="form-group">
-									<label for="new_password" class="form-label">New Password</label>
-									<input id="new_password" class="form-control password" type="password" name="new_password" required autofocus autocomplete="new-password" />
-								</div>
-	
-								<div class="form-group">
-									<label for="new_password_confirmation" class="form-label">Confirm New Password</label>
-									<input id="new_password_confirmation" class="form-control password" type="password" name="new_password_confirmation" required autofocus autocomplete="new-password" />
-								</div>
-							</div>
-	
-							<button type="submit" class="button button-primary" disabled>Update password</button>
-						</form>
+				
+				<div class="flex flex-col gap-2">
+					<h2 class="text-lg font-semibold text-gray-700 dark:text-gray-100">Theme Preferences</h2>
+					<div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+						
 					</div>
 				</div>
 

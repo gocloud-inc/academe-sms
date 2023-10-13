@@ -448,7 +448,7 @@
 
 		<header class="header sticky top-0 z-10">
 			<nav class="border-b relative bg-white shadow-sm dark:bg-primary-950 dark:border-gray-800">
-				<div class="px-4 py-3 mx-auto">
+				<div class="px-4 py-5 mx-auto">
 					<div class="flex items-center justify-between">
 						<div class="flex items-center gap-2">
 							<!-- Mobile menu button -->
@@ -460,8 +460,8 @@
 								</button>
 							</div>
 
-							<a href="#" class="hidden lg:block text-gray-700 dark:text-gray-200">
-								School Information Management System
+							<a href="#" class="hidden lg:block text-gray-700 font-medium dark:text-gray-200">
+								Academe SMS
 							</a>
 						</div>
 						<div class="flex items-center gap-4">
