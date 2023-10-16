@@ -1,11 +1,16 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div class="bg-white shadow-sm rounded-lg h-fit border dark:bg-gray-900 dark:border-gray-800">
+  	<div class="bg-white shadow-sm rounded-lg h-fit border dark:bg-gray-900 dark:border-gray-800">
 		<div class="flex flex-wrap divide-x divide-gray-100 dark:divide-gray-800 relative">
 			<div class="p-5 flex justify-center items-center">
-				<div class="uppercase bg-gray-100 text-gray-500 rounded-full w-32 h-32 p-4 flex justify-center items-center text-5xl font-semibold dark:bg-gray-700 dark:text-gray-400"> 
-					MP
+				<div class="dropzone relative uppercase bg-gray-100 text-gray-500 rounded-full w-36 h-36 flex justify-center items-center text-5xl font-semibold group">
+					<div class="dropzone-image-preview h-full w-full uppercase bg-gray-100 text-gray-500 rounded-full p-4 flex justify-center items-center text-5xl font-semibold dark:bg-gray-700 dark:text-gray-400">
+						MP
+					</div>
+					<button data-te-target="#profilePhotoModal" data-te-toggle="modal" type="button" class="absolute bottom-0 left-0 right-0 text-xs bg-gray-900 w-36 h-36 rounded-full hidden group-hover:flex justify-center items-center">
+						<span class="material-symbols-rounded msr-filled text-white relative opacity-100 text-4xl">add_a_photo</span>
+					</button>
 				</div>
 			</div>
 			<div class="p-5">
@@ -60,6 +65,8 @@
 			</div>
 		</div>
 	</div>
+
+	<ModalsProfilePhotoUploader />
 </template>
 
 <style lang="postcss" scoped>
