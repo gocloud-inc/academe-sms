@@ -58,6 +58,10 @@ export default defineNuxtConfig({
 			mode: 'client'
 		},
 		{
+			src: 'plugins/admin',
+			mode: 'client'
+		},
+		{
 			src: 'plugins/sidebar',
 			mode: 'client'
 		},

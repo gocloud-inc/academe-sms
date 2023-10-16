@@ -1,11 +1,5 @@
-<script setup>
-	definePageMeta({
-	   colorMode: 'light',
-	})
-</script>
-
 <template>
-  	<div id="app" class="bg-gray-50 dark:bg-black antialiased">
+  	<div id="app" class="bg-white dark:bg-black antialiased">
 		<aside id="aside" class="aside flex h-screen sticky top-0 transition-all duration-300 ease-in-out">
 			<div class="aside-container">
 				<nav class="aside-nav-menu">
@@ -116,59 +110,35 @@
 							</summary>
 					
 							<div class="space-y-1 px-4">
-								<a class="flex items-center px-3 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-									<span class="material-symbols-rounded text-base">
-										subdirectory_arrow_right
-									</span>
+								<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
 									<span class="mx-2 text-sm font-medium">Officially Enrolled</span>
 								</a>
 	
-								<a class="flex items-center px-3 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-									<span class="material-symbols-rounded text-base">
-										subdirectory_arrow_right
-									</span>
+								<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
 									<span class="mx-2 text-sm font-medium">Registrar Verified</span>
 								</a>
 	
-								<a class="flex items-center px-3 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-									<span class="material-symbols-rounded text-base">
-										subdirectory_arrow_right
-									</span>
+								<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
 									<span class="mx-2 text-sm font-medium">Enrollees</span>
 								</a>
 	
-								<a class="flex items-center px-3 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-									<span class="material-symbols-rounded text-base">
-										subdirectory_arrow_right
-									</span>
+								<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
 									<span class="mx-2 text-sm font-medium">Credential Master Lists</span>
 								</a>
 
-								<a class="flex items-center px-3 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-									<span class="material-symbols-rounded text-base">
-										subdirectory_arrow_right
-									</span>
+								<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
 									<span class="mx-2 text-sm font-medium">Generate Grade Slip</span>
 								</a>
 	
-								<a class="flex items-center px-3 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-									<span class="material-symbols-rounded text-base">
-										subdirectory_arrow_right
-									</span>
+								<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
 									<span class="mx-2 text-sm font-medium">Course Schedule</span>
 								</a>
 	
-								<a class="flex items-center px-3 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-									<span class="material-symbols-rounded text-base">
-										subdirectory_arrow_right
-									</span>
+								<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
 									<span class="mx-2 text-sm font-medium">Departments</span>
 								</a>
 	
-								<a class="flex items-center px-3 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-									<span class="material-symbols-rounded text-base">
-										subdirectory_arrow_right
-									</span>
+								<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
 									<span class="mx-2 text-sm font-medium">Semester</span>
 								</a>
 							</div>
@@ -190,45 +160,27 @@
 							</summary>
 					
 							<div class="space-y-1 px-4">
-								<a class="flex items-center px-3 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-									<span class="material-symbols-rounded text-base">
-										subdirectory_arrow_right
-									</span>
+								<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
 									<span class="mx-2 text-sm font-medium">Year Level Category</span>
 								</a>
 	
-								<a class="flex items-center px-3 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-									<span class="material-symbols-rounded text-base">
-										subdirectory_arrow_right
-									</span>
+								<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
 									<span class="mx-2 text-sm font-medium">Year Levels</span>
 								</a>
 	
-								<a class="flex items-center px-3 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-									<span class="material-symbols-rounded text-base">
-										subdirectory_arrow_right
-									</span>
+								<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
 									<span class="mx-2 text-sm font-medium">Program Departments</span>
 								</a>
 	
-								<a class="flex items-center px-3 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-									<span class="material-symbols-rounded text-base">
-										subdirectory_arrow_right
-									</span>
+								<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
 									<span class="mx-2 text-sm font-medium">Programs</span>
 								</a>
 	
-								<a class="flex items-center px-3 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-									<span class="material-symbols-rounded text-base">
-										subdirectory_arrow_right
-									</span>
+								<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
 									<span class="mx-2 text-sm font-medium">Curriculum</span>
 								</a>
 	
-								<a class="flex items-center px-3 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-									<span class="material-symbols-rounded text-base">
-										subdirectory_arrow_right
-									</span>
+								<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
 									<span class="mx-2 text-sm font-medium">Master Courses</span>
 								</a>
 							</div>
@@ -250,17 +202,11 @@
 							</summary>
 					
 							<div class="space-y-1 px-4">
-								<a class="flex items-center px-3 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-									<span class="material-symbols-rounded text-base">
-										subdirectory_arrow_right
-									</span>
+								<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
 									<span class="mx-2 text-sm font-medium">Open Admission</span>
 								</a>
 
-								<a class="flex items-center px-3 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-									<span class="material-symbols-rounded text-base">
-										subdirectory_arrow_right
-									</span>
+								<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
 									<span class="mx-2 text-sm font-medium">Applicants</span>
 								</a>
 							</div>
@@ -282,38 +228,23 @@
 							</summary>
 					
 							<div class="space-y-1 px-4">
-								<a class="flex items-center px-3 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-									<span class="material-symbols-rounded text-base">
-										subdirectory_arrow_right
-									</span>
+								<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
 									<span class="mx-2 text-sm font-medium">Open Enrollment</span>
 								</a>
 
-								<a class="flex items-center px-3 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-									<span class="material-symbols-rounded text-base">
-										subdirectory_arrow_right
-									</span>
+								<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
 									<span class="mx-2 text-sm font-medium">Enrollment Settings</span>
 								</a>
 
-								<a class="flex items-center px-3 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-									<span class="material-symbols-rounded text-base">
-										subdirectory_arrow_right
-									</span>
+								<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
 									<span class="mx-2 text-sm font-medium">Block Sections</span>
 								</a>
 
-								<a class="flex items-center px-3 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-									<span class="material-symbols-rounded text-base">
-										subdirectory_arrow_right
-									</span>
+								<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
 									<span class="mx-2 text-sm font-medium">Course Schedules</span>
 								</a>
 
-								<a class="flex items-center px-3 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-									<span class="material-symbols-rounded text-base">
-										subdirectory_arrow_right
-									</span>
+								<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
 									<span class="mx-2 text-sm font-medium">Rooms</span>
 								</a>
 							</div>
@@ -335,45 +266,27 @@
 							</summary>
 					
 							<div class="space-y-1 px-4">
-								<a class="flex items-center px-3 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-									<span class="material-symbols-rounded text-base">
-										subdirectory_arrow_right
-									</span>
+								<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
 									<span class="mx-2 text-sm font-medium">Bank Details</span>
 								</a>
 
-								<a class="flex items-center px-3 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-									<span class="material-symbols-rounded text-base">
-										subdirectory_arrow_right
-									</span>
+								<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
 									<span class="mx-2 text-sm font-medium">Official Receipts</span>
 								</a>
 
-								<a class="flex items-center px-3 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-									<span class="material-symbols-rounded text-base">
-										subdirectory_arrow_right
-									</span>
+								<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
 									<span class="mx-2 text-sm font-medium">Payment Plans</span>
 								</a>
 
-								<a class="flex items-center px-3 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-									<span class="material-symbols-rounded text-base">
-										subdirectory_arrow_right
-									</span>
+								<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
 									<span class="mx-2 text-sm font-medium">Recompute Fees</span>
 								</a>
 
-								<a class="flex items-center px-3 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-									<span class="material-symbols-rounded text-base">
-										subdirectory_arrow_right
-									</span>
+								<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
 									<span class="mx-2 text-sm font-medium">Scholarship</span>
 								</a>
 
-								<a class="flex items-center px-3 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-									<span class="material-symbols-rounded text-base">
-										subdirectory_arrow_right
-									</span>
+								<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
 									<span class="mx-2 text-sm font-medium">SOA</span>
 								</a>
 							</div>
@@ -395,45 +308,27 @@
 							</summary>
 					
 							<div class="space-y-1 px-4">
-								<a class="flex items-center px-3 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-									<span class="material-symbols-rounded text-base">
-										subdirectory_arrow_right
-									</span>
+								<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
 									<span class="mx-2 text-sm font-medium">Classlist Report</span>
 								</a>
 
-								<a class="flex items-center px-3 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-									<span class="material-symbols-rounded text-base">
-										subdirectory_arrow_right
-									</span>
+								<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
 									<span class="mx-2 text-sm font-medium">Download Student Profile</span>
 								</a>
 
-								<a class="flex items-center px-3 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-									<span class="material-symbols-rounded text-base">
-										subdirectory_arrow_right
-									</span>
+								<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
 									<span class="mx-2 text-sm font-medium">Enrollment List</span>
 								</a>
 
-								<a class="flex items-center px-3 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-									<span class="material-symbols-rounded text-base">
-										subdirectory_arrow_right
-									</span>
+								<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
 									<span class="mx-2 text-sm font-medium">Exam Permit Report</span>
 								</a>
 
-								<a class="flex items-center px-3 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-									<span class="material-symbols-rounded text-base">
-										subdirectory_arrow_right
-									</span>
+								<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
 									<span class="mx-2 text-sm font-medium">GWA Reports</span>
 								</a>
 
-								<a class="flex items-center px-3 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-									<span class="material-symbols-rounded text-base">
-										subdirectory_arrow_right
-									</span>
+								<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
 									<span class="mx-2 text-sm font-medium">List of Transferees</span>
 								</a>
 							</div>
@@ -473,11 +368,8 @@
 			</nav>
 		</header>
 
-		<main class="main py-8 flex flex-col overflow-y-auto">
-			<div class="flex-1">
-				<slot></slot>
-			</div>
-			<div class="mt-4 text-gray-500 text-sm text-center">© 2022 Company Name . All Rights Reserved</div>
+		<main class="main py-8 overflow-y-auto">
+			<slot></slot>
 		</main>
 	</div>
 </template>

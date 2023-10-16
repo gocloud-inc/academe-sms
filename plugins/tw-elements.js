@@ -1,7 +1,7 @@
-import { Dropdown, Modal, PerfectScrollbar, Select, ScrollSpy, initTE } from "tw-elements";
+import { Dropdown, Modal, Offcanvas, PerfectScrollbar, Select, ScrollSpy, initTE } from "tw-elements";
 
 export default defineNuxtPlugin((nuxtApp) => {
     if (typeof window !== "undefined") {
-        nuxtApp.initTE = initTE({ Dropdown, Modal, PerfectScrollbar, Select, ScrollSpy });
+        nuxtApp.initTE = initTE({ Dropdown, Modal, Offcanvas, PerfectScrollbar, Select, ScrollSpy });
     }
 })

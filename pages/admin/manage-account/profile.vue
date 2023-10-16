@@ -73,69 +73,15 @@
 				</div>
 
 				<div class="grid grid-cols-1 xl:grid-cols-12 md:grid-cols-12 gap-6">
-					<div class="col-span-3 hidden xl:flow-root">
-						<div id="scrollspy1">
-							<ul class="space-y-1">
-								<li> 
-									<a href="#profile" data-te-nav-link-ref data-te-nav-link-active class="flex items-center gap-3 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-gray-200">
-										<span class="material-symbols-rounded">
-											person
-										</span>
-										<span class="text-sm font-medium">Personal Information</span>
-									</a>
-								</li>
-								<li> 
-									<a href="#educational" data-te-nav-link-ref class="flex items-center gap-3 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-gray-200">
-										<span class="material-symbols-rounded">
-											history_edu
-										</span>
-										<span class="text-sm font-medium">Educational Background</span>
-									</a>
-								</li>
-								<li> 
-									<a href="#career-service" data-te-nav-link-ref class="flex items-center gap-3 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-gray-200">
-										<span class="material-symbols-rounded">
-											grade
-										</span>
-										<span class="text-sm font-medium">Career Service</span>
-									</a>
-								</li>
-								<li> 
-									<a href="#work-experience" class="flex items-center gap-3 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-gray-200">
-										<span class="material-symbols-rounded">
-											work
-										</span>
-										<span class="text-sm font-medium">Work Experience</span>
-									</a>
-								</li>
-								<li> 
-									<a href="#training-programs" data-te-nav-link-ref class="flex items-center gap-3 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-gray-200">
-										<span class="material-symbols-rounded">
-											loyalty
-										</span>
-										<span class="text-sm font-medium">Training Programs</span>
-									</a>
-								</li>
-								<li> 
-									<a href="#other" data-te-nav-link-ref class="flex items-center gap-3 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-gray-200">
-										<span class="material-symbols-rounded">
-											checklist
-										</span>
-										<span class="text-sm font-medium">Other Information</span>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="col-span-1 xl:col-span-9 md:col-span-9 space-y-6" data-te-spy="scroll" data-te-target="#scrollspy1" data-te-offset="200">
+					<div class="col-span-1 xl:col-span-8 md:col-span-8 space-y-4" data-te-spy="scroll" data-te-target="#scrollspy1" data-te-offset="200">
+						<h2 class="text-xl font-medium dark:text-gray-300">Personal Information</h2>
 						<div id="profile" class="bg-white shadow-sm rounded-lg divide-y divide-gray-100 h-fit border dark:bg-gray-900 dark:divide-gray-700 dark:border-gray-800">
 							<div class="relative p-2">
 								<details class="group [&_summary::-webkit-details-marker]:hidden" open>
 									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">General Details</h4>
 										<div>
-											<button type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
+											<button data-te-offcanvas-toggle data-te-target="#editGeneralDetails" aria-controls="editGeneralDetails" type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-700 hover:text-gray-500">
 												<span class="material-symbols-rounded">
 													edit
 												</span>
@@ -192,7 +138,7 @@
 									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Workspace</h4>
 										<div>
-											<button type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
+											<button data-te-offcanvas-toggle data-te-target="#editWorkspace" aria-controls="editWorkspace" type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-700 hover:text-gray-500">
 												<span class="material-symbols-rounded">
 													edit
 												</span>
@@ -241,7 +187,7 @@
 									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Contact Information</h4>
 										<div>
-											<button type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
+											<button data-te-offcanvas-toggle data-te-target="#editContact" aria-controls="editContact" type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-700 hover:text-gray-500">
 												<span class="material-symbols-rounded">
 													edit
 												</span>
@@ -280,7 +226,7 @@
 									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Address</h4>
 										<div>
-											<button type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
+											<button data-te-offcanvas-toggle data-te-target="#editAddress" aria-controls="editAddress" type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-700 hover:text-gray-500">
 												<span class="material-symbols-rounded">
 													edit
 												</span>
@@ -314,7 +260,7 @@
 									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Government ID</h4>
 										<div>
-											<button type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
+											<button data-te-offcanvas-toggle data-te-target="#editGovernmentID" aria-controls="editGovernmentID" type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-700 hover:text-gray-500">
 												<span class="material-symbols-rounded">
 													edit
 												</span>
@@ -352,16 +298,16 @@
 									</div>
 								</details>
 							</div>
-			
 						</div>
 
+						<h2 class="text-xl font-medium pt-6 dark:text-gray-300">Education</h2>
 						<div id="educational" class="bg-white shadow-sm rounded-lg divide-y divide-gray-100 h-fit border dark:bg-gray-900 dark:divide-gray-700 dark:border-gray-800">
 							<div class="relative p-2">
 								<details class="group [&_summary::-webkit-details-marker]:hidden" open>
 									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Elementary</h4>
 										<div>
-											<button type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
+											<button data-te-offcanvas-toggle data-te-target="#editEducation" aria-controls="editEducation" type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-700 hover:text-gray-500">
 												<span class="material-symbols-rounded">
 													edit
 												</span>
@@ -386,170 +332,25 @@
 				
 											<div class="grid grid-cols-1 gap-1 py-3 sm:grid-cols-3 sm:gap-4">
 												<dt class="text-gray-400">Year Graduated</dt>
-												<dd class="font-medium text-gray-700 sm:col-span-2 dark:text-gray-300">Philippines</dd>
+												<dd class="font-medium text-gray-700 sm:col-span-2 dark:text-gray-300">-</dd>
 											</div>
 										</dl>
 									</div>
 								</details>
 							</div>
-
-							<div class="relative p-2">
-								<details class="group [&_summary::-webkit-details-marker]:hidden">
-									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
-										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Secondary</h4>
-										<div>
-											<button type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
-												<span class="material-symbols-rounded">
-													edit
-												</span>
-											</button>
-											<span class="material-symbols-rounded text-2xl shrink-0 transition duration-300 group-open:-rotate-180">
-												expand_more
-											</span>
-										</div>
-									</summary>
-			
-									<div class="flow-root px-4">
-										<dl class="text-sm">
-											<div class="grid grid-cols-1 gap-1 py-3 sm:grid-cols-3 sm:gap-4">
-												<dt class="text-gray-400">Name of School</dt>
-												<dd class="font-medium text-gray-700 sm:col-span-2 dark:text-gray-300">-</dd>
-											</div>
-				
-											<div class="grid grid-cols-1 gap-1 py-3 sm:grid-cols-3 sm:gap-4">
-												<dt class="text-gray-400">Degree Course</dt>
-												<dd class="font-medium text-gray-700 sm:col-span-2 dark:text-gray-300">-</dd>
-											</div>
-				
-											<div class="grid grid-cols-1 gap-1 py-3 sm:grid-cols-3 sm:gap-4">
-												<dt class="text-gray-400">Year Graduated</dt>
-												<dd class="font-medium text-gray-700 sm:col-span-2 dark:text-gray-300">Philippines</dd>
-											</div>
-										</dl>
-									</div>
-								</details>
-							</div>
-			
-							<div class="relative p-2">
-								<details class="group [&_summary::-webkit-details-marker]:hidden">
-									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
-										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Vocational</h4>
-										<div>
-											<button type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
-												<span class="material-symbols-rounded">
-													edit
-												</span>
-											</button>
-											<span class="material-symbols-rounded text-2xl shrink-0 transition duration-300 group-open:-rotate-180">
-												expand_more
-											</span>
-										</div>
-									</summary>
-			
-									<div class="flow-root px-4">
-										<dl class="text-sm">
-											<div class="grid grid-cols-1 gap-1 py-3 sm:grid-cols-3 sm:gap-4">
-												<dt class="text-gray-400">Name of School</dt>
-												<dd class="font-medium text-gray-700 sm:col-span-2 dark:text-gray-300">-</dd>
-											</div>
-				
-											<div class="grid grid-cols-1 gap-1 py-3 sm:grid-cols-3 sm:gap-4">
-												<dt class="text-gray-400">Degree Course</dt>
-												<dd class="font-medium text-gray-700 sm:col-span-2 dark:text-gray-300">-</dd>
-											</div>
-				
-											<div class="grid grid-cols-1 gap-1 py-3 sm:grid-cols-3 sm:gap-4">
-												<dt class="text-gray-400">Year Graduated</dt>
-												<dd class="font-medium text-gray-700 sm:col-span-2 dark:text-gray-300">Philippines</dd>
-											</div>
-										</dl>
-									</div>
-								</details>
-							</div>
-			
-							<div class="relative p-2">
-								<details class="group [&_summary::-webkit-details-marker]:hidden">
-									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
-										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">College</h4>
-										<div>
-											<button type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
-												<span class="material-symbols-rounded">
-													edit
-												</span>
-											</button>
-											<span class="material-symbols-rounded text-2xl shrink-0 transition duration-300 group-open:-rotate-180">
-												expand_more
-											</span>
-										</div>
-									</summary>
-			
-									<div class="flow-root px-4">
-										<dl class="text-sm">
-											<div class="grid grid-cols-1 gap-1 py-3 sm:grid-cols-3 sm:gap-4">
-												<dt class="text-gray-400">Name of School</dt>
-												<dd class="font-medium text-gray-700 sm:col-span-2 dark:text-gray-300">-</dd>
-											</div>
-				
-											<div class="grid grid-cols-1 gap-1 py-3 sm:grid-cols-3 sm:gap-4">
-												<dt class="text-gray-400">Degree Course</dt>
-												<dd class="font-medium text-gray-700 sm:col-span-2 dark:text-gray-300">-</dd>
-											</div>
-				
-											<div class="grid grid-cols-1 gap-1 py-3 sm:grid-cols-3 sm:gap-4">
-												<dt class="text-gray-400">Year Graduated</dt>
-												<dd class="font-medium text-gray-700 sm:col-span-2 dark:text-gray-300">Philippines</dd>
-											</div>
-										</dl>
-									</div>
-								</details>
-							</div>
-
-							<div class="relative p-2">
-								<details class="group [&_summary::-webkit-details-marker]:hidden">
-									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
-										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Graduate Studies</h4>
-										<div>
-											<button type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
-												<span class="material-symbols-rounded">
-													edit
-												</span>
-											</button>
-											<span class="material-symbols-rounded text-2xl shrink-0 transition duration-300 group-open:-rotate-180">
-												expand_more
-											</span>
-										</div>
-									</summary>
-			
-									<div class="flow-root px-4">
-										<dl class="text-sm">
-											<div class="grid grid-cols-1 gap-1 py-3 sm:grid-cols-3 sm:gap-4">
-												<dt class="text-gray-400">Name of School</dt>
-												<dd class="font-medium text-gray-700 sm:col-span-2 dark:text-gray-300">-</dd>
-											</div>
-				
-											<div class="grid grid-cols-1 gap-1 py-3 sm:grid-cols-3 sm:gap-4">
-												<dt class="text-gray-400">Degree Course</dt>
-												<dd class="font-medium text-gray-700 sm:col-span-2 dark:text-gray-300">-</dd>
-											</div>
-				
-											<div class="grid grid-cols-1 gap-1 py-3 sm:grid-cols-3 sm:gap-4">
-												<dt class="text-gray-400">Year Graduated</dt>
-												<dd class="font-medium text-gray-700 sm:col-span-2 dark:text-gray-300">Philippines</dd>
-											</div>
-										</dl>
-									</div>
-								</details>
-							</div>
-			
 						</div>
+						<button data-te-offcanvas-toggle data-te-target="#addEducation" aria-controls="addEducation" type="button" class="button button-outline-primary">
+							Add education
+						</button>
 
+						<h2 class="text-xl font-medium pt-6 dark:text-gray-300">Licences & certifications</h2>
 						<div id="career-service" class="bg-white shadow-sm rounded-lg divide-y divide-gray-100 h-fit border dark:bg-gray-900 dark:divide-gray-700 dark:border-gray-800">
 							<div class="relative p-2">
 								<details class="group [&_summary::-webkit-details-marker]:hidden" open>
 									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
-										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Career Service Certification</h4>
+										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Certification</h4>
 										<div>
-											<button type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
+											<button data-te-offcanvas-toggle data-te-target="#editLicence" aria-controls="editLicence" type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-700 hover:text-gray-500">
 												<span class="material-symbols-rounded">
 													edit
 												</span>
@@ -581,14 +382,18 @@
 								</details>
 							</div>
 						</div>
+						<button data-te-offcanvas-toggle data-te-target="#addLicence" aria-controls="addLicence" type="button" class="button button-outline-primary">
+							Add certificate
+						</button>
 
+						<h2 class="text-xl font-medium pt-6 dark:text-gray-300">Work history</h2>
 						<div id="work-experience" class="bg-white shadow-sm rounded-lg divide-y divide-gray-100 h-fit border dark:bg-gray-900 dark:divide-gray-700 dark:border-gray-800">
 							<div class="relative p-2">
 								<details class="group [&_summary::-webkit-details-marker]:hidden" open>
 									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Work Experience</h4>
 										<div>
-											<button type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
+											<button data-te-offcanvas-toggle data-te-target="#editWorkExperience" aria-controls="editWorkExperience" type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-700 hover:text-gray-500">
 												<span class="material-symbols-rounded">
 													edit
 												</span>
@@ -620,14 +425,18 @@
 								</details>
 							</div>
 						</div>
+						<button data-te-offcanvas-toggle data-te-target="#addWorkExperience" aria-controls="addWorkExperience" type="button" class="button button-outline-primary">
+							Add experience
+						</button>
 
+						<h2 class="text-xl font-medium pt-6 dark:text-gray-300">Training</h2>
 						<div id="training-programs" class="bg-white shadow-sm rounded-lg divide-y divide-gray-100 h-fit border dark:bg-gray-900 dark:divide-gray-700 dark:border-gray-800">
 							<div class="relative p-2">
 								<details class="group [&_summary::-webkit-details-marker]:hidden" open>
 									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Training Programs</h4>
 										<div>
-											<button type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
+											<button data-te-offcanvas-toggle data-te-target="#editTraining" aria-controls="editTraining" type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-700 hover:text-gray-500">
 												<span class="material-symbols-rounded">
 													edit
 												</span>
@@ -659,60 +468,68 @@
 								</details>
 							</div>
 						</div>
+						<button data-te-offcanvas-toggle data-te-target="#addTraining" aria-controls="addTraining" type="button" class="button button-outline-primary">
+							Add training
+						</button>
 
-						<div id="other" class="bg-white shadow-sm rounded-lg divide-y divide-gray-100 h-fit border dark:bg-gray-900 dark:divide-gray-700 dark:border-gray-800">
-							<div class="relative p-2">
-								<details class="group [&_summary::-webkit-details-marker]:hidden" open>
-									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
-										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Other Information</h4>
-										<div>
-											<button type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
-												<span class="material-symbols-rounded">
-													edit
-												</span>
-											</button>
-											<span class="material-symbols-rounded text-2xl shrink-0 transition duration-300 group-open:-rotate-180">
-												expand_more
-											</span>
-										</div>
+					</div>
+
+					<div class="col-span-4 hidden lg:block space-y-6">
+						<div class="card">
+							<div class="card-body">
+								<div class="flex flex-col w-full gap-1">
+									<div class="flex items-center justify-between gap-2">
+										<div class="text-base font-medium dark:text-gray-200">Profile Completion</div>
+										<div class="text-xs text-green-500">30%</div>
+									</div>
+									<span role="progressbar" aria-labelledby="ProgressLabel" aria-valuenow="30" class="block w-full rounded-full bg-gray-200">
+										<span class="block w-full h-2 rounded-full bg-success-500" style="width: 30%"></span>
+									</span>
+								</div>
+								<details class="group [&_summary::-webkit-details-marker]:hidden mt-2" open>
+									<summary class="flex cursor-pointer items-center gap-1.5 rounded-lg text-gray-900 dark:text-gray-300">
+										<span class="material-symbols-rounded text-2xl shrink-0 transition duration-300 group-open:-rotate-180">
+											expand_more
+										</span>
+										<h2 class="text-xs">
+											Hide Recommendations
+										</h2>
 									</summary>
-			
-									<div class="flow-root px-4">
-										<dl class="text-sm">
-											<div class="grid grid-cols-1 gap-1 py-3 sm:grid-cols-3 sm:gap-4">
-												<dt class="text-gray-400">Non-Academic Distinction / Recognition</dt>
-												<dd class="font-medium text-gray-700 sm:col-span-2 dark:text-gray-300">-</dd>
-											</div>
-				
-											<div class="grid grid-cols-1 gap-1 py-3 sm:grid-cols-3 sm:gap-4">
-												<dt class="text-gray-400">Membership in Association Organization</dt>
-												<dd class="font-medium text-gray-700 sm:col-span-2 dark:text-gray-300">-</dd>
-											</div>
-				
-											<div class="grid grid-cols-1 gap-1 py-3 sm:grid-cols-3 sm:gap-4">
-												<dt class="text-gray-400">Community Tax Certificate No.</dt>
-												<dd class="font-medium text-gray-700 sm:col-span-2 dark:text-gray-300">-</dd>
-											</div>
 
-											<div class="grid grid-cols-1 gap-1 py-3 sm:grid-cols-3 sm:gap-4">
-												<dt class="text-gray-400">Issued At</dt>
-												<dd class="font-medium text-gray-700 sm:col-span-2 dark:text-gray-300">-</dd>
-											</div>
+									<div class="mt-2 px-4">
+										<p class="text-xs leading-relaxed text-gray-500 mb-3 dark:text-gray-300">
+											Fill-out the following items to strengthen your profile. 
+										</p>
 
-											<div class="grid grid-cols-1 gap-1 py-3 sm:grid-cols-3 sm:gap-4">
-												<dt class="text-gray-400">Issued On</dt>
-												<dd class="font-medium text-gray-700 sm:col-span-2 dark:text-gray-300">-</dd>
-											</div>
-										</dl>
+										<ul class="text-xs text-gray-500 dark:text-gray-400 space-y-2">
+											<li>Share your <b>Date of Birth</b></li>
+											<li>Specify <b>Professional Status</b></li>
+											<li>Add one (1) <b>Document Credentials</b></li>
+											<li>Add <b>Current Address</b></li>
+										</ul>
 									</div>
 								</details>
 							</div>
 						</div>
 					</div>
 				</div>
-
 			</div>
 		</div>
+
+		<!-- Edit Profile Through Offcanvas -->
+		<OffcanvasAdminProfileEditGeneralDetails />
+		<OffcanvasAdminProfileEditWorkspace />
+		<OffcanvasAdminProfileEditContact />
+		<OffcanvasAdminProfileEditAddress />
+		<OffcanvasAdminProfileEditGovernmentID />
+		<OffcanvasAdminProfileEditEducation />
+		<OffcanvasAdminProfileAddEducation />
+		<OffcanvasAdminProfileEditLicence />
+		<OffcanvasAdminProfileAddLicence />
+		<OffcanvasAdminProfileAddWorkExperience />
+		<OffcanvasAdminProfileEditWorkExperience />
+		<OffcanvasAdminProfileAddTraining />
+		<OffcanvasAdminProfileEditTraining />
 	</div>
 </template>
 

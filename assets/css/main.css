@@ -107,7 +107,7 @@
 
     /* Buttons (Default) */
     .button {
-        @apply inline-flex items-center justify-center gap-1 rounded-md px-5 py-2 text-sm leading-normal transition duration-150 ease-in-out focus:outline-none focus:ring-0 active:shadow-md dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-xl dark:focus:shadow-xl dark:active:shadow-xl;
+        @apply inline-flex items-center justify-center gap-1 rounded-md px-5 py-2 text-sm font-medium leading-normal transition duration-150 ease-in-out focus:outline-none focus:ring-0 active:shadow-md dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-xl dark:focus:shadow-xl dark:active:shadow-xl;
 
         &:disabled {
             @apply bg-gray-200 hover:bg-gray-300 text-gray-400 cursor-not-allowed dark:bg-gray-600 dark:hover:bg-gray-500;
@@ -120,7 +120,7 @@
     }
 
     .button-secondary {
-        @apply border bg-gray-100 text-gray-600 hover:bg-gray-200 focus:bg-gray-200 active:bg-gray-200;
+        @apply border bg-gray-100 text-gray-600 hover:bg-gray-200 focus:bg-gray-200 active:bg-gray-200 dark:bg-gray-600 dark:text-gray-200 dark:border-gray-500;
     }
 
     .button-success {
@@ -133,6 +133,10 @@
 
     .button-warning {
         @apply bg-warning text-white hover:bg-warning-600 focus:bg-warning-600 active:bg-warning-700;
+    }
+
+    .button-outline-primary {
+        @apply bg-transparent border-2 border-primary text-primary hover:bg-primary-100 focus:bg-primary-100 active:bg-primary-100 dark:border-primary-400 dark:text-primary-200 dark:hover:bg-primary-900 dark:focus:bg-primary-900;
     }
 
     /* Floating Action Button (FAB) */
@@ -179,11 +183,11 @@
         @apply flex flex-col gap-2;
 
         .form-label {
-            @apply block text-sm text-gray dark:text-gray-300;
+            @apply block font-medium text-sm text-gray-700 dark:text-gray-300;
         }
 
         .form-control {
-            @apply block w-full px-4 py-2.5 text-gray-700 placeholder-gray-400 placeholder:text-sm bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-primary-400 dark:focus:border-primary-400 focus:ring-primary-400 focus:outline-none;
+            @apply block w-full px-4 py-2.5 text-gray-700 placeholder-gray-400 placeholder:text-sm bg-white border-2 border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-primary-400 dark:focus:border-primary-400 focus:ring-primary-400 focus:outline-none;
 
             &:disabled {
                 @apply bg-gray-200 hover:bg-gray-300 text-gray-400 cursor-not-allowed dark:bg-gray-600 dark:hover:bg-gray-500;
@@ -339,7 +343,7 @@
 
     /* Dropdown */
     .dropdown-menu {
-        @apply absolute z-[1000] float-left m-0 hidden min-w-max list-none rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-gray-700 [&[data-te-dropdown-show]]:block;
+        @apply absolute z-[1000] float-left m-0 hidden min-w-max list-none rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-gray-800 [&[data-te-dropdown-show]]:block;
 
         .dropdown-link {
             @apply inline-flex items-center gap-2 w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-gray-700 hover:bg-gray-100 active:text-gray-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-gray-400 dark:text-gray-200 dark:hover:bg-gray-600;
@@ -361,5 +365,31 @@
     
     .modal-body {
         @apply p-4 lg:p-6 pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding shadow-lg outline-none dark:bg-gray-800;
+    }
+
+    /* Offcanvas */
+    .offcanvas {
+        @apply invisible fixed bottom-0 right-0 top-0 z-[1045] flex w-[30%] max-w-full translate-x-full flex-col border-none bg-white bg-clip-padding text-gray-700 shadow-sm outline-none transition duration-300 ease-in-out dark:bg-gray-800 dark:text-gray-200 [&[data-te-offcanvas-show]]:transform-none;
+
+        .offcanvas-header {
+            @apply flex items-center justify-between p-4;
+
+            .offcanvas-title {
+                @apply mb-0 text-xl font-medium leading-normal;
+            }
+
+            .offcanvas-button-dismiss {
+                @apply box-content rounded-none border-none opacity-50 hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none;
+            }
+        }
+
+        .offcanvas-body {
+            @apply flex-grow overflow-y-auto px-6 pt-6;
+
+            .offcanvas-action {
+                @apply sticky bottom-0 bg-white flex items-center justify-end gap-3 py-4 dark:bg-gray-800;
+            }
+        }
+
     }
 }
