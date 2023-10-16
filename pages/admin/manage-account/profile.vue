@@ -12,65 +12,7 @@
 	<div class="container">
 		<div class="space-y-6">
 			<div class="space-y-6">
-				<div class="bg-white shadow-sm rounded-lg h-fit border dark:bg-gray-900 dark:border-gray-800">
-					<div class="flex flex-wrap divide-x divide-gray-100 dark:divide-gray-800 relative">
-						<div class="p-5 flex justify-center items-center">
-							<div class="uppercase bg-gray-100 text-gray-500 rounded-full w-32 h-32 p-4 flex justify-center items-center text-5xl font-semibold dark:bg-gray-700 dark:text-gray-400"> 
-								MP
-							</div>
-						</div>
-						<div class="p-5">
-							<div class="flex items-center gap-1">
-								<h2 class="font-semibold text-gray-700 text-lg dark:text-gray-100">Mark Paul Cañeda</h2>
-								<span class="material-symbols-rounded msr-filled text-primary text-base">verified</span>
-							</div>
-							<div class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-300 font-medium mb-4">
-								<div>@mpcaneda</div>
-								<div class="bg-gray-400 w-[4px] h-[4px] rounded-full"></div>
-								<div>Administrator</div>
-							</div>
-			
-							<div class="flex items-center gap-2 text-sm">
-								<div class="font-medium text-gray-600">Program:</div>
-								<div class="text-gray-600">College</div>
-							</div>
-			
-							<div class="flex flex-wrap justify-between gap-8 mt-3">
-								<div class="flex items-center gap-2 text-sm">
-									<div class="font-medium text-gray-600">Date Joined:</div>
-									<div class="text-gray-500 dark:text-gray-300">October 12, 2023</div>
-								</div>
-			
-								<div class="flex items-center gap-2 text-sm">
-									<div class="font-medium text-gray-600">Email:</div>
-									<div class="text-success-600">mpcaneda.gca@gmail.com</div>
-								</div>
-							</div>
-						</div>
-					</div>
-			
-					<div class="block">
-						<div class="border-y bg-gray-50 border-gray-200 px-4 pt-4 dark:bg-gray-800 dark:border-gray-700">
-							<nav class="flex overflow-auto gap-6" aria-label="Tabs">
-								<NuxtLink to="/admin/manage-account/profile" class="inline-flex shrink-0 items-center gap-2 px-1 pb-4 text-sm font-medium text-primary-600 dark:text-gray-400 border-b-2 border-b-primary-500">
-									Profile
-								</NuxtLink>
-			
-								<NuxtLink to="/admin/manage-account/change-password" class="inline-flex shrink-0 items-center gap-2 px-1 pb-4 text-sm font-medium text-gray-600 dark:text-gray-400">
-									Change Password
-								</NuxtLink>
-	
-								<a href="#" class="inline-flex shrink-0 items-center gap-2 px-1 pb-4 text-sm font-medium text-gray-600 dark:text-gray-400">
-									QR Code
-								</a>
-
-								<NuxtLink to="/admin/manage-account/preferences" class="inline-flex shrink-0 items-center gap-2 px-1 pb-4 text-sm font-medium text-gray-600 dark:text-gray-400">
-									Preferences
-								</NuxtLink>
-							</nav>
-						</div>
-					</div>
-				</div>
+				<AdminProfileCard />
 
 				<div class="grid grid-cols-1 xl:grid-cols-12 md:grid-cols-12 gap-6">
 					<div class="col-span-1 xl:col-span-8 md:col-span-8 space-y-4" data-te-spy="scroll" data-te-target="#scrollspy1" data-te-offset="200">
@@ -81,7 +23,7 @@
 									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">General Details</h4>
 										<div>
-											<button data-te-offcanvas-toggle data-te-target="#editGeneralDetails" aria-controls="editGeneralDetails" type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-700 hover:text-gray-500">
+											<button data-te-offcanvas-toggle data-te-target="#editGeneralDetails" aria-controls="editGeneralDetails" type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-200 hover:text-gray-500 dark:hover:bg-gray-700">
 												<span class="material-symbols-rounded">
 													edit
 												</span>
@@ -138,7 +80,7 @@
 									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Workspace</h4>
 										<div>
-											<button data-te-offcanvas-toggle data-te-target="#editWorkspace" aria-controls="editWorkspace" type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-700 hover:text-gray-500">
+											<button data-te-offcanvas-toggle data-te-target="#editWorkspace" aria-controls="editWorkspace" type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-200 hover:text-gray-500 dark:hover:bg-gray-700">
 												<span class="material-symbols-rounded">
 													edit
 												</span>
@@ -187,7 +129,7 @@
 									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Contact Information</h4>
 										<div>
-											<button data-te-offcanvas-toggle data-te-target="#editContact" aria-controls="editContact" type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-700 hover:text-gray-500">
+											<button data-te-offcanvas-toggle data-te-target="#editContact" aria-controls="editContact" type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-200 hover:text-gray-500 dark:hover:bg-gray-700">
 												<span class="material-symbols-rounded">
 													edit
 												</span>
@@ -226,7 +168,7 @@
 									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Address</h4>
 										<div>
-											<button data-te-offcanvas-toggle data-te-target="#editAddress" aria-controls="editAddress" type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-700 hover:text-gray-500">
+											<button data-te-offcanvas-toggle data-te-target="#editAddress" aria-controls="editAddress" type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-200 hover:text-gray-500 dark:hover:bg-gray-700">
 												<span class="material-symbols-rounded">
 													edit
 												</span>
@@ -260,7 +202,7 @@
 									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Government ID</h4>
 										<div>
-											<button data-te-offcanvas-toggle data-te-target="#editGovernmentID" aria-controls="editGovernmentID" type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-700 hover:text-gray-500">
+											<button data-te-offcanvas-toggle data-te-target="#editGovernmentID" aria-controls="editGovernmentID" type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-200 hover:text-gray-500 dark:hover:bg-gray-700">
 												<span class="material-symbols-rounded">
 													edit
 												</span>
@@ -307,7 +249,7 @@
 									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Elementary</h4>
 										<div>
-											<button data-te-offcanvas-toggle data-te-target="#editEducation" aria-controls="editEducation" type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-700 hover:text-gray-500">
+											<button data-te-offcanvas-toggle data-te-target="#editEducation" aria-controls="editEducation" type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-200 hover:text-gray-500 dark:hover:bg-gray-700">
 												<span class="material-symbols-rounded">
 													edit
 												</span>
@@ -350,7 +292,7 @@
 									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Certification</h4>
 										<div>
-											<button data-te-offcanvas-toggle data-te-target="#editLicence" aria-controls="editLicence" type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-700 hover:text-gray-500">
+											<button data-te-offcanvas-toggle data-te-target="#editLicence" aria-controls="editLicence" type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-200 hover:text-gray-500 dark:hover:bg-gray-700">
 												<span class="material-symbols-rounded">
 													edit
 												</span>
@@ -393,7 +335,7 @@
 									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Work Experience</h4>
 										<div>
-											<button data-te-offcanvas-toggle data-te-target="#editWorkExperience" aria-controls="editWorkExperience" type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-700 hover:text-gray-500">
+											<button data-te-offcanvas-toggle data-te-target="#editWorkExperience" aria-controls="editWorkExperience" type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-200 hover:text-gray-500 dark:hover:bg-gray-700">
 												<span class="material-symbols-rounded">
 													edit
 												</span>
@@ -436,7 +378,7 @@
 									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Training Programs</h4>
 										<div>
-											<button data-te-offcanvas-toggle data-te-target="#editTraining" aria-controls="editTraining" type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-700 hover:text-gray-500">
+											<button data-te-offcanvas-toggle data-te-target="#editTraining" aria-controls="editTraining" type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-200 hover:text-gray-500 dark:hover:bg-gray-700">
 												<span class="material-symbols-rounded">
 													edit
 												</span>

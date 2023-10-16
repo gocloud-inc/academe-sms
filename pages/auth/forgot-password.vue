@@ -11,7 +11,7 @@
 <template>
 	<div class="flex-1">
 		<div class="text-start">
-			<h2 class="mt-3 text-2xl font-semibold text-gray-800 capitalize sm:text-3xl dark:text-white">Forgot your password</h2>
+			<h2 class="mt-3 text-2xl font-semibold text-gray-800 capitalize sm:text-3xl dark:text-white">Forgot password</h2>
 			<p class="mt-3 text-gray-500 dark:text-gray-300">Enter your email to receive password reset link</p>
 		</div>
 
@@ -22,9 +22,9 @@
 					<input id="email" type="email" placeholder="email@example.com" class="form-control form-control-lg" autocomplete="email" autofocus required />
 				</div>
 
-				<button class="button button-primary button-lg w-full">
+				<NuxtLink to="/auth/reset-password" class="button button-primary button-lg w-full">
 					Send password reset link
-				</button>
+				</NuxtLink>
 			</form>
 			
 			<div class="mt-6 text-center">
