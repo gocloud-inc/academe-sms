@@ -1,6 +1,6 @@
 <script setup>
 	definePageMeta({
-		layout: "admin"
+		layout: "admin",
 	})
 
 	useSeoMeta({
@@ -24,7 +24,7 @@
 					<h2 class="text-lg font-semibold text-gray-700 dark:text-gray-100">Theme Preferences</h2>
 					<div class="card">
 						<div class="card-body">
-							<ColorModePicker />
+							
 						</div>
 					</div>
 				</div>
