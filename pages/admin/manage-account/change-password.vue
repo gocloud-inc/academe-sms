@@ -1,11 +1,35 @@
-<script setup>
-	definePageMeta({
-		layout: "admin",
-	})
+<script>
+	export default {
+		setup() {
+			definePageMeta({
+				layout: "admin",
+			})
+			
+			useSeoMeta({
+				title: 'Profile - Admin',
+			})
 
-	useSeoMeta({
-        title: 'Profile - Admin',
-    })
+			onMounted(() => {
+				const passwordEls = Array.from(document.querySelectorAll('.password'));
+				const passwordBtns = Array.from(document.querySelectorAll('.password-btn'));
+				const passwordIcons = Array.from(document.querySelectorAll('.password-icon'));
+				
+				passwordBtns.forEach(btn => {
+					btn.addEventListener('click', () => {
+						const isPasswordVisible = passwordEls[0].type === 'text';
+				
+						passwordEls.forEach(passwordEl => {
+							passwordEl.type = isPasswordVisible ? 'password' : 'text';
+						});
+				
+						passwordIcons.forEach(icon => {
+							icon.textContent = isPasswordVisible ? 'Show' : 'Hide';
+						});
+					});
+				});
+			});
+		}
+	}
 </script>
 
 <template>

@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 	import { Dropdown, PerfectScrollbar, initTE } from "tw-elements";
 
 	export default {

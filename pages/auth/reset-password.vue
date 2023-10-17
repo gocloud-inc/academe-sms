@@ -1,11 +1,35 @@
-<script setup>
-	definePageMeta({
-		layout: "auth",
-	})
+<script>
+	export default {
+		setup() {
+			definePageMeta({
+				layout: "auth",
+			})
+		
+			useSeoMeta({
+				title: 'Reset Password - Academe SMS',
+			})
 
-	useSeoMeta({
-        title: 'Reset Password - Academe SMS',
-    })
+			onMounted(() => {
+				const passwordEls = Array.from(document.querySelectorAll('.password'));
+				const passwordBtns = Array.from(document.querySelectorAll('.password-btn'));
+				const passwordIcons = Array.from(document.querySelectorAll('.password-icon'));
+				
+				passwordBtns.forEach(btn => {
+					btn.addEventListener('click', () => {
+						const isPasswordVisible = passwordEls[0].type === 'text';
+				
+						passwordEls.forEach(passwordEl => {
+							passwordEl.type = isPasswordVisible ? 'password' : 'text';
+						});
+				
+						passwordIcons.forEach(icon => {
+							icon.textContent = isPasswordVisible ? 'Show' : 'Hide';
+						});
+					});
+				});
+			});
+		}
+	}
 </script>
 
 <template>
@@ -24,12 +48,17 @@
 
 				<div class="form-group">
 					<label for="new_password" class="form-label">New Password</label>
-					<input id="new_password" type="password" placeholder="********" class="form-control form-control-lg" autocomplete="new-password" autofocus required />
+					<div class="relative">
+						<input id="new_password" class="form-control password" type="password" name="new_password" placeholder="********" required autofocus autocomplete="new-password" />
+						<div class="absolute top-0 end-0 my-3 mx-4 password-btn text-sm cursor-pointer">
+							<span class="password-icon">Show</span>
+						</div>
+					</div>
 				</div>
 
 				<div class="form-group">
 					<label for="confirm_new_password" class="form-label">Confirm New Password</label>
-					<input id="confirm_new_password" type="password" placeholder="********" class="form-control form-control-lg" autocomplete="new-password" autofocus required />
+					<input id="confirm_new_password" type="password" placeholder="********" class="form-control form-control-lg password" autocomplete="new-password" autofocus required />
 				</div>
 
 				<NuxtLink to="/admin/dashboard" class="button button-primary button-lg w-full">

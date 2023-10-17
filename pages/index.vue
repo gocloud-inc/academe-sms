@@ -1,11 +1,35 @@
-<script setup>
-	definePageMeta({
-		layout: "auth",
-	})
+<script>
+	export default {
+		setup() {
+			definePageMeta({
+				layout: "auth",
+			})
+		
+			useSeoMeta({
+				title: 'Login - Academe SMS',
+			})
 
-	useSeoMeta({
-        title: 'Login - Academe SMS',
-    })
+			onMounted(() => {
+				const passwordEls = Array.from(document.querySelectorAll('.password'));
+				const passwordBtns = Array.from(document.querySelectorAll('.password-btn'));
+				const passwordIcons = Array.from(document.querySelectorAll('.password-icon'));
+				
+				passwordBtns.forEach(btn => {
+					btn.addEventListener('click', () => {
+						const isPasswordVisible = passwordEls[0].type === 'text';
+				
+						passwordEls.forEach(passwordEl => {
+							passwordEl.type = isPasswordVisible ? 'password' : 'text';
+						});
+				
+						passwordIcons.forEach(icon => {
+							icon.textContent = isPasswordVisible ? 'Show' : 'Hide';
+						});
+					});
+				});
+			});
+		}
+	}
 </script>
 
 <template>
@@ -24,7 +48,12 @@
 
 				<div class="form-group">
 					<label for="password" class="form-label">Password</label>
-					<input id="password" type="password" placeholder="********" class="form-control form-control-lg" autocomplete="new-password" autofocus required />
+					<div class="relative">
+						<input id="current_password" class="form-control password" type="password" name="current_password" required autofocus autocomplete="current-password" />
+						<div class="absolute top-0 end-0 my-3 mx-4 password-btn text-sm cursor-pointer">
+							<span class="password-icon">Show</span>
+						</div>
+					</div>
 				</div>
 
 				<NuxtLink to="/auth/forgot-password" class="inline-block my-4 text-sm text-primary-500 capitalize hover:underline dark:text-primary-400">
