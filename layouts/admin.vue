@@ -9,7 +9,7 @@
 		</ClientOnly>
 
 		<header class="header sticky top-0 z-10">
-			<nav class="border-b relative bg-white shadow-sm dark:bg-primary-950 dark:border-gray-800">
+			<nav class="border-b relative bg-white shadow-sm dark:bg-gray-900 dark:border-gray-800">
 				<div class="px-4 py-3 xl:py-5 mx-auto">
 					<div class="flex items-center justify-between">
 						<div class="flex items-center gap-2">

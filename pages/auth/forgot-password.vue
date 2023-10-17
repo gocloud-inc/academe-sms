@@ -1,6 +1,7 @@
 <script setup>
 	definePageMeta({
 		layout: "auth",
+		colorMode: "light"
 	})
 
 	useSeoMeta({

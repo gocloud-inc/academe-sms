@@ -54,7 +54,7 @@
 								<label for="current_password" class="form-label">Current Password</label>
 								<div class="relative">
 									<input id="current_password" class="form-control password" type="password" name="current_password" required autofocus autocomplete="current-password" />
-									<div class="absolute top-0 end-0 my-3 mx-4 password-btn text-sm cursor-pointer">
+									<div class="absolute top-0 end-0 my-3 mx-4 password-btn text-sm cursor-pointer dark:text-gray-100">
 										<span class="password-icon">Show</span>
 									</div>
 								</div>

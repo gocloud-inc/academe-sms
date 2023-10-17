@@ -21,10 +21,12 @@
 				</ClientOnly>
 				
 				<div class="flex flex-col gap-2">
-					<h2 class="text-lg font-semibold text-gray-700 dark:text-gray-100">Theme Preferences</h2>
 					<div class="card">
 						<div class="card-body">
-							
+							<h2 class="font-semibold text-gray-700 text-lg dark:text-gray-300">Color Mode</h2>
+							<p class="text-sm text-gray-500 dark:text-gray-400">Choose if Academe's appearance should be light or dark, or follow your computer’s settings.</p>
+
+							<ColorModePicker />
 						</div>
 					</div>
 				</div>

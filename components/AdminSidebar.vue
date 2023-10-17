@@ -137,11 +137,11 @@
 			</div>
 		</div>
 		
-		<div data-te-perfect-scrollbar-init class="relative h-screen px-5 py-4 overflow-hidden bg-primary-50 border-l border-r sm:w-64 w-60 dark:bg-primary-950 dark:border-gray-800">
+		<div data-te-perfect-scrollbar-init class="relative h-screen px-5 py-4 overflow-hidden bg-primary-50 border-l border-r sm:w-64 w-60 dark:bg-gray-900 dark:border-gray-800">
 			<nav class="-mx-3 space-y-2">
 				<div class="space-y-1">
-					<div class="flex items-center gap-3 bg-white border shadow-sm p-3 mb-3 rounded-lg dark:bg-gray-900 dark:border-gray-800">
-						<div class="bg-gray-100 rounded-xl w-12 h-12 p-4 text-lg uppercase text-primary font-semibold flex items-center justify-center dark:bg-gray-700">
+					<div class="flex items-center gap-3 bg-white border shadow-sm p-3 mb-3 rounded-lg dark:bg-gray-800 dark:border-gray-800">
+						<div class="bg-gray-100 rounded-xl w-12 h-12 p-4 text-lg uppercase text-primary font-semibold flex items-center justify-center dark:bg-gray-700 dark:text-primary-300">
 							LV
 						</div>
 						<div class="flex flex-col">
@@ -151,7 +151,7 @@
 					</div>
 
 					<details class="group [&_summary::-webkit-details-marker]:hidden" open>
-						<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-primary-100 hover:text-gray-700 dark:hover:bg-primary-800 dark:text-gray-200 dark:hover:text-gray-100">
+						<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-primary-100 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 							<div class="flex items-center gap-2">
 								<span class="material-symbols-rounded">
 									app_registration
@@ -201,7 +201,7 @@
 
 				<div class="space-y-1">
 					<details class="group [&_summary::-webkit-details-marker]:hidden">
-						<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-primary-100 hover:text-gray-700 dark:hover:bg-primary-800 dark:text-gray-200 dark:hover:text-gray-100">
+						<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-primary-100 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 							<div class="flex items-center gap-2">
 								<span class="material-symbols-rounded">
 									energy_program_time_used
@@ -243,7 +243,7 @@
 
 				<div class="space-y-1">
 					<details class="group [&_summary::-webkit-details-marker]:hidden">
-						<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-primary-100 hover:text-gray-700 dark:hover:bg-primary-800 dark:text-gray-200 dark:hover:text-gray-100">
+						<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-primary-100 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 							<div class="flex items-center gap-2">
 								<span class="material-symbols-rounded">
 									other_admission
@@ -269,7 +269,7 @@
 
 				<div class="space-y-1">
 					<details class="group [&_summary::-webkit-details-marker]:hidden">
-						<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-primary-100 hover:text-gray-700 dark:hover:bg-primary-800 dark:text-gray-200 dark:hover:text-gray-100">
+						<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-primary-100 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 							<div class="flex items-center gap-2">
 								<span class="material-symbols-rounded">
 									badge
@@ -307,7 +307,7 @@
 	
 				<div class="space-y-1">
 					<details class="group [&_summary::-webkit-details-marker]:hidden">
-						<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-primary-100 hover:text-gray-700 dark:hover:bg-primary-800 dark:text-gray-200 dark:hover:text-gray-100">
+						<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-primary-100 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 							<div class="flex items-center gap-2">
 								<span class="material-symbols-rounded">
 									account_balance
@@ -349,7 +349,7 @@
 
 				<div class="space-y-1">
 					<details class="group [&_summary::-webkit-details-marker]:hidden">
-						<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-primary-100 hover:text-gray-700 dark:hover:bg-primary-800 dark:text-gray-200 dark:hover:text-gray-100">
+						<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-primary-100 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 							<div class="flex items-center gap-2">
 								<span class="material-symbols-rounded">
 									lab_profile

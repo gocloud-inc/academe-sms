@@ -68,9 +68,9 @@
 						QR Code
 					</a>
 
-					<!-- <NuxtLink to="/admin/manage-account/preferences" class="inline-flex shrink-0 items-center gap-2 px-1 pb-4 text-sm font-medium text-gray-600 dark:text-gray-400">
+					<NuxtLink to="/admin/manage-account/preferences" class="inline-flex shrink-0 items-center gap-2 px-1 pb-4 text-sm font-medium text-gray-600 dark:text-gray-400">
 						Preferences
-					</NuxtLink> -->
+					</NuxtLink>
 				</nav>
 			</div>
 		</div>
