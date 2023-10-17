@@ -27,7 +27,7 @@
 					<input id="password" type="password" placeholder="********" class="form-control form-control-lg" autocomplete="new-password" autofocus required />
 				</div>
 
-				<NuxtLink to="/auth/forgot-password" class="inline-block my-4 text-primary-500 capitalize hover:underline dark:text-primary-400">
+				<NuxtLink to="/auth/forgot-password" class="inline-block my-4 text-sm text-primary-500 capitalize hover:underline dark:text-primary-400">
 					Forgot your password?
 				</NuxtLink>
 

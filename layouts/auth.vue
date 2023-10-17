@@ -1,4 +1,6 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+
+</script>
 
 <template>
  	<div class="bg-white dark:bg-gray-900">

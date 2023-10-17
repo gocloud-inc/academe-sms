@@ -52,20 +52,6 @@ export default defineNuxtConfig({
 			autoprefixer: {},
 		},
 	},
-	plugins: [
-		{
-			src: 'plugins/tw-elements',
-			mode: 'client'
-		},
-		{
-			src: 'plugins/admin',
-			mode: 'client'
-		},
-		{
-			src: 'plugins/sidebar',
-			mode: 'client'
-		},
-	],
 	modules: [
 		'@nuxtjs/color-mode'
 	],

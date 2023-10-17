@@ -1,11 +1,28 @@
-<script setup>
-	definePageMeta({
-		layout: "admin"
-	})
+<script lang="ts">
+	export default {
+		setup() {
+			definePageMeta({
+				layout: "admin",
+			});
 
-	useSeoMeta({
-        title: 'Dashboard - Admin',
-    })
+			useSeoMeta({
+				title: 'Dashboard',
+			});
+
+			const greetings = {
+				morning: '⛅ Good morning',
+				afternoon: '🌞 Good afternoon',
+				evening: '🌘 Good evening',
+			};
+
+			const currentHour = new Date().getHours();
+			const greeting = currentHour < 12 ? greetings.morning : currentHour < 18 ? greetings.afternoon : greetings.evening;
+
+			return {
+				greeting,
+			};
+		},
+	}
 </script>
 
 <template>
@@ -16,7 +33,7 @@
 					Dashboard
 				</a>
 			</div>
-			<h4 class="text-xl lg:text-2xl font-medium text-gray-700 mt-1 dark:text-gray-300"><span class="greeting"></span>! Mark Paul</h4>
+			<h4 class="text-xl lg:text-2xl font-medium text-gray-700 mt-1 dark:text-gray-300">{{ greeting }}! Mark Paul</h4>
 		</div>
 
 		

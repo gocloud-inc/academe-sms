@@ -1,4 +1,14 @@
-<script lang="ts" setup></script>
+<script lang="ts">
+	import { Select, initTE } from "tw-elements";
+
+	export default {
+		setup() {
+			onMounted(() => {
+				initTE({ Select });
+			});
+		},
+	}
+</script>
 
 <template>
 	<div class="offcanvas" tabindex="-1" id="editWorkspace" aria-labelledby="editWorkspaceLabel" data-te-offcanvas-init>
@@ -28,29 +38,28 @@
 			<form class="space-y-6">
 				<div class="form-group">
 					<label for="employee_id" class="form-label">Employee ID</label>
-					<input id="employee_id" type="text" placeholder="e.g Juan Dela Cruz" class="form-control" autofocus />
+					<input id="employee_id" type="text" class="form-control" placeholder="e.g Juan Dela Cruz" autofocus />
 				</div>
 				<div class="form-group">
 					<label for="account_type" class="form-label">Account Type</label>
-					<select class="form-control" name="account_type" id="account_type">
+					<select data-te-select-init data-te-select-size="lg" data-te-select-placeholder="Select" name="account_type" id="account_type">
 						<option value="System Administrator">System Administrator</option>
 					</select>
 				</div>
 				<div class="form-group">
 					<label for="employee_status" class="form-label">Employee Status</label>
-					<select class="form-control" name="employee_status" id="employee_status">
+					<select data-te-select-init data-te-select-size="lg" data-te-select-placeholder="Select" name="employee_status" id="employee_status">
 						<option value="Employed">Employed</option>
 					</select>
 				</div>
 				<div class="form-group">
 					<label for="program_department" class="form-label">Program Department</label>
-					<select class="form-control" name="program_department" id="program_department">
-						<option label="Select" selected hidden disabled></option>
+					<select data-te-select-init data-te-select-size="lg" data-te-select-placeholder="Select" name="program_department" id="program_department">
 					</select>
 				</div>
 				<div class="form-group">
 					<label for="program_category" class="form-label">Program Category</label>
-					<select class="form-control" name="program_category" id="program_category">
+					<select data-te-select-init data-te-select-size="lg" data-te-select-placeholder="Select" name="program_category" id="program_category">
 						<option value="College">College</option>
 					</select>
 				</div>

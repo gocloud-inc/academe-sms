@@ -1,6 +1,6 @@
 <script setup>
 	definePageMeta({
-		layout: "admin"
+		layout: "admin",
 	})
 
 	useSeoMeta({
@@ -12,7 +12,10 @@
 	<div class="container">
 		<div class="space-y-6">
 			<div class="space-y-6">
-				<AdminProfileCard />
+
+				<ClientOnly>
+					<AdminProfileCard />
+				</ClientOnly>
 
 				<div class="grid grid-cols-1 xl:grid-cols-12 md:grid-cols-12 gap-6">
 					<div class="col-span-1 xl:col-span-8 md:col-span-8 space-y-4" data-te-spy="scroll" data-te-target="#scrollspy1" data-te-offset="200">
@@ -459,8 +462,11 @@
 		</div>
 
 		<!-- Edit Profile Through Offcanvas -->
-		<OffcanvasAdminProfileEditGeneralDetails />
-		<OffcanvasAdminProfileEditWorkspace />
+		<ClientOnly>
+			<OffcanvasAdminProfileEditGeneralDetails />
+			<OffcanvasAdminProfileEditWorkspace />
+		</ClientOnly>
+
 		<OffcanvasAdminProfileEditContact />
 		<OffcanvasAdminProfileEditAddress />
 		<OffcanvasAdminProfileEditGovernmentID />

@@ -1,4 +1,14 @@
-<script lang="ts" setup></script>
+<script lang="ts">
+	import { Modal, Offcanvas, initTE } from "tw-elements";
+
+	export default {
+		setup() {
+			onMounted(() => {
+				initTE({ Modal, Offcanvas });
+			});
+		},
+	}
+</script>
 
 <template>
   	<div class="bg-white shadow-sm rounded-lg h-fit border dark:bg-gray-900 dark:border-gray-800">
