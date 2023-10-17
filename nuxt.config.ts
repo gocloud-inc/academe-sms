@@ -1,7 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   	devtools: { enabled: true },
-	  app: {
+	experimental: {
+		payloadExtraction: false
+	},
+	app: {
+		baseURL: '/academe-sms/',
+    	buildAssetsDir: 'assets',
 		head: {
 			htmlAttrs: {
 				lang: 'en',
