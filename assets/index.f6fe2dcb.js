@@ -1,1 +1,0 @@
-import{r as n,h as c,i as f,u as m}from"./entry.ff725ea1.js";import{u as p}from"./vue.f36acd1f.02d51177.js";function d(t,a){const e=n({});return c(()=>{const s=f(t),{title:o,titleTemplate:r,...u}=s;e.value={title:o,titleTemplate:r,meta:m(u)}}),p(e,a)}export{d as u};
