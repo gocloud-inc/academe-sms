@@ -373,7 +373,7 @@
 
     /* Offcanvas */
     .offcanvas {
-        @apply invisible fixed bottom-0 right-0 top-0 z-[1045] flex w-[30%] max-w-full translate-x-full flex-col border-none bg-white bg-clip-padding text-gray-700 shadow-sm outline-none transition duration-300 ease-in-out dark:bg-gray-800 dark:text-gray-200 [&[data-te-offcanvas-show]]:transform-none;
+        @apply invisible fixed bottom-0 right-0 top-0 z-[1045] flex lg:w-[30%] max-w-full translate-x-full flex-col border-none bg-white bg-clip-padding text-gray-700 shadow-sm outline-none transition duration-300 ease-in-out dark:bg-gray-800 dark:text-gray-200 [&[data-te-offcanvas-show]]:transform-none;
 
         .offcanvas-header {
             @apply flex items-center justify-between p-4;

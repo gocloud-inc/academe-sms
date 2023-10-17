@@ -22,7 +22,7 @@
 				</ClientOnly>
 
 				<div class="grid grid-cols-1 xl:grid-cols-12 md:grid-cols-12 gap-6">
-					<div class="col-span-1 xl:col-span-8 md:col-span-8 space-y-4" data-te-spy="scroll" data-te-target="#scrollspy1" data-te-offset="200">
+					<div class="col-span-1 xl:col-span-8 md:col-span-12 space-y-4" data-te-spy="scroll" data-te-target="#scrollspy1" data-te-offset="200">
 						<h2 class="text-xl font-medium dark:text-gray-300">Personal Information</h2>
 						<div id="profile" class="bg-white shadow-sm rounded-lg divide-y divide-gray-100 h-fit border dark:bg-gray-900 dark:divide-gray-700 dark:border-gray-800">
 							<div class="relative p-2">
