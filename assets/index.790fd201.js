@@ -1,1 +1,0 @@
-import{l as u,m,n as c,q as f}from"./entry.beddcad0.js";import{u as l}from"./vue.f36acd1f.6e942b16.js";function d(t,a){const e=u({});return m(()=>{const s=c(t),{title:o,titleTemplate:n,...r}=s;e.value={title:o,titleTemplate:n,meta:f(r)}}),l(e,a)}export{d as u};
