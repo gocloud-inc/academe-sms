@@ -7,7 +7,7 @@
 			})
 		
 			useSeoMeta({
-				title: 'Reset Password - Academe SMS',
+				title: 'Reset Password',
 			})
 
 			onMounted(() => {

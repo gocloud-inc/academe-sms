@@ -7,7 +7,7 @@
 			})
 		
 			useSeoMeta({
-				title: 'Login - Academe SMS',
+				title: 'Login',
 			})
 
 			onMounted(() => {

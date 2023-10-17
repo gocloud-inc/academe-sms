@@ -5,7 +5,7 @@
 	})
 
 	useSeoMeta({
-        title: 'Forgot Password - Academe SMS',
+        title: 'Forgot Password',
     })
 </script>
 

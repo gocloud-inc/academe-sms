@@ -4,7 +4,7 @@
 	})
 
 	useSeoMeta({
-        title: 'Profile - Admin',
+        title: 'Profile',
     })
 </script>
 

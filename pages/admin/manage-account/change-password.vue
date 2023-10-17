@@ -6,7 +6,7 @@
 			})
 			
 			useSeoMeta({
-				title: 'Profile - Admin',
+				title: 'Change Password',
 			})
 
 			onMounted(() => {

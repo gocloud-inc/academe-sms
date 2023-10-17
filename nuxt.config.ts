@@ -27,6 +27,11 @@ export default defineNuxtConfig({
 			],
 			link: [
 				{
+					rel: 'icon',
+					type: 'image/png',
+					href: 'favicon.ico',
+				},
+				{
 					rel: "preconnect",
 					href: "https://fonts.googleapis.com",
 				},
@@ -58,9 +63,53 @@ export default defineNuxtConfig({
 		},
 	},
 	modules: [
-		'@nuxtjs/color-mode'
+		'@nuxtjs/color-mode',
+		'@vite-pwa/nuxt'
 	],
 	colorMode: {
 		classSuffix: ''
+	},
+	pwa: {
+		manifest: {
+			name: 'Academe SMS',
+			short_name: 'Academe SMS',
+			description: 'Academe School Information Management System',
+			theme_color: '#793C9D',
+			background_color: '#ffffff',
+			icons: [
+				{
+					src: 'pwa-64x64.png',
+					sizes: '64x64',
+					type: 'image/png'
+				},
+				{
+					src: 'pwa-192x192.png',
+					sizes: '192x192',
+					type: 'image/png'
+				},
+				{
+					src: 'pwa-512x512.png',
+					sizes: '512x512',
+					type: 'image/png',
+					purpose: 'any'  
+				},
+				{
+					src: 'maskable-icon-512x512.png',
+					sizes: '512x512',
+					type: 'image/png',
+					purpose: 'maskable'
+				}
+			]
+		},
+		registerType: 'autoUpdate',
+		workbox: {
+			navigateFallback: '/academe-sms/',
+			clientsClaim: true,
+			skipWaiting: true
+		},
+		devOptions: {
+			enabled: true,
+			type: 'module',
+		},
 	}
 })

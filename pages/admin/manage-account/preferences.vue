@@ -4,7 +4,7 @@
 	})
 
 	useSeoMeta({
-        title: 'Preferences - Admin',
+        title: 'Preferences',
     })
 </script>
 
