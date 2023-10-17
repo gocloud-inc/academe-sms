@@ -11,7 +11,13 @@
 <template>
 	<div class="container">
 		<div class="space-y-6">
-			<AdminProfileCard />
+			<ClientOnly>
+				<AdminProfileCard />
+
+				<template #fallback>
+					<SkeletonAdminProfileCard />
+				</template>
+			</ClientOnly>
 
 			<div class="card">
 				<div class="card-body">

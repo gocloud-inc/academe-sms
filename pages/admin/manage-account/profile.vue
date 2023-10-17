@@ -15,6 +15,10 @@
 
 				<ClientOnly>
 					<AdminProfileCard />
+
+					<template #fallback>
+						<SkeletonAdminProfileCard />
+					</template>
 				</ClientOnly>
 
 				<div class="grid grid-cols-1 xl:grid-cols-12 md:grid-cols-12 gap-6">

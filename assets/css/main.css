@@ -74,7 +74,7 @@
             }
     
             .aside-container {
-                @apply flex flex-col items-center w-16 h-screen py-4 bg-gradient-to-t from-primary-800 via-primary-700 to-primary-600 dark:from-primary-950 dark:via-primary-900 dark:to-primary-800 dark:border-gray-700;
+                @apply flex flex-col items-center w-16 h-screen py-4 bg-gradient-to-t from-primary-900 via-primary-800 to-primary-700 dark:from-primary-950 dark:via-primary-900 dark:to-primary-800 dark:border-gray-700;
     
                 .aside-nav-menu {
                     @apply flex flex-col items-center flex-1 space-y-4;

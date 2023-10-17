@@ -15,7 +15,7 @@
 		<div class="flex flex-wrap divide-x divide-gray-100 dark:divide-gray-800 relative">
 			<div class="p-5 flex justify-center items-center">
 				<div class="dropzone relative uppercase bg-gray-100 text-gray-500 rounded-full w-36 h-36 flex justify-center items-center text-5xl font-semibold group">
-					<div class="dropzone-image-preview h-full w-full uppercase bg-gray-100 text-gray-500 rounded-full p-4 flex justify-center items-center text-5xl font-semibold dark:bg-gray-700 dark:text-gray-400">
+					<div class="dropzone-image-preview h-full w-full uppercase bg-gray-100 text-gray-500 rounded-full p-4 flex justify-center items-center text-5xl font-semibold ring-2 ring-gray-200 dark:ring-gray-600 dark:bg-gray-700 dark:text-gray-400">
 						MP
 					</div>
 					<button data-te-target="#profilePhotoModal" data-te-toggle="modal" type="button" class="absolute bottom-0 left-0 right-0 text-xs bg-gray-900 w-36 h-36 rounded-full hidden group-hover:flex justify-center items-center">

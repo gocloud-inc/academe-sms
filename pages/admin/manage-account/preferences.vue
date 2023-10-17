@@ -12,7 +12,13 @@
 	<div class="container">
 		<div class="space-y-6">
 			<div class="space-y-6">
-				<AdminProfileCard />
+				<ClientOnly>
+					<AdminProfileCard />
+
+					<template #fallback>
+						<SkeletonAdminProfileCard />
+					</template>
+				</ClientOnly>
 				
 				<div class="flex flex-col gap-2">
 					<h2 class="text-lg font-semibold text-gray-700 dark:text-gray-100">Theme Preferences</h2>
