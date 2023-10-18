@@ -60,14 +60,4 @@
 	</div>
 </template>
 
-<style>
-	.dark-mode body {
-		background-color: #091a28;
-		color: #ebf4f1;
-	}
-	.sepia-mode body {
-		background-color: #f1e7d0;
-		color: #433422;
-	}
-</style>
 

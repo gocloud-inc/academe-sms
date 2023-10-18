@@ -102,11 +102,6 @@ export default defineNuxtConfig({
 			]
 		},
 		registerType: 'autoUpdate',
-		workbox: {
-			navigateFallback: '/academe-sms/',
-			clientsClaim: true,
-			skipWaiting: true
-		},
 		devOptions: {
 			enabled: true,
 			type: 'module',

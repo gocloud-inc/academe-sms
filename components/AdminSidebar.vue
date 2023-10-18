@@ -1,45 +1,44 @@
-<script>
+<script setup>
 	import { Dropdown, PerfectScrollbar, initTE } from "tw-elements";
 
-	export default {
-		setup() {
-			
-			const sidebarToggler = document.getElementById('sidebar-toggler');
-			const asideEl = ref(null);
-			let bodyOverflow = '';
+	const sidebarToggler = document.getElementById('sidebar-toggler');
+	const asideEl = ref(null);
+	let bodyOverflow = '';
 
-			onMounted(() => {
-				initTE({ Dropdown, PerfectScrollbar });
+	onMounted(() => {
+		initTE({ Dropdown, PerfectScrollbar });
 
-				asideEl.value = document.getElementById('aside');
-				
-				if (sidebarToggler) {
-					sidebarToggler.addEventListener('click', () => {
-					asideEl.value.classList.toggle('show');
+		asideEl.value = document.getElementById('aside');
+		
+		if (sidebarToggler) {
+			sidebarToggler.addEventListener('click', () => {
+			asideEl.value.classList.toggle('show');
 
-					const asideDivOverlay = createOverlay();
+			const asideDivOverlay = createOverlay();
 
-					asideDivOverlay.addEventListener('click', () => {
-						asideEl.value.classList.remove('show');
+			asideDivOverlay.addEventListener('click', () => {
+				asideEl.value.classList.remove('show');
 
-						document.body.style.overflow = bodyOverflow; // Restore the original overflow property
-						document.body.removeChild(asideDivOverlay);
-					});
-
-					// Disable body scrolling
-					bodyOverflow = document.body.style.overflow;
-					document.body.style.overflow = 'hidden';
-					});
-				}
+				document.body.style.overflow = bodyOverflow; // Restore the original overflow property
+				document.body.removeChild(asideDivOverlay);
 			});
 
-			function createOverlay() {
-				const asideDivOverlay = document.createElement('div');
-				asideDivOverlay.className = 'sidebar-overlay';
-				document.body.appendChild(asideDivOverlay);
-				return asideDivOverlay;
-			}
-		},
+			// Disable body scrolling
+			bodyOverflow = document.body.style.overflow;
+			document.body.style.overflow = 'hidden';
+			});
+		}
+	});
+
+	const createOverlay = () => {
+		const asideDivOverlay = document.createElement('div');
+		asideDivOverlay.className = 'sidebar-overlay';
+		document.body.appendChild(asideDivOverlay);
+		return asideDivOverlay;
+	}
+
+	const logout = async () => {
+		navigateTo('/')
 	}
 </script>
 
@@ -47,8 +46,8 @@
   	<aside id="aside" ref="asideEl" class="aside flex h-screen sticky top-0 transition-all duration-300 ease-in-out">
 		<div class="aside-container">
 			<nav class="aside-nav-menu">
-				<a href="#" class="uppercase font-semibold text-gray-600 bg-gray-200 rounded-lg p-2">
-					GG
+				<a href="#" class="uppercase font-semibold text-gray-600 p-2">
+					<img class="flex-shrink-0 object-cover mx-1 w-8 h-8" src="/logo-inverted.png" alt="Academe SMS">
 				</a>
 	
 				<NuxtLink to="/admin/dashboard" class="aside-nav-link" title="Home">
@@ -128,9 +127,9 @@
 						</li>
 						<hr class="dropdown-divider" />
 						<li>
-							<NuxtLink to="/" class="dropdown-link" data-te-dropdown-item-ref>
+							<button type="button" @click.prevent="logout" class="dropdown-link" data-te-dropdown-item-ref>
 								Sign out
-							</NuxtLink>
+							</button>
 						</li>
 					</ul>
 				</div>

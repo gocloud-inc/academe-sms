@@ -26,7 +26,7 @@
 			<div class="p-5">
 				<div class="flex items-center gap-1">
 					<h2 class="font-semibold text-gray-700 text-lg dark:text-gray-100">Mark Paul Cañeda</h2>
-					<span class="material-symbols-rounded msr-filled text-primary text-base">verified</span>
+					<span class="material-symbols-rounded msr-filled text-primary text-md dark:text-primary-400">verified</span>
 				</div>
 				<div class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-300 font-medium mb-4">
 					<div>@mpcaneda</div>
@@ -35,19 +35,19 @@
 				</div>
 
 				<div class="flex items-center gap-2 text-sm">
-					<div class="font-medium text-gray-600">Program:</div>
-					<div class="text-gray-600">College</div>
+					<div class="font-medium text-gray-500">Program:</div>
+					<div class="text-gray-500">College</div>
 				</div>
 
 				<div class="flex flex-wrap justify-between gap-8 mt-3">
 					<div class="flex items-center gap-2 text-sm">
-						<div class="font-medium text-gray-600">Date Joined:</div>
+						<div class="font-medium text-gray-500">Date Joined:</div>
 						<div class="text-gray-500 dark:text-gray-300">October 12, 2023</div>
 					</div>
 
 					<div class="flex items-center gap-2 text-sm">
-						<div class="font-medium text-gray-600">Email:</div>
-						<div class="text-success-600">mpcaneda.gca@gmail.com</div>
+						<div class="font-medium text-gray-500">Email:</div>
+						<div class="text-success-500">mpcaneda.gca@gmail.com</div>
 					</div>
 				</div>
 			</div>
