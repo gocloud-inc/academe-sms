@@ -55,7 +55,7 @@
 				<div class="form-group">
 					<label for="password" class="form-label">Password</label>
 					<div class="relative">
-						<input v-model="user.password" id="current_password" class="form-control password" type="password" name="current_password" required autofocus autocomplete="current-password" />
+						<input v-model="user.password" id="password" class="form-control password" type="password" name="password" required autofocus autocomplete="current-password" />
 						<div class="absolute top-0 end-0 my-3 mx-4 password-btn text-sm cursor-pointer">
 							<span class="password-icon">Show</span>
 						</div>
@@ -76,8 +76,8 @@
 					Not enrolled yet? Admission
 				</a>
 			</div>
-			<p class="mt-6 text-sm text-gray-500 dark:text-gray-400">
-				By clicking “Login” above, you acknowledge that you have read and understood, and agree to Our <a href="#" class="text-primary hover:underline dark:text-white">Term & Conditions</a> and <a href="#" class="text-primary hover:underline dark:text-white"> Privacy Policy.</a>
+			<p class="mt-6 text-sm text-gray-600 dark:text-gray-400">
+				By clicking “Login” above, you acknowledge that you have read and understood, and agree to Our <a href="#" class="text-primary-600 font-medium hover:underline dark:text-white">Term & Conditions</a> and <a href="#" class="text-primary-600 font-medium hover:underline dark:text-white"> Privacy Policy.</a>
 			</p>
 		</div>
 	</div>
