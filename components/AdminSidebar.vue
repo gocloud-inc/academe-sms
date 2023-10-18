@@ -51,40 +51,44 @@
 				</a>
 	
 				<NuxtLink to="/admin/dashboard" class="aside-nav-link" title="Home">
-					<span class="material-symbols-rounded">
-						home
-					</span>
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-smart-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M19 8.71l-5.333 -4.148a2.666 2.666 0 0 0 -3.274 0l-5.334 4.148a2.665 2.665 0 0 0 -1.029 2.105v7.2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-7.2c0 -.823 -.38 -1.6 -1.03 -2.105"></path>
+						<path d="M16 15c-2.21 1.333 -5.792 1.333 -8 0"></path>
+					</svg>
 				</NuxtLink>
 
 				<a href="#" class="aside-nav-link" title="Messages">
-					<span class="material-symbols-rounded">
-						chat
-					</span>
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message-circle" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1"></path>
+					</svg>
 				</a>
 	
 				<a href="#" class="aside-nav-link" title="Admin">
-					<span class="material-symbols-rounded">
-						school
-					</span>
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-school" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M22 9l-10 -4l-10 4l10 4l10 -4v6"></path>
+						<path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4"></path>
+					</svg>
 				</a>
 	
 	
 				<a href="#" class="aside-nav-link" title="Notifications">
-					<span class="material-symbols-rounded">
-						notifications
-					</span>
-				</a>
-
-				<a href="#" class="aside-nav-link" title="Departments">
-					<span class="material-symbols-rounded">
-						group
-					</span>
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bell" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6"></path>
+						<path d="M9 17v1a3 3 0 0 0 6 0v-1"></path>
+					</svg>
 				</a>
 
 				<a href="#" class="aside-nav-link" title="More">
-					<span class="material-symbols-rounded">
-						more_horiz
-					</span>
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M5 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+						<path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+						<path d="M19 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+					</svg>
 				</a>
 			</nav>
 	
@@ -152,14 +156,21 @@
 					<details class="group [&_summary::-webkit-details-marker]:hidden" open>
 						<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-primary-100 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 							<div class="flex items-center gap-2">
-								<span class="material-symbols-rounded">
-									app_registration
-								</span>
+								<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-list-details" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+									<path d="M13 5h8"></path>
+									<path d="M13 9h5"></path>
+									<path d="M13 15h8"></path>
+									<path d="M13 19h5"></path>
+									<path d="M3 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"></path>
+									<path d="M3 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"></path>
+								</svg>
 								<span class="px-3 text-sm text-gray-700 font-medium capitalize dark:text-gray-200">Registrar</span>
 							</div>
-							<span class="material-symbols-rounded shrink-0 transition duration-300 group-open:-rotate-180">
-								expand_more
-							</span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down shrink-0 transition duration-300 group-open:-rotate-180" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+								<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+								<path d="M6 9l6 6l6 -6"></path>
+							</svg>
 						</summary>
 				
 						<div class="space-y-1 px-4">
@@ -202,14 +213,19 @@
 					<details class="group [&_summary::-webkit-details-marker]:hidden">
 						<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-primary-100 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 							<div class="flex items-center gap-2">
-								<span class="material-symbols-rounded">
-									energy_program_time_used
-								</span>
+								<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-category-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+									<path d="M14 4h6v6h-6z"></path>
+									<path d="M4 14h6v6h-6z"></path>
+									<path d="M17 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+									<path d="M7 7m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+								</svg>
 								<span class="px-3 text-sm text-gray-700 font-medium capitalize dark:text-gray-200">Program</span>
 							</div>
-							<span class="material-symbols-rounded shrink-0 transition duration-300 group-open:-rotate-180">
-								expand_more
-							</span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down shrink-0 transition duration-300 group-open:-rotate-180" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+								<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+								<path d="M6 9l6 6l6 -6"></path>
+							</svg>
 						</summary>
 				
 						<div class="space-y-1 px-4">
@@ -244,14 +260,21 @@
 					<details class="group [&_summary::-webkit-details-marker]:hidden">
 						<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-primary-100 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 							<div class="flex items-center gap-2">
-								<span class="material-symbols-rounded">
-									other_admission
-								</span>
+								<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-address-book" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+									<path d="M20 6v12a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2z"></path>
+									<path d="M10 16h6"></path>
+									<path d="M13 11m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+									<path d="M4 8h3"></path>
+									<path d="M4 12h3"></path>
+									<path d="M4 16h3"></path>
+								</svg>
 								<span class="px-3 text-sm text-gray-700 font-medium capitalize dark:text-gray-200">Admission</span>
 							</div>
-							<span class="material-symbols-rounded shrink-0 transition duration-300 group-open:-rotate-180">
-								expand_more
-							</span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down shrink-0 transition duration-300 group-open:-rotate-180" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+								<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+								<path d="M6 9l6 6l6 -6"></path>
+							</svg>
 						</summary>
 				
 						<div class="space-y-1 px-4">
@@ -270,14 +293,19 @@
 					<details class="group [&_summary::-webkit-details-marker]:hidden">
 						<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-primary-100 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 							<div class="flex items-center gap-2">
-								<span class="material-symbols-rounded">
-									badge
-								</span>
+								<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-id-badge" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+									<path d="M5 3m0 3a3 3 0 0 1 3 -3h8a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-8a3 3 0 0 1 -3 -3z"></path>
+									<path d="M12 13m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+									<path d="M10 6h4"></path>
+									<path d="M9 18h6"></path>
+								</svg>
 								<span class="px-3 text-sm text-gray-700 font-medium capitalize dark:text-gray-200">Enrollment</span>
 							</div>
-							<span class="material-symbols-rounded shrink-0 transition duration-300 group-open:-rotate-180">
-								expand_more
-							</span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down shrink-0 transition duration-300 group-open:-rotate-180" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+								<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+								<path d="M6 9l6 6l6 -6"></path>
+							</svg>
 						</summary>
 				
 						<div class="space-y-1 px-4">
@@ -308,14 +336,20 @@
 					<details class="group [&_summary::-webkit-details-marker]:hidden">
 						<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-primary-100 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 							<div class="flex items-center gap-2">
-								<span class="material-symbols-rounded">
-									account_balance
-								</span>
+								<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-coins" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+									<path d="M9 14c0 1.657 2.686 3 6 3s6 -1.343 6 -3s-2.686 -3 -6 -3s-6 1.343 -6 3z"></path>
+									<path d="M9 14v4c0 1.656 2.686 3 6 3s6 -1.344 6 -3v-4"></path>
+									<path d="M3 6c0 1.072 1.144 2.062 3 2.598s4.144 .536 6 0c1.856 -.536 3 -1.526 3 -2.598c0 -1.072 -1.144 -2.062 -3 -2.598s-4.144 -.536 -6 0c-1.856 .536 -3 1.526 -3 2.598z"></path>
+									<path d="M3 6v10c0 .888 .772 1.45 2 2"></path>
+									<path d="M3 11c0 .888 .772 1.45 2 2"></path>
+								</svg>
 								<span class="px-3 text-sm text-gray-700 font-medium capitalize dark:text-gray-200">Finance</span>
 							</div>
-							<span class="material-symbols-rounded shrink-0 transition duration-300 group-open:-rotate-180">
-								expand_more
-							</span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down shrink-0 transition duration-300 group-open:-rotate-180" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+								<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+								<path d="M6 9l6 6l6 -6"></path>
+							</svg>
 						</summary>
 				
 						<div class="space-y-1 px-4">
@@ -350,14 +384,20 @@
 					<details class="group [&_summary::-webkit-details-marker]:hidden">
 						<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-primary-100 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 							<div class="flex items-center gap-2">
-								<span class="material-symbols-rounded">
-									lab_profile
-								</span>
+								<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-analytics" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+									<path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
+									<path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"></path>
+									<path d="M9 17l0 -5"></path>
+									<path d="M12 17l0 -1"></path>
+									<path d="M15 17l0 -3"></path>
+								</svg>
 								<span class="px-3 text-sm text-gray-700 font-medium capitalize dark:text-gray-200">Reports</span>
 							</div>
-							<span class="material-symbols-rounded shrink-0 transition duration-300 group-open:-rotate-180">
-								expand_more
-							</span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down shrink-0 transition duration-300 group-open:-rotate-180" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+								<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+								<path d="M6 9l6 6l6 -6"></path>
+							</svg>
 						</summary>
 				
 						<div class="space-y-1 px-4">

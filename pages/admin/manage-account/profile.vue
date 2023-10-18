@@ -29,15 +29,18 @@
 								<details class="group [&_summary::-webkit-details-marker]:hidden" open>
 									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">General Details</h4>
-										<div>
+										<div class="flex items-center gap-2">
 											<button data-te-offcanvas-toggle data-te-target="#editGeneralDetails" aria-controls="editGeneralDetails" type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-200 hover:text-gray-500 dark:hover:bg-gray-700">
-												<span class="material-symbols-rounded">
-													edit
-												</span>
+												<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4"></path>
+													<path d="M13.5 6.5l4 4"></path>
+												</svg>
 											</button>
-											<span class="material-symbols-rounded text-2xl shrink-0 transition duration-300 group-open:-rotate-180">
-												expand_more
-											</span>
+											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down shrink-0 transition duration-300 group-open:-rotate-180" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+												<path d="M6 9l6 6l6 -6"></path>
+											</svg>
 										</div>
 									</summary>
 			
@@ -86,15 +89,18 @@
 								<details class="group [&_summary::-webkit-details-marker]:hidden">
 									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Workspace</h4>
-										<div>
+										<div class="flex items-center gap-2">
 											<button data-te-offcanvas-toggle data-te-target="#editWorkspace" aria-controls="editWorkspace" type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-200 hover:text-gray-500 dark:hover:bg-gray-700">
-												<span class="material-symbols-rounded">
-													edit
-												</span>
+												<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4"></path>
+													<path d="M13.5 6.5l4 4"></path>
+												</svg>
 											</button>
-											<span class="material-symbols-rounded text-2xl shrink-0 transition duration-300 group-open:-rotate-180">
-												expand_more
-											</span>
+											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down shrink-0 transition duration-300 group-open:-rotate-180" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+												<path d="M6 9l6 6l6 -6"></path>
+											</svg>
 										</div>
 									</summary>
 			
@@ -135,15 +141,18 @@
 								<details class="group [&_summary::-webkit-details-marker]:hidden">
 									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Contact Information</h4>
-										<div>
+										<div class="flex items-center gap-2">
 											<button data-te-offcanvas-toggle data-te-target="#editContact" aria-controls="editContact" type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-200 hover:text-gray-500 dark:hover:bg-gray-700">
-												<span class="material-symbols-rounded">
-													edit
-												</span>
+												<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4"></path>
+													<path d="M13.5 6.5l4 4"></path>
+												</svg>
 											</button>
-											<span class="material-symbols-rounded text-2xl shrink-0 transition duration-300 group-open:-rotate-180">
-												expand_more
-											</span>
+											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down shrink-0 transition duration-300 group-open:-rotate-180" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+												<path d="M6 9l6 6l6 -6"></path>
+											</svg>
 										</div>
 									</summary>
 			
@@ -174,15 +183,18 @@
 								<details class="group [&_summary::-webkit-details-marker]:hidden">
 									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Address</h4>
-										<div>
+										<div class="flex items-center gap-2">
 											<button data-te-offcanvas-toggle data-te-target="#editAddress" aria-controls="editAddress" type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-200 hover:text-gray-500 dark:hover:bg-gray-700">
-												<span class="material-symbols-rounded">
-													edit
-												</span>
+												<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4"></path>
+													<path d="M13.5 6.5l4 4"></path>
+												</svg>
 											</button>
-											<span class="material-symbols-rounded text-2xl shrink-0 transition duration-300 group-open:-rotate-180">
-												expand_more
-											</span>
+											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down shrink-0 transition duration-300 group-open:-rotate-180" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+												<path d="M6 9l6 6l6 -6"></path>
+											</svg>
 										</div>
 									</summary>
 			
@@ -208,15 +220,18 @@
 								<details class="group [&_summary::-webkit-details-marker]:hidden">
 									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Government ID</h4>
-										<div>
+										<div class="flex items-center gap-2">
 											<button data-te-offcanvas-toggle data-te-target="#editGovernmentID" aria-controls="editGovernmentID" type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-200 hover:text-gray-500 dark:hover:bg-gray-700">
-												<span class="material-symbols-rounded">
-													edit
-												</span>
+												<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4"></path>
+													<path d="M13.5 6.5l4 4"></path>
+												</svg>
 											</button>
-											<span class="material-symbols-rounded text-2xl shrink-0 transition duration-300 group-open:-rotate-180">
-												expand_more
-											</span>
+											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down shrink-0 transition duration-300 group-open:-rotate-180" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+												<path d="M6 9l6 6l6 -6"></path>
+											</svg>
 										</div>
 									</summary>
 			
@@ -255,15 +270,18 @@
 								<details class="group [&_summary::-webkit-details-marker]:hidden" open>
 									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Elementary</h4>
-										<div>
+										<div class="flex items-center gap-2">
 											<button data-te-offcanvas-toggle data-te-target="#editEducation" aria-controls="editEducation" type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-200 hover:text-gray-500 dark:hover:bg-gray-700">
-												<span class="material-symbols-rounded">
-													edit
-												</span>
+												<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4"></path>
+													<path d="M13.5 6.5l4 4"></path>
+												</svg>
 											</button>
-											<span class="material-symbols-rounded text-2xl shrink-0 transition duration-300 group-open:-rotate-180">
-												expand_more
-											</span>
+											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down shrink-0 transition duration-300 group-open:-rotate-180" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+												<path d="M6 9l6 6l6 -6"></path>
+											</svg>
 										</div>
 									</summary>
 			
@@ -298,15 +316,18 @@
 								<details class="group [&_summary::-webkit-details-marker]:hidden" open>
 									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Certification</h4>
-										<div>
+										<div class="flex items-center gap-2">
 											<button data-te-offcanvas-toggle data-te-target="#editLicence" aria-controls="editLicence" type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-200 hover:text-gray-500 dark:hover:bg-gray-700">
-												<span class="material-symbols-rounded">
-													edit
-												</span>
+												<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4"></path>
+													<path d="M13.5 6.5l4 4"></path>
+												</svg>
 											</button>
-											<span class="material-symbols-rounded text-2xl shrink-0 transition duration-300 group-open:-rotate-180">
-												expand_more
-											</span>
+											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down shrink-0 transition duration-300 group-open:-rotate-180" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+												<path d="M6 9l6 6l6 -6"></path>
+											</svg>
 										</div>
 									</summary>
 			
@@ -341,15 +362,18 @@
 								<details class="group [&_summary::-webkit-details-marker]:hidden" open>
 									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Work Experience</h4>
-										<div>
+										<div class="flex items-center gap-2">
 											<button data-te-offcanvas-toggle data-te-target="#editWorkExperience" aria-controls="editWorkExperience" type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-200 hover:text-gray-500 dark:hover:bg-gray-700">
-												<span class="material-symbols-rounded">
-													edit
-												</span>
+												<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4"></path>
+													<path d="M13.5 6.5l4 4"></path>
+												</svg>
 											</button>
-											<span class="material-symbols-rounded text-2xl shrink-0 transition duration-300 group-open:-rotate-180">
-												expand_more
-											</span>
+											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down shrink-0 transition duration-300 group-open:-rotate-180" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+												<path d="M6 9l6 6l6 -6"></path>
+											</svg>
 										</div>
 									</summary>
 			
@@ -384,15 +408,18 @@
 								<details class="group [&_summary::-webkit-details-marker]:hidden" open>
 									<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
 										<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500 ml-2">Training Programs</h4>
-										<div>
+										<div class="flex items-center gap-2">
 											<button data-te-offcanvas-toggle data-te-target="#editTraining" aria-controls="editTraining" type="button" class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-200 hover:text-gray-500 dark:hover:bg-gray-700">
-												<span class="material-symbols-rounded">
-													edit
-												</span>
+												<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4"></path>
+													<path d="M13.5 6.5l4 4"></path>
+												</svg>
 											</button>
-											<span class="material-symbols-rounded text-2xl shrink-0 transition duration-300 group-open:-rotate-180">
-												expand_more
-											</span>
+											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down shrink-0 transition duration-300 group-open:-rotate-180" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+												<path d="M6 9l6 6l6 -6"></path>
+											</svg>
 										</div>
 									</summary>
 			
@@ -436,10 +463,11 @@
 									</span>
 								</div>
 								<details class="group [&_summary::-webkit-details-marker]:hidden mt-2" open>
-									<summary class="flex cursor-pointer items-center gap-1.5 rounded-lg text-gray-900 dark:text-gray-300">
-										<span class="material-symbols-rounded text-2xl shrink-0 transition duration-300 group-open:-rotate-180">
-											expand_more
-										</span>
+									<summary class="flex cursor-pointer items-center gap-1.5 rounded-lg text-gray-500 dark:text-gray-300">
+										<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down shrink-0 transition duration-300 group-open:-rotate-180" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+											<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+											<path d="M6 9l6 6l6 -6"></path>
+										</svg>
 										<h2 class="text-xs">
 											Hide Recommendations
 										</h2>
