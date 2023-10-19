@@ -24,7 +24,7 @@
 								</button>
 							</div>
 
-							<a href="#" class="hidden lg:block text-gray-700 font-medium dark:text-gray-200">
+							<a href="#" class="text-gray-700 font-medium dark:text-gray-200">
 								Academe SMS
 							</a>
 

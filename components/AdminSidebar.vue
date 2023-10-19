@@ -4,37 +4,58 @@
 	const sidebarToggler = document.getElementById('sidebar-toggler');
 	const asideEl = ref(null);
 	let bodyOverflow = '';
+	let asideDivOverlay = null;
 
 	onMounted(() => {
 		initTE({ Dropdown, PerfectScrollbar });
 
 		asideEl.value = document.getElementById('aside');
-		
+
 		if (sidebarToggler) {
 			sidebarToggler.addEventListener('click', () => {
-			asideEl.value.classList.toggle('show');
-
-			const asideDivOverlay = createOverlay();
-
-			asideDivOverlay.addEventListener('click', () => {
-				asideEl.value.classList.remove('show');
-
-				document.body.style.overflow = bodyOverflow; // Restore the original overflow property
-				document.body.removeChild(asideDivOverlay);
-			});
-
-			// Disable body scrolling
-			bodyOverflow = document.body.style.overflow;
-			document.body.style.overflow = 'hidden';
+				if (asideEl.value.classList.contains('show')) {
+					asideEl.value.classList.remove('show');
+					removeOverlay();
+				} else {
+					asideEl.value.classList.add('show');
+					createOverlay();
+				}
 			});
 		}
+
+		// Handle click events on the links within the aside
+		const links = asideEl.value.querySelectorAll('a');
+		links.forEach(link => {
+			link.addEventListener('click', handleLinkClick);
+		});
+
+		// Remove an overlay when the page loads
+		removeOverlay();
 	});
 
 	const createOverlay = () => {
-		const asideDivOverlay = document.createElement('div');
+		asideDivOverlay = document.createElement('div');
 		asideDivOverlay.className = 'sidebar-overlay';
 		document.body.appendChild(asideDivOverlay);
-		return asideDivOverlay;
+
+		// Add a click event listener to remove the overlay when clicked
+		asideDivOverlay.addEventListener('click', () => {
+			asideEl.value.classList.remove('show');
+			removeOverlay();
+		});
+	};
+
+	const removeOverlay = () => {
+		if (asideDivOverlay && asideDivOverlay.parentElement) {
+			document.body.style.overflow = bodyOverflow;
+			document.body.removeChild(asideDivOverlay);
+		}
+	};
+
+	const handleLinkClick = (event) => {
+		event.preventDefault();
+		asideEl.value.classList.remove('show');
+		removeOverlay();
 	}
 
 	const logout = async () => {
@@ -94,10 +115,10 @@
 	
 			<div class="flex flex-col items-center mt-4 space-y-4">
 				<div class="relative" data-te-dropdown-ref>
-					<a href="#" class="relative" id="dropdownProfile" data-te-dropdown-toggle-ref data-te-dropdown-animation="off" aria-expanded="false">
+					<button type="button" class="relative" id="dropdownProfile" data-te-dropdown-toggle-ref data-te-dropdown-animation="off" aria-expanded="false">
 						<img class="avatar" src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&h=634&q=80" alt="avatar" />
 						<span class="h-2.5 w-2.5 rounded-full bg-success-500 absolute right-0.5 ring-1 ring-gray-100 bottom-0"></span>
-					</a>
+					</button>
 					<ul class="dropdown-menu" aria-labelledby="dropdownProfile" data-te-dropdown-menu-ref>
 						<li>
 							<a href="#" class="flex items-center p-3 text-sm text-gray-600 transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">

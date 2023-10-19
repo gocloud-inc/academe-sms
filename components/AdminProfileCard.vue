@@ -18,7 +18,7 @@
 					<div class="dropzone-image-preview h-full w-full uppercase bg-gray-100 text-gray-500 rounded-full p-4 flex justify-center items-center text-5xl font-semibold ring-2 ring-gray-200 dark:ring-gray-600 dark:bg-gray-700 dark:text-gray-400">
 						MP
 					</div>
-					<button data-te-target="#profilePhotoModal" data-te-toggle="modal" type="button" class="absolute bottom-0 left-0 right-0 text-xs bg-gray-900 w-36 h-36 rounded-full hidden group-hover:flex justify-center items-center">
+					<button data-te-target="#profilePhotoModal" data-te-toggle="modal" type="button" class="absolute bottom-0 left-0 right-0 text-xs bg-gray-700/70 backdrop-blur-sm w-36 h-36 rounded-full hidden group-hover:flex justify-center items-center">
 						<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-camera-plus text-white relative opacity-100" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
 							<path d="M12 20h-7a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v3.5"></path>
