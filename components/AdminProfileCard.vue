@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 	import { Modal, Offcanvas, initTE } from "tw-elements";
 
 	export default {
