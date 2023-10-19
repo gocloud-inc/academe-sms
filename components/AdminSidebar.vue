@@ -1,5 +1,5 @@
 <script setup>
-	import { Dropdown, PerfectScrollbar, initTE } from "tw-elements";
+	import { Dropdown, PerfectScrollbar, Tooltip, initTE } from "tw-elements";
 
 	const sidebarToggler = document.getElementById('sidebar-toggler');
 	const asideEl = ref(null);
@@ -7,7 +7,7 @@
 	let asideDivOverlay = null;
 
 	onMounted(() => {
-		initTE({ Dropdown, PerfectScrollbar });
+		initTE({ Dropdown, PerfectScrollbar, Tooltip });
 
 		asideEl.value = document.getElementById('aside');
 
@@ -71,7 +71,7 @@
 					<img class="flex-shrink-0 object-cover mx-1 w-8 h-8" src="/logo-inverted.png" alt="Academe SMS">
 				</a>
 	
-				<NuxtLink to="/admin/dashboard" class="aside-nav-link group" title="Home">
+				<NuxtLink to="/admin/dashboard" class="aside-nav-link group" data-te-toggle="tooltip" title="Home">
 					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-smart-home group-hover:scale-[1.1] transition-all delay-100 ease-in-out" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
 						<path d="M19 8.71l-5.333 -4.148a2.666 2.666 0 0 0 -3.274 0l-5.334 4.148a2.665 2.665 0 0 0 -1.029 2.105v7.2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-7.2c0 -.823 -.38 -1.6 -1.03 -2.105"></path>
@@ -79,7 +79,7 @@
 					</svg>
 				</NuxtLink>
 
-				<a href="#" class="aside-nav-link group" title="Admin">
+				<a href="#" class="aside-nav-link group" data-te-toggle="tooltip" title="Admin">
 					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-school group-hover:scale-[1.1] transition-all delay-100 ease-in-out" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
 						<path d="M22 9l-10 -4l-10 4l10 4l10 -4v6"></path>
@@ -87,7 +87,7 @@
 					</svg>
 				</a>
 
-				<a href="#" class="aside-nav-link relative group" title="Messages">
+				<a href="#" class="aside-nav-link relative group" data-te-toggle="tooltip" title="Messages">
 					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-messages group-hover:scale-[1.1] transition-all delay-100 ease-in-out" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
 						<path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10"></path>
@@ -98,7 +98,7 @@
 					</div>
 				</a>
 	
-				<a href="#" class="aside-nav-link relative group" title="Notifications">
+				<a href="#" class="aside-nav-link relative group" data-te-toggle="tooltip" title="Notifications">
 					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bell group-hover:scale-[1.1] transition-all delay-100 ease-in-out" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
 						<path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6"></path>
@@ -112,7 +112,7 @@
 	
 			<div class="flex flex-col items-center mt-4 space-y-4">
 				<div class="relative" data-te-dropdown-ref>
-					<button type="button" class="relative" id="dropdownProfile" data-te-dropdown-toggle-ref data-te-dropdown-animation="off" aria-expanded="false">
+					<button type="button" class="relative" id="dropdownProfile" data-te-dropdown-toggle-ref data-te-dropdown-animation="off" aria-expanded="false" data-te-toggle="tooltip" title="Mark Paul Cañeda">
 						<img class="avatar" src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&h=634&q=80" alt="avatar" />
 						<span class="h-2.5 w-2.5 rounded-full bg-success-500 absolute right-0.5 ring-1 ring-gray-100 bottom-0"></span>
 					</button>

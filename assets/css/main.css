@@ -76,17 +76,17 @@
             }
     
             .aside-container {
-                @apply flex flex-col items-center w-16 h-screen py-4 bg-gradient-to-t from-primary-900 via-primary-800 to-primary-700 dark:from-primary-950 dark:via-primary-900 dark:to-primary-950 dark:border-gray-900;
+                @apply flex flex-col items-center w-16 h-screen py-4 bg-gradient-to-b from-primary-900 via-primary-800 to-primary-700 dark:from-primary-950 dark:via-primary-900 dark:to-primary-800 dark:border-gray-900;
     
                 .aside-nav-menu {
                     @apply flex flex-col items-center flex-1 space-y-4;
     
                     .aside-nav-link {
-                        @apply p-2 inline-flex items-center justify-center text-gray-100 hover:bg-primary-600 focus:outline-none transition-colors duration-200 rounded-md dark:text-gray-400;
+                        @apply p-2 inline-flex flex-col items-center justify-center gap-1 text-primary-100 text-xs font-medium hover:bg-primary-600 focus:outline-none transition-colors duration-200 rounded-md dark:text-primary-100;
                     }
     
                     .aside-nav-link[aria-current="page"] {
-                        @apply bg-primary-600;
+                        @apply bg-primary-600 text-primary-50;
                     }
                 }
             }
