@@ -57,10 +57,6 @@
 		asideEl.value.classList.remove('show');
 		removeOverlay();
 	}
-
-	const logout = async () => {
-		navigateTo('/')
-	}
 </script>
 
 <template>
@@ -111,50 +107,14 @@
 			</nav>
 	
 			<div class="flex flex-col items-center mt-4 space-y-4">
-				<div class="relative" data-te-dropdown-ref>
-					<button type="button" class="relative" id="dropdownProfile" data-te-dropdown-toggle-ref data-te-dropdown-animation="off" aria-expanded="false" data-te-toggle="tooltip" title="Mark Paul Cañeda">
-						<img class="avatar" src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&h=634&q=80" alt="avatar" />
-						<span class="h-2.5 w-2.5 rounded-full bg-success-500 absolute right-0.5 ring-1 ring-gray-100 bottom-0"></span>
-					</button>
-					<ul class="dropdown-menu" aria-labelledby="dropdownProfile" data-te-dropdown-menu-ref>
-						<li>
-							<a href="#" class="flex items-center p-3 text-sm text-gray-600 transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
-								<img class="flex-shrink-0 object-cover mx-1 rounded-full w-9 h-9" src="https://images.unsplash.com/photo-1523779917675-b6ed3a42a561?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8d29tYW4lMjBibHVlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=face&w=500&q=200" alt="jane avatar">
-								<div class="mx-1">
-									<h1 class="text-sm font-semibold text-gray-700 dark:text-gray-200">Jane Doe</h1>
-									<p class="text-sm text-gray-500 dark:text-gray-400">janedoe@exampl.com</p>
-								</div>
-							</a>
-						</li>
-						<hr class="dropdown-divider" />
-						<li>
-							<NuxtLink to="/admin/manage-account/profile" class="dropdown-link" data-te-dropdown-item-ref>
-								Profile
-							</NuxtLink>
-						</li>
-						<li>
-							<NuxtLink to="/admin/manage-account/preferences" class="dropdown-link" data-te-dropdown-item-ref>
-								Preferences
-							</NuxtLink>
-						</li>
-						<li>
-							<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
-								Account Settings
-							</a>
-						</li>
-						<li>
-							<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
-								Ticket
-							</a>
-						</li>
-						<hr class="dropdown-divider" />
-						<li>
-							<button type="button" @click.prevent="logout" class="dropdown-link" data-te-dropdown-item-ref>
-								Sign out
-							</button>
-						</li>
-					</ul>
-				</div>
+				<button class="inline-flex items-center justify-center text-primary-100 transition-colors duration-300 transform dark:text-gray-200 dark:hover:text-gray-400 focus:text-gray-700 dark:focus:text-gray-400 focus:outline-none" data-te-toggle="tooltip" title="Help Center">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-help" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+						<path d="M12 17l0 .01"></path>
+						<path d="M12 13.5a1.5 1.5 0 0 1 1 -1.5a2.6 2.6 0 1 0 -3 -4"></path>
+					</svg>
+				</button>
 			</div>
 		</div>
 		
@@ -192,9 +152,9 @@
 						</summary>
 				
 						<div class="space-y-1 px-4">
-							<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
+							<NuxtLink to="/admin/registrar/officially-enrolled" class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700">
 								<span class="mx-2 text-sm font-medium">Officially Enrolled</span>
-							</a>
+							</NuxtLink>
 
 							<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
 								<span class="mx-2 text-sm font-medium">Registrar Verified</span>
@@ -450,4 +410,8 @@
 	</aside>
 </template>
 
-<style scoped></style>
+<style lang="postcss" scoped>
+[aria-current="page"] {
+	@apply bg-primary-100 text-gray-700 dark:bg-gray-800 dark:text-gray-100;
+}
+</style>

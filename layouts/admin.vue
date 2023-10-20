@@ -1,3 +1,9 @@
+<script setup>
+	const logout = async () => {
+		navigateTo('/')
+	}
+</script>
+
 <template>
   	<div id="app">
 		<ClientOnly>
@@ -10,7 +16,7 @@
 
 		<header class="header sticky top-0 z-10">
 			<nav class="border-b relative bg-white shadow-sm dark:bg-gray-900 dark:border-gray-800">
-				<div class="px-4 py-3 xl:py-5 mx-auto">
+				<div class="px-4 py-2 mx-auto">
 					<div class="flex items-center justify-between">
 						<div class="flex items-center gap-2">
 							<!-- Mobile menu button -->
@@ -33,15 +39,50 @@
 								<a href="#" class="px-3 py-1 text-sm text-gray-700 transition-colors duration-300 transform rounded-md xl:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">SY: 2023 - 2024</a>
 							</div>
 						</div>
-						<div class="flex items-center gap-4">
-							<button class="inline-flex items-center justify-center text-gray-600 transition-colors duration-300 transform dark:text-gray-200 hover:text-gray-700 dark:hover:text-gray-400 focus:text-gray-700 dark:focus:text-gray-400 focus:outline-none" data-te-toggle="tooltip" title="Help Center">
-								<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-help" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-									<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-									<path d="M12 17l0 .01"></path>
-									<path d="M12 13.5a1.5 1.5 0 0 1 1 -1.5a2.6 2.6 0 1 0 -3 -4"></path>
-								</svg>
-							</button>
+						<div class="flex items-center">
+							<div class="relative" data-te-dropdown-ref>
+								<button type="button" class="relative" id="dropdownProfile" data-te-dropdown-toggle-ref data-te-dropdown-animation="off" aria-expanded="false" title="Mark Paul Cañeda">
+									<img class="avatar avatar-sm rounded-full ring-2 ring-gray-200 dark:ring-gray-600" src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&h=634&q=80" alt="avatar" />
+								</button>
+								<ul class="dropdown-menu" aria-labelledby="dropdownProfile" data-te-dropdown-menu-ref>
+									<li>
+										<a href="#" class="flex items-center p-3 text-sm text-gray-600 transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+											<img class="flex-shrink-0 object-cover mx-1 rounded-full w-9 h-9 ring-2 ring-gray-200 dark:ring-gray-600" src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&h=634&q=80" alt="jane avatar">
+											<div class="mx-1">
+												<h1 class="text-sm font-semibold text-gray-700 dark:text-gray-200">Mark Paul Cañeda</h1>
+												<p class="text-sm text-gray-500 dark:text-gray-400">mpcaneda.gca@gmail.com</p>
+											</div>
+										</a>
+									</li>
+									<hr class="dropdown-divider" />
+									<li>
+										<NuxtLink to="/admin/manage-account/profile" class="dropdown-link" data-te-dropdown-item-ref>
+											Profile
+										</NuxtLink>
+									</li>
+									<li>
+										<NuxtLink to="/admin/manage-account/preferences" class="dropdown-link" data-te-dropdown-item-ref>
+											Preferences
+										</NuxtLink>
+									</li>
+									<li>
+										<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
+											Account Settings
+										</a>
+									</li>
+									<li>
+										<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
+											Ticket
+										</a>
+									</li>
+									<hr class="dropdown-divider" />
+									<li>
+										<button type="button" @click.prevent="logout" class="dropdown-link" data-te-dropdown-item-ref>
+											Sign out
+										</button>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>

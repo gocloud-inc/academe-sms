@@ -35,9 +35,7 @@
 			</div>
 			<h4 class="text-xl lg:text-2xl font-medium text-gray-700 mt-1 dark:text-gray-300">{{ greeting }}! Mark Paul</h4>
 		</div>
-
-		
-	</div>
+	</div>	
 </template>
 
 <style scoped></style>
