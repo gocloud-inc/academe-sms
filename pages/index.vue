@@ -75,15 +75,20 @@
 					</form>
 					
 					<div class="mt-6 text-center">
-						<a href="#" class="text-sm text-primary-500 hover:underline dark:text-primary-400">
+						<NuxtLink to="/admission/applicant-type" class="text-sm text-primary-500 hover:underline dark:text-primary-400">
 							Not enrolled yet? Admission
-						</a>
+						</NuxtLink>
 					</div>
 					<p class="mt-6 text-sm text-gray-600 dark:text-gray-400">
 						By clicking “Login” above, you acknowledge that you have read and understood, and agree to Our <a href="#" class="text-primary-600 font-medium hover:underline dark:text-white">Term & Conditions</a> and <a href="#" class="text-primary-600 font-medium hover:underline dark:text-white"> Privacy Policy.</a>
 					</p>
 				</div>
 			</div>
+		</div>
+
+		<div class="flex flex-col items-center justify-center gap-1 mt-6">
+			<img class="w-24" src="https://gocloudgroup.com/media/products/logo-academe-sms.png" alt="">
+			<div class="text-sm text-gray-500">&copy; 2023 Gocloud Inc. All Rights Reserved.</div>
 		</div>
 	</div>
 </template>

@@ -5,8 +5,8 @@ export default defineNuxtConfig({
 		payloadExtraction: false
 	},
 	app: {
-		baseURL: '/academe-sms/',
-    	buildAssetsDir: 'assets',
+		// baseURL: '/academe-sms/',
+    	// buildAssetsDir: 'assets',
 		head: {
 			htmlAttrs: {
 				lang: 'en',
