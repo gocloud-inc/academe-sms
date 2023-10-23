@@ -1,8 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  	devtools: { enabled: true },
+	devtools: { enabled: true },
 	experimental: {
-		payloadExtraction: false
+		payloadExtraction: false,
 	},
 	app: {
 		baseURL: '/academe-sms/',

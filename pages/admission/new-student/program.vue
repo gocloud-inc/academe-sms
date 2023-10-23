@@ -13,9 +13,7 @@
 			})
 		
 			onMounted(() => {
-				setTimeout(() => {
-					initTE({ Select });
-				}, 1);
+				initTE({ Select });
 			});
 		
 			const program = async () => {
