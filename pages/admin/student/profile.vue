@@ -67,7 +67,7 @@
 						<div class="relative p-5">
 							<div class="flex justify-between items-center">
 								<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500">General Details</h4>
-								<button type="button" class="absolute top-0 right-0 m-3 inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
+								<button type="button" class="absolute top-0 right-0 m-3 inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:text-gray-500 dark:hover:bg-gray-700">
 									<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 										<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
 										<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4"></path>
@@ -141,7 +141,7 @@
 						<div class="relative p-5">
 							<div class="flex justify-between items-center">
 								<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500">Contact</h4>
-								<button type="button" class="absolute top-0 right-0 m-3 inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
+								<button type="button" class="absolute top-0 right-0 m-3 inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:text-gray-500 dark:hover:bg-gray-700">
 									<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 										<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
 										<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4"></path>
@@ -175,7 +175,7 @@
 						<div class="relative p-5">
 							<div class="flex justify-between items-center">
 								<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500">Current Address</h4>
-								<button type="button" class="absolute top-0 right-0 m-3 inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
+								<button type="button" class="absolute top-0 right-0 m-3 inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:text-gray-500 dark:hover:bg-gray-700">
 									<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 										<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
 										<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4"></path>
@@ -214,7 +214,7 @@
 						<div class="relative p-5">
 							<div class="flex justify-between items-center">
 								<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500">Father's Information</h4>
-								<button type="button" class="absolute top-0 right-0 m-3 inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
+								<button type="button" class="absolute top-0 right-0 m-3 inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:text-gray-500 dark:hover:bg-gray-700">
 									<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 										<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
 										<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4"></path>
@@ -248,7 +248,7 @@
 						<div class="relative p-5">
 							<div class="flex justify-between items-center">
 								<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500">Mother's Information</h4>
-								<button type="button" class="absolute top-0 right-0 m-3 inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
+								<button type="button" class="absolute top-0 right-0 m-3 inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:text-gray-500 dark:hover:bg-gray-700">
 									<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 										<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
 										<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4"></path>
@@ -287,7 +287,7 @@
 						<div class="relative p-5">
 							<div class="flex justify-between items-center">
 								<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500">Guardian's Information</h4>
-								<button type="button" class="absolute top-0 right-0 m-3 inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
+								<button type="button" class="absolute top-0 right-0 m-3 inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:text-gray-500 dark:hover:bg-gray-700">
 									<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 										<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
 										<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4"></path>
@@ -326,7 +326,7 @@
 						<div class="relative p-5">
 							<div class="flex justify-between items-center">
 								<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500">Grade I to VI</h4>
-								<button type="button" class="absolute top-0 right-0 m-3 inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
+								<button type="button" class="absolute top-0 right-0 m-3 inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:text-gray-500 dark:hover:bg-gray-700">
 									<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 										<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
 										<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4"></path>
@@ -372,7 +372,7 @@
 						<div class="relative p-5">
 							<div class="flex justify-between items-center">
 								<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500">Grade 7 to 10</h4>
-								<button type="button" class="absolute top-0 right-0 m-3 inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
+								<button type="button" class="absolute top-0 right-0 m-3 inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:text-gray-500 dark:hover:bg-gray-700">
 									<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 										<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
 										<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4"></path>
@@ -418,7 +418,7 @@
 						<div class="relative p-5">
 							<div class="flex justify-between items-center">
 								<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500">College (Transferees)</h4>
-								<button type="button" class="absolute top-0 right-0 m-3 inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
+								<button type="button" class="absolute top-0 right-0 m-3 inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:text-gray-500 dark:hover:bg-gray-700">
 									<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 										<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
 										<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4"></path>
@@ -464,7 +464,7 @@
 						<div class="relative p-5">
 							<div class="flex justify-between items-center">
 								<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500">College (2nd Courser)</h4>
-								<button type="button" class="absolute top-0 right-0 m-3 inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
+								<button type="button" class="absolute top-0 right-0 m-3 inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:text-gray-500 dark:hover:bg-gray-700">
 									<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 										<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
 										<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4"></path>
@@ -510,7 +510,7 @@
 						<div class="relative p-5">
 							<div class="flex justify-between items-center">
 								<h4 class="font-semibold text-gray-700 text-base dark:text-gray-500">Vocational Course</h4>
-								<button type="button" class="absolute top-0 right-0 m-3 inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500">
+								<button type="button" class="absolute top-0 right-0 m-3 inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:text-gray-500 dark:hover:bg-gray-700">
 									<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 										<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
 										<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4"></path>

@@ -1,8 +1,8 @@
 <script lang="ts" setup></script>
 
 <template>
-  	<div class="bg-white shadow-sm rounded-lg h-fit border dark:bg-gray-900 dark:border-gray-700">
-		<div class="flex flex-wrap divide-x divide-gray-100 dark:divide-gray-700 relative">
+  	<div class="relative bg-white shadow-sm rounded-lg h-fit border dark:bg-gray-900 dark:border-gray-700">
+		<div class="flex flex-wrap divide-x divide-gray-100 dark:divide-gray-700">
 			<div class="p-5 flex justify-center items-center">
 				<div class="uppercase bg-gray-100 text-gray-500 rounded-full w-32 h-32 p-4 flex justify-center items-center text-5xl font-semibold dark:bg-gray-700 dark:text-gray-400"> 
 					CJ
@@ -40,67 +40,67 @@
 					</div>
 				</div>
 			</div>
+		</div>
 
-			<div class="absolute top-0 right-0 m-3">
-				<div class="relative" data-te-dropdown-ref>
-					<button type="button" class="inline-flex items-center px-1 py-1 text-gray-600 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-100 hover:text-gray-500" id="dropdownMenuButton1d" data-te-dropdown-toggle-ref data-te-dropdown-animation="off" aria-expanded="false">
-						<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-							<path d="M5 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-							<path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-							<path d="M19 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-						</svg>
-					</button>
-					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1d" data-te-dropdown-menu-ref>
-						<li>
-							<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
-								Edit ID Number
-							</a>
-						</li>
-						<li>
-							<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
-								View Curriculum
-							</a>
-						</li>
-						<li>
-							<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
-								View QR Code
-							</a>
-						</li>
-						<hr class="dropdown-divider" />
-						<li>
-							<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
-								Change Enrollment
-							</a>
-						</li>
-						<li>
-							<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
-								Generate Student Portal
-							</a>
-						</li>
-						<li>
-							<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
-								Course Overview
-							</a>
-						</li>
-						<li>
-							<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
-								Set Curriculum
-							</a>
-						</li>
-						<hr class="dropdown-divider" />
-						<li>
-							<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
-								Withraw Enrollee
-							</a>
-						</li>
-						<li>
-							<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
-								Delete
-							</a>
-						</li>
-					</ul>
-				</div>
+		<div class="absolute top-0 right-0 m-3">
+			<div class="relative" data-te-dropdown-ref>
+				<button type="button" class="inline-flex items-center px-1 py-1 text-gray-600 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-200 hover:text-gray-500 dark:hover:bg-gray-700" id="dropdownMenuButton1d" data-te-dropdown-toggle-ref data-te-dropdown-animation="off" aria-expanded="false">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M5 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+						<path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+						<path d="M19 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+					</svg>
+				</button>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1d" data-te-dropdown-menu-ref>
+					<li>
+						<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
+							Edit ID Number
+						</a>
+					</li>
+					<li>
+						<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
+							View Curriculum
+						</a>
+					</li>
+					<li>
+						<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
+							View QR Code
+						</a>
+					</li>
+					<hr class="dropdown-divider" />
+					<li>
+						<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
+							Change Enrollment
+						</a>
+					</li>
+					<li>
+						<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
+							Generate Student Portal
+						</a>
+					</li>
+					<li>
+						<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
+							Course Overview
+						</a>
+					</li>
+					<li>
+						<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
+							Set Curriculum
+						</a>
+					</li>
+					<hr class="dropdown-divider" />
+					<li>
+						<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
+							Withraw Enrollee
+						</a>
+					</li>
+					<li>
+						<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
+							Delete
+						</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 

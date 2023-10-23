@@ -1,21 +1,31 @@
-<script setup>
+<script>
 	import { Select, initTE } from "tw-elements";
 
-	definePageMeta({
-		layout: "auth",
-		colorMode: "light"
-	})
+	export default {
+		setup() {
+			definePageMeta({
+				layout: "auth",
+				colorMode: "light"
+			})
+		
+			useSeoMeta({
+				title: 'Select Program - New Student',
+			})
+		
+			onMounted(() => {
+				setTimeout(() => {
+					initTE({ Select });
+				}, 1);
+			});
+		
+			const program = async () => {
+				navigateTo('/admission/new-student/profile')
+			}
 
-	useSeoMeta({
-		title: 'Select Program - New Student',
-	})
-
-	onMounted(() => {
-		initTE({ Select });
-	});
-
-	const program = async () => {
-		navigateTo('/admission/new-student/profile')
+			return {
+				program,
+			}
+		}
 	}
 </script>
 
