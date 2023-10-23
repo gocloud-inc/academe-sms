@@ -19,10 +19,10 @@
 				<div class="flex items-center gap-x-3">
 					<h2 class="text-xl font-medium text-gray-800 dark:text-white">Officially Enrolled</h2>
 
-					<span class="badge badge-primary">240 students</span>
+					<span class="badge badge-primary">10 students</span>
 				</div>
 
-				<p class="mt-1 text-sm text-gray-500 dark:text-gray-300">These companies have purchased in the last 12 months.</p>
+				<p class="mt-1 text-sm text-gray-500 dark:text-gray-300">These students are officiallty enrolled in the current school year.</p>
 			</div>
 
 			<div class="flex items-center mt-4 gap-x-3">
@@ -226,7 +226,7 @@
 		</div>
 
 		<div class="flex flex-col mt-6">
-			<div class="overflow-x-hidden">
+			<div class="overflow-x-auto">
 				<div class="inline-block min-w-full align-middle">
 					<div class="table-responsive">
 						<table class="table">

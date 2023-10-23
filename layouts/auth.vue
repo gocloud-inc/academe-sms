@@ -35,7 +35,7 @@
 				<slot></slot>
 			</div> -->
 
-		<div class="container flex items-center justify-center min-h-screen px-6 mx-auto relative">
+		<div class="container flex items-center justify-center min-h-screen lg:px-6 py-24 mx-auto relative">
 			<slot />
 		</div>
 	</div>

@@ -23,7 +23,7 @@
 					<div class="space-y-3 mb-3">
 						<NuxtLink to="/admission/new-student/program" class="card group hover:bg-primary-50 hover:border-primary-500 scale-100 transition-all duration-300 hover:scale-[1.05] ease-in-out">
 							<div class="card-body relative">
-								<div class="text-gray-700 font-semibold capitalize">New Student Enrollment</div>
+								<div class="text-gray-700 font-semibold capitalize">New Student</div>
 								<div class="hidden absolute right-5 top-5 text-primary group-hover:inline-flex">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M12.001 2c5.523 0 10 4.477 10 10s-4.477 10-10 10s-10-4.477-10-10s4.477-10 10-10Zm.78 5.469l-.084-.073a.75.75 0 0 0-.882-.007l-.094.08l-.073.084a.75.75 0 0 0-.007.883l.08.094l2.72 2.72H7.75l-.103.006a.75.75 0 0 0-.64.642L7 11.999l.007.102a.75.75 0 0 0 .642.641l.101.007h6.69l-2.72 2.72l-.073.085a.75.75 0 0 0 1.05 1.05l.084-.073l4.001-4l.073-.085a.75.75 0 0 0 .007-.882l-.08-.094l-4-4.001l-.085-.073l.084.073Z"/></svg>
                                 </div>
@@ -31,7 +31,7 @@
 						</NuxtLink>
 						<NuxtLink to="/" class="card group hover:bg-primary-50 hover:border-primary-500 scale-100 transition-all duration-300 hover:scale-[1.05] ease-in-out">
 							<div class="card-body relative">
-								<div class="text-gray-700 font-semibold capitalize">Transferee Student Enrollment</div>
+								<div class="text-gray-700 font-semibold capitalize">Transferee Student</div>
 								<div class="hidden absolute right-5 top-5 text-primary group-hover:inline-flex">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M12.001 2c5.523 0 10 4.477 10 10s-4.477 10-10 10s-10-4.477-10-10s4.477-10 10-10Zm.78 5.469l-.084-.073a.75.75 0 0 0-.882-.007l-.094.08l-.073.084a.75.75 0 0 0-.007.883l.08.094l2.72 2.72H7.75l-.103.006a.75.75 0 0 0-.64.642L7 11.999l.007.102a.75.75 0 0 0 .642.641l.101.007h6.69l-2.72 2.72l-.073.085a.75.75 0 0 0 1.05 1.05l.084-.073l4.001-4l.073-.085a.75.75 0 0 0 .007-.882l-.08-.094l-4-4.001l-.085-.073l.084.073Z"/></svg>
                                 </div>
@@ -39,7 +39,7 @@
 						</NuxtLink>
 						<NuxtLink to="/" class="card group hover:bg-primary-50 hover:border-primary-500 scale-100 transition-all duration-300 hover:scale-[1.05] ease-in-out">
 							<div class="card-body relative">
-								<div class="text-gray-700 font-semibold capitalize">Cross Student Enrollment</div>
+								<div class="text-gray-700 font-semibold capitalize">Cross Student</div>
 								<div class="hidden absolute right-5 top-5 text-primary group-hover:inline-flex">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M12.001 2c5.523 0 10 4.477 10 10s-4.477 10-10 10s-10-4.477-10-10s4.477-10 10-10Zm.78 5.469l-.084-.073a.75.75 0 0 0-.882-.007l-.094.08l-.073.084a.75.75 0 0 0-.007.883l.08.094l2.72 2.72H7.75l-.103.006a.75.75 0 0 0-.64.642L7 11.999l.007.102a.75.75 0 0 0 .642.641l.101.007h6.69l-2.72 2.72l-.073.085a.75.75 0 0 0 1.05 1.05l.084-.073l4.001-4l.073-.085a.75.75 0 0 0 .007-.882l-.08-.094l-4-4.001l-.085-.073l.084.073Z"/></svg>
                                 </div>
