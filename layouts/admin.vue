@@ -34,7 +34,7 @@
 								Academe SMS
 							</a>
 
-							<div class="hidden xl:flex flex-col xl:flex-row xl:items-center mx-3">
+							<div class="hidden md:flex flex-col md:flex-row md:items-center mx-3">
 								<a href="#" class="px-3 py-1 text-sm text-gray-700 transition-colors duration-300 transform rounded-md xl:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">First Quarter</a>
 								<a href="#" class="px-3 py-1 text-sm text-gray-700 transition-colors duration-300 transform rounded-md xl:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">SY: 2023 - 2024</a>
 							</div>

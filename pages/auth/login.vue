@@ -54,13 +54,13 @@
 					<form @submit.prevent="login" class="space-y-6">
 						<div class="form-group">
 							<label for="email" class="form-label">Email</label>
-							<input v-model="user.email" id="email" type="email" placeholder="email@example.com" class="form-control form-control-lg" autocomplete="email" autofocus required />
+							<input v-model="user.email" id="email" type="email" placeholder="email@example.com" class="form-control form-control-lg" autocomplete="email" required />
 						</div>
 		
 						<div class="form-group">
 							<label for="password" class="form-label">Password</label>
 							<div class="relative">
-								<input v-model="user.password" id="password" class="form-control password" type="password" name="password" required autofocus autocomplete="current-password" />
+								<input v-model="user.password" id="password" class="form-control password" type="password" name="password" required autocomplete="current-password" />
 								<div class="absolute top-0 end-0 my-3 mx-4 password-btn text-sm cursor-pointer">
 									<span class="password-icon">Show</span>
 								</div>
