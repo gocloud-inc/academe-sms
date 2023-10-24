@@ -1,15 +1,3 @@
-<script lang="ts">
-	import { Select, initTE } from "tw-elements";
-
-	export default {
-		setup() {
-			onMounted(() => {
-				initTE({ Select });
-			});
-		},
-	}
-</script>
-
 <template>
 	<div class="offcanvas" tabindex="-1" id="editWorkspace" aria-labelledby="editWorkspaceLabel" data-te-offcanvas-init>
 		<div class="offcanvas-header">
@@ -42,26 +30,26 @@
 				</div>
 				<div class="form-group">
 					<label for="account_type" class="form-label">Account Type</label>
-					<select data-te-select-init data-te-select-size="lg" data-te-select-placeholder="Select" name="account_type" id="account_type">
+					<FormsSelect name="account_type" id="account_type">
 						<option value="System Administrator">System Administrator</option>
-					</select>
+					</FormsSelect>
 				</div>
 				<div class="form-group">
 					<label for="employee_status" class="form-label">Employee Status</label>
-					<select data-te-select-init data-te-select-size="lg" data-te-select-placeholder="Select" name="employee_status" id="employee_status">
+					<FormsSelect name="employee_status" id="employee_status">
 						<option value="Employed">Employed</option>
-					</select>
+					</FormsSelect>
 				</div>
 				<div class="form-group">
 					<label for="program_department" class="form-label">Program Department</label>
-					<select data-te-select-init data-te-select-size="lg" data-te-select-placeholder="Select" name="program_department" id="program_department">
-					</select>
+					<FormsSelect name="program_department" id="program_department">
+					</FormsSelect>
 				</div>
 				<div class="form-group">
 					<label for="program_category" class="form-label">Program Category</label>
-					<select data-te-select-init data-te-select-size="lg" data-te-select-placeholder="Select" name="program_category" id="program_category">
+					<FormsSelect name="program_category" id="program_category">
 						<option value="College">College</option>
-					</select>
+					</FormsSelect>
 				</div>
 
 				<div class="offcanvas-action">

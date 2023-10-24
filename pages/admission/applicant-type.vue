@@ -46,10 +46,6 @@
 							</div>
 						</NuxtLink>
 					</div>
-
-					<NuxtLink to="/" class="text-sm text-primary-500 hover:underline dark:text-primary-400">
-						Already enrolled? Signin
-					</NuxtLink>
 					
 					<p class="mt-6 text-sm text-gray-600 dark:text-gray-400">
 						By continuing, you acknowledge that you have read and understood, and agree to Our <a href="#" class="text-primary-600 font-medium hover:underline dark:text-white">Term & Conditions</a> and <a href="#" class="text-primary-600 font-medium hover:underline dark:text-white"> Privacy Policy.</a>

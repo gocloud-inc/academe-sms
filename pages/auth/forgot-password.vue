@@ -32,7 +32,7 @@
 					</form>
 					
 					<div class="mt-6 text-center">
-						<NuxtLink to="/" class="text-sm text-primary-500 hover:underline dark:text-primary-400">
+						<NuxtLink to="/auth/login" class="text-sm text-primary-500 hover:underline dark:text-primary-400">
 							Already enrolled? Signin
 						</NuxtLink>
 					</div>

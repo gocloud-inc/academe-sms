@@ -1,18 +1,16 @@
 <script setup>
 	definePageMeta({
-		layout: "auth",
+		layout: "enrollment",
 		colorMode: "light"
 	})
 
 	useSeoMeta({
-		title: 'Applicant Profile - New Student',
+		title: 'Profile - Enrollment',
 	})
-
-	const router = useRouter()
 </script>
 
 <template>
-	<form class="max-w-4xl mx-auto space-y-6 pb-6">
+  	<form class="max-w-4xl mx-auto space-y-6 pb-6" action="">
 		<div class="card p-2">
 			<div class="card-body">
 				<h1 class="text-xl font-semibold text-gray-800 capitalize dark:text-white">
@@ -38,7 +36,7 @@
 					<div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
 						<div class="form-group">
 							<label for="previous_track" class="form-label">Senior High Previous Track</label>
-							<FormsSelect name="previous_track" id="previous_track" required>
+							<FormsSelect  name="previous_track" id="previous_track" required>
 								<option value="Academic">Academic</option>
 								<option value="Sports">Sports</option>
 								<option value="Arts & Design">Arts & Design</option>
@@ -48,7 +46,7 @@
 
 						<div class="form-group">
 							<label for="previous_strand" class="form-label">Senior High Previous Strand</label>
-							<FormsSelect name="previous_strand" id="previous_strand" required>
+							<FormsSelect  name="previous_strand" id="previous_strand" required>
 								<option value="Accountancy, Business and Management">Accountancy, Business and Management</option>
 								<option value="Humanities and Social Sciences">Humanities and Social Sciences</option>
 								<option value="Science, Technology, Engineering, and Mathematics">Science, Technology, Engineering, and Mathematics</option>
@@ -87,7 +85,7 @@
 					<div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
 						<div class="form-group">
 							<label for="gender" class="form-label">Gender</label>
-							<FormsSelect name="gender" id="gender" required>
+							<FormsSelect  name="gender" id="gender" required>
 								<option value="Male">Male</option>
 								<option value="Female">Female</option>
 							</FormsSelect>
@@ -107,14 +105,14 @@
 					<div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
 						<div class="form-group">
 							<label for="nationality" class="form-label">Nationality</label>
-							<FormsSelect name="nationality" id="nationality" required>
+							<FormsSelect  name="nationality" id="nationality" required>
 								<option value="Filipino">Filipino</option>
 							</FormsSelect>
 						</div>
 
 						<div class="form-group">
 							<label for="civil_status" class="form-label">Civil Status</label>
-							<FormsSelect name="civil_status" id="civil_status" required>
+							<FormsSelect  name="civil_status" id="civil_status" required>
 								<option value="Single">Single</option>
 								<option value="Married">Married</option>
 								<option value="Widowed">Widowed</option>
@@ -124,7 +122,7 @@
 
 						<div class="form-group">
 							<label for="living_with" class="form-label">Living with</label>
-							<FormsSelect name="living_with" id="living_with" required>
+							<FormsSelect  name="living_with" id="living_with" required>
 								<option value="Parents">Parents</option>
 								<option value="Relatives">Relatives</option>
 								<option value="Guardian">Guardian</option>
@@ -152,22 +150,22 @@
 					<div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
 						<div class="form-group">
 							<label for="province" class="form-label">Province</label>
-							<FormsSelect name="province" id="province" required>
-								<option value="Select">Select</option>
+							<FormsSelect  name="province" id="province" required>
+								<option value="Regular">Regular</option>
 							</FormsSelect>
 						</div>
 
 						<div class="form-group">
 							<label for="city" class="form-label">City/Municipality</label>
-							<FormsSelect name="city" id="city" required>
-								<option value="Select">Select</option>
+							<FormsSelect  name="city" id="city" required>
+								<option value="Academic">Academic</option>
 							</FormsSelect>
 						</div>
 
 						<div class="form-group">
 							<label for="barangay" class="form-label">Barangay</label>
-							<FormsSelect name="barangay" id="barangay" required>
-								<option value="Select">Select</option>
+							<FormsSelect  name="barangay" id="barangay" required>
+								<option value="Accountancy, Business and Management">Accountancy, Business and Management</option>
 							</FormsSelect>
 						</div>
 					</div>
@@ -237,7 +235,7 @@
 			</div>
 		</div>
 
-		<div class="card p-2 hidden">
+		<div class="card p-2">
 			<div class="card-body">
 				<h1 class="text-xl font-semibold text-gray-800 capitalize dark:text-white">
 					Guardian's Information
@@ -263,7 +261,7 @@
 			</div>
 		</div>
 
-		<div class="card p-2 hidden">
+		<div class="card p-2">
 			<div class="card-body">
 				<h1 class="text-xl font-semibold text-gray-800 capitalize dark:text-white">
 					Grade I to VI
@@ -298,7 +296,7 @@
 			</div>
 		</div>
 
-		<div class="card p-2 hidden">
+		<div class="card p-2">
 			<div class="card-body">
 				<h1 class="text-xl font-semibold text-gray-800 capitalize dark:text-white">
 					Grade 7 to 10
@@ -333,7 +331,7 @@
 			</div>
 		</div>
 
-		<div class="card p-2 hidden">
+		<div class="card p-2">
 			<div class="card-body">
 				<h1 class="text-xl font-semibold text-gray-800 capitalize dark:text-white">
 					College (Transferees)
@@ -368,7 +366,7 @@
 			</div>
 		</div>
 
-		<div class="card p-2 hidden">
+		<div class="card p-2">
 			<div class="card-body">
 				<h1 class="text-xl font-semibold text-gray-800 capitalize dark:text-white">
 					College (2nd Courser)
@@ -403,7 +401,7 @@
 			</div>
 		</div>
 
-		<div class="card p-2 hidden">
+		<div class="card p-2">
 			<div class="card-body">
 				<h1 class="text-xl font-semibold text-gray-800 capitalize dark:text-white">
 					Vocational Course
@@ -441,13 +439,10 @@
 		<!-- Action Buttons -->
 		<div class="card">
 			<div class="card-body space-y-6">
-				<p class="text-base text-gray-600">I hereby affirm that all information supplied herein is complete and accurate. Withholding false information will make me ineligible for admission or subject to dismissal. If admitted, I agree to abide by the policies, rules and regulations of School Information Management System.</p>
+				<p class="text-sm text-gray-600">I hereby affirm that all information supplied herein is complete and accurate. Withholding false information will make me ineligible for admission or subject to dismissal. If admitted, I agree to abide by the policies, rules and regulations of School Information Management System.</p>
 				<div class="flex flex-wrap justify-between gap-4">
-					<button @click="$router.back()" type="button" class="button button-secondary button-lg">
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M10.733 19.79a.75.75 0 0 0 1.034-1.086L5.516 12.75H20.25a.75.75 0 0 0 0-1.5H5.516l6.251-5.955a.75.75 0 0 0-1.034-1.086l-7.42 7.067a.995.995 0 0 0-.3.58a.754.754 0 0 0 .001.289a.995.995 0 0 0 .3.579l7.419 7.067Z"/></svg>
-						Back
-					</button>
-					<button type="submit" class="button button-primary button-lg">Save and Continue</button>
+					<button @click="$router.back()" type="button" class="button button-secondary button-lg">Back</button>
+					<NuxtLink to="/enrollment/course" class="button button-primary button-lg">Save and Continue</NuxtLink>
 				</div>
 			</div>
 		</div>

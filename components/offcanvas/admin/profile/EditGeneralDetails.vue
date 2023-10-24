@@ -1,15 +1,3 @@
-<script lang="ts">
-	import { Select, initTE } from "tw-elements";
-
-	export default {
-		setup() {
-			onMounted(() => {
-				initTE({ Select });
-			});
-		},
-	}
-</script>
-
 <template>
 	<div class="offcanvas" tabindex="-1" id="editGeneralDetails" aria-labelledby="editGeneralDetailsLabel" data-te-offcanvas-init>
 		<div class="offcanvas-header">
@@ -50,10 +38,10 @@
 				</div>
 				<div class="form-group">
 					<label for="gender" class="form-label">Gender</label>
-					<select data-te-select-init data-te-select-size="lg" data-te-select-placeholder="Select" name="gender" id="gender">
+					<FormsSelect name="gender" id="gender">
 						<option value="Male">Male</option>
 						<option value="Female">Female</option>
-					</select>
+					</FormsSelect>
 				</div>
 				<div class="form-group">
 					<label for="nationality" class="form-label">Nationality</label>
@@ -61,12 +49,12 @@
 				</div>
 				<div class="form-group">
 					<label for="civil_status" class="form-label">Civil Status</label>
-					<select data-te-select-init data-te-select-size="lg" data-te-select-placeholder="Select" name="civil_status" id="civil_status">
+					<FormsSelect name="civil_status" id="civil_status">
 						<option value="Single">Single</option>
 						<option value="Married">Married</option>
 						<option value="Widowed">Widowed</option>
 						<option value="Divorced">Divorced</option>
-					</select>
+					</FormsSelect>
 				</div>
 				<div class="form-group">
 					<label for="religion" class="form-label">Religion</label>

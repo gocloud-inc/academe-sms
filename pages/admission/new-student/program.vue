@@ -1,30 +1,14 @@
-<script>
-	import { Select, initTE } from "tw-elements";
+<script setup>
+	definePageMeta({
+		layout: "auth",
+		colorMode: "light"
+	})
 
-	export default {
-		setup() {
-			definePageMeta({
-				layout: "auth",
-				colorMode: "light"
-			})
-		
-			useSeoMeta({
-				title: 'Select Program - New Student',
-			})
-		
-			onMounted(() => {
-				initTE({ Select });
-			});
-		
-			const program = async () => {
-				navigateTo('/admission/new-student/profile')
-			}
+	useSeoMeta({
+		title: 'Select Program - New Student',
+	})
 
-			return {
-				program,
-			}
-		}
-	}
+	const router = useRouter()
 </script>
 
 <template>
@@ -41,42 +25,42 @@
 					<form @submit.prevent="program" class="space-y-6">
                         <div class="form-group">
                             <label for="year_level" class="form-label">Year Level</label>
-                            <select data-te-select-init data-te-select-size="lg" data-te-select-placeholder="Select level" name="year_level" id="year_level" required>
-                                <option value="1st Year">1st Year</option>
-                                <option value="2nd Year">2nd Year</option>
-                                <option value="3rd Year">3rd Year</option>
-                                <option value="4th Year">4th Year</option>
-                                <option value="PEC">Profession Education Courses (PEC)</option>
-                            </select>
+							<FormsSelect name="year_level" id="year_level" required>
+								<option value="1st Year">1st Year</option>
+								<option value="2nd Year">2nd Year</option>
+								<option value="3rd Year">3rd Year</option>
+								<option value="4th Year">4th Year</option>
+								<option value="PEC">Profession Education Courses (PEC)</option>
+							</FormsSelect>
                         </div>
         
                         <div class="form-group">
                             <label for="course" class="form-label">Course</label>
-                            <select data-te-select-init data-te-select-size="lg" data-te-select-placeholder="Select course" data-te-select-filter="true" name="course" id="course" required>
+                            <FormsSelect name="course" id="course" required>
                                 <option value="Bachelor of Elementary Education">Bachelor of Elementary Education</option>
                                 <option value="Bachelor of Science in Accountancy">Bachelor of Science in Accountancy</option>
                                 <option value="Bachelor of Science in Business Administration">Bachelor of Science in Business Administration</option>
                                 <option value="Bachelor of Science in Computer Science">Bachelor of Science in Computer Science</option>
                                 <option value="Profession Education Courses">Profession Education Courses</option>
-                            </select>
+                            </FormsSelect>
                         </div>
 
                         <div class="form-group">
                            <label for="course" class="form-label">Major</label>
-                           <select data-te-select-init data-te-select-size="lg" data-te-select-placeholder="Select major" data-te-select-filter="true" name="course" id="course" required>
+                           <FormsSelect name="course" id="course" required>
                                <option value="Bachelor of Elementary Education">Bachelor of Elementary Education</option>
-                           </select>
+                           </FormsSelect>
                        	</div>
 					   
 						<div class="flex md:justify-between md:flex-auto gap-2">
-							<NuxtLink to="/admission/applicant-type" class="button button-secondary button-lg">
+							<button @click="$router.back()" type="button" class="button button-secondary button-lg">
 								<svg class="hidden md:block" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M10.733 19.79a.75.75 0 0 0 1.034-1.086L5.516 12.75H20.25a.75.75 0 0 0 0-1.5H5.516l6.251-5.955a.75.75 0 0 0-1.034-1.086l-7.42 7.067a.995.995 0 0 0-.3.58a.754.754 0 0 0 .001.289a.995.995 0 0 0 .3.579l7.419 7.067Z"/></svg>
 								Back
-							</NuxtLink>
-							<button type="submit" class="button button-primary button-lg">
+							</button>
+							<NuxtLink to="/admission/new-student/profile" class="button button-primary button-lg">
 								Continue
 								<svg class="hidden md:block" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M13.267 4.209a.75.75 0 0 0-1.034 1.086l6.251 5.955H3.75a.75.75 0 0 0 0 1.5h14.734l-6.251 5.954a.75.75 0 0 0 1.034 1.087l7.42-7.067a.996.996 0 0 0 .3-.58a.758.758 0 0 0-.001-.29a.995.995 0 0 0-.3-.578l-7.419-7.067Z"/></svg>
-							</button>
+							</NuxtLink>
 						</div>
                     </form>
 					<p class="mt-6 text-sm text-gray-600 dark:text-gray-400">

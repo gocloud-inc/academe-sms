@@ -494,11 +494,8 @@
 		</div>
 
 		<!-- Edit Profile Through Offcanvas -->
-		<ClientOnly>
-			<OffcanvasAdminProfileEditGeneralDetails />
-			<OffcanvasAdminProfileEditWorkspace />
-		</ClientOnly>
-
+		<OffcanvasAdminProfileEditGeneralDetails />
+		<OffcanvasAdminProfileEditWorkspace />
 		<OffcanvasAdminProfileEditContact />
 		<OffcanvasAdminProfileEditAddress />
 		<OffcanvasAdminProfileEditGovernmentID />

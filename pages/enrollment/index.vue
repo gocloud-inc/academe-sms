@@ -1,23 +1,17 @@
-<script>
-	export default {
-		setup() {
-			definePageMeta({
-				layout: "auth",
-				colorMode: "light"
-			})
-		
-			useSeoMeta({
-				title: 'Enrollment Portal',
-			})
+<script setup>
+	definePageMeta({
+		layout: "auth",
+		colorMode: "light"
+	})
 
-			const program = async () => {
-				navigateTo('/')
-			}
+	useSeoMeta({
+		title: 'Enrollment Portal',
+	})
 
-			return {
-				program,
-			}
-		}
+	const router = useRouter()
+
+	const program = async () => {
+		navigateTo('/enrollment/program')
 	}
 </script>
 
@@ -54,10 +48,10 @@
                         </div>
 					   
 						<div class="flex justify-between">
-							<NuxtLink to="/" class="button button-secondary button-lg">
+							<button @click="$router.back()" type="button" class="button button-secondary button-lg">
 								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M10.733 19.79a.75.75 0 0 0 1.034-1.086L5.516 12.75H20.25a.75.75 0 0 0 0-1.5H5.516l6.251-5.955a.75.75 0 0 0-1.034-1.086l-7.42 7.067a.995.995 0 0 0-.3.58a.754.754 0 0 0 .001.289a.995.995 0 0 0 .3.579l7.419 7.067Z"/></svg>
 								Back
-							</NuxtLink>
+							</button>
 							<button type="submit" class="button button-primary button-lg">
 								Continue
 								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M13.267 4.209a.75.75 0 0 0-1.034 1.086l6.251 5.955H3.75a.75.75 0 0 0 0 1.5h14.734l-6.251 5.954a.75.75 0 0 0 1.034 1.087l7.42-7.067a.996.996 0 0 0 .3-.58a.758.758 0 0 0-.001-.29a.995.995 0 0 0-.3-.578l-7.419-7.067Z"/></svg>
