@@ -56,10 +56,6 @@
 						<option value="Divorced">Divorced</option>
 					</FormsSelect>
 				</div>
-				<div class="form-group">
-					<label for="religion" class="form-label">Religion</label>
-					<input id="religion" type="text" placeholder="e.g MCGI" class="form-control" autofocus />
-				</div>
 
 				<div class="offcanvas-action">
 					<button type="button" class="button button-secondary button-lg" data-te-offcanvas-dismiss>Cancel</button>

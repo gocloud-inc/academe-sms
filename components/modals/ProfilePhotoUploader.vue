@@ -23,12 +23,12 @@
 						</div>
 					</div>
 					
-					<div class="mt-10 sm:flex sm:items-center justify-center sm:-mx-2 gap-2">
-						<button type="button" class="button button-secondary button-lg" data-te-modal-dismiss>
+					<div class="modal-action">
+						<button type="button" class="button button-secondary" data-te-modal-dismiss>
 							Cancel
 						</button>
 
-						<button type="submit" class="button button-primary button-lg">
+						<button type="submit" class="button button-primary">
 							Save
 						</button>
 					</div>

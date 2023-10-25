@@ -25,7 +25,7 @@
 					<form @submit.prevent="program" class="space-y-6">
                         <div class="form-group">
                             <label for="year_level" class="form-label">Year Level</label>
-							<FormsSelect name="year_level" id="year_level" required>
+							<FormsSelect class="form-control-lg" name="year_level" id="year_level" required>
 								<option value="1st Year">1st Year</option>
 								<option value="2nd Year">2nd Year</option>
 								<option value="3rd Year">3rd Year</option>
@@ -36,7 +36,7 @@
         
                         <div class="form-group">
                             <label for="course" class="form-label">Course</label>
-                            <FormsSelect name="course" id="course" required>
+                            <FormsSelect class="form-control-lg" name="course" id="course" required>
                                 <option value="Bachelor of Elementary Education">Bachelor of Elementary Education</option>
                                 <option value="Bachelor of Science in Accountancy">Bachelor of Science in Accountancy</option>
                                 <option value="Bachelor of Science in Business Administration">Bachelor of Science in Business Administration</option>
@@ -47,7 +47,7 @@
 
                         <div class="form-group">
                            <label for="course" class="form-label">Major</label>
-                           <FormsSelect name="course" id="course" required>
+                           <FormsSelect class="form-control-lg" name="course" id="course" required>
                                <option value="Bachelor of Elementary Education">Bachelor of Elementary Education</option>
                            </FormsSelect>
                        	</div>

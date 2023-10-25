@@ -75,11 +75,6 @@
 												<dt class="text-gray-400">Civil Status</dt>
 												<dd class="font-medium text-gray-700 sm:col-span-2 dark:text-gray-300">Single</dd>
 											</div>
-
-											<div class="grid grid-cols-1 gap-1 py-3 sm:grid-cols-3 sm:gap-4">
-												<dt class="text-gray-400">Religion</dt>
-												<dd class="font-medium text-gray-700 sm:col-span-2 dark:text-gray-300">-</dd>
-											</div>
 										</dl>
 									</div>
 								</details>

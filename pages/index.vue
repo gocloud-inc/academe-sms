@@ -42,7 +42,7 @@
 	<div class="w-full max-w-md">
 		<div>
             <div class="text-start">
-                <img class="w-auto h-8 sm:h-12" src="/logo.png" alt="">
+                <img class="w-auto h-12" src="/logo.png" alt="">
                 <h2 class="mt-3 text-2xl font-semibold text-gray-800 capitalize sm:text-3xl dark:text-white">Academe 2.0 School Management System</h2>
                 <p class="mt-3 text-gray-500 dark:text-gray-300">To begin this journey, tell us what type of account you'd be opening.</p>
 

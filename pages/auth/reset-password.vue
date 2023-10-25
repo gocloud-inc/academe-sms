@@ -53,7 +53,7 @@
 						<div class="form-group">
 							<label for="new_password" class="form-label">New Password</label>
 							<div class="relative">
-								<input id="new_password" class="form-control password" type="password" name="new_password" placeholder="********" required autofocus autocomplete="new-password" />
+								<input id="new_password" class="form-control form-control-lg password" type="password" name="new_password" placeholder="********" required autofocus autocomplete="new-password" />
 								<div class="absolute top-0 end-0 my-3 mx-4 password-btn text-sm cursor-pointer">
 									<span class="password-icon">Show</span>
 								</div>

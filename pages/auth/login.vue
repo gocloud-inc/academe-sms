@@ -60,7 +60,7 @@
 						<div class="form-group">
 							<label for="password" class="form-label">Password</label>
 							<div class="relative">
-								<input v-model="user.password" id="password" class="form-control password" type="password" name="password" required autocomplete="current-password" />
+								<input v-model="user.password" id="password" class="form-control form-control-lg password" type="password" name="password" required autocomplete="current-password" />
 								<div class="absolute top-0 end-0 my-3 mx-4 password-btn text-sm cursor-pointer">
 									<span class="password-icon">Show</span>
 								</div>
