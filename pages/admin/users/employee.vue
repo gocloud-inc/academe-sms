@@ -150,7 +150,7 @@
 						</li>
 						<li>
 							<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
-								Deactivated
+								Inactive
 							</a>
 						</li>
 					</ul>
@@ -192,7 +192,7 @@
 								</tr>
 							</thead>
 							<tbody class="table-body">
-								<tr v-for="i in 10">
+								<tr v-for="i in 5">
 									<td class="table-data">
 										<div class="flex items-center gap-2">
 											<div class="uppercase bg-gray-100 text-gray-500 rounded-full w-10 h-10 flex justify-center items-center text-sm font-semibold dark:bg-gray-600 dark:text-gray-300">
@@ -240,6 +240,74 @@
 												</li>
 												<hr class="dropdown-divider" />
 												<li>
+													<button data-te-target="#deactivateModal" data-te-toggle="modal" type="button" class="dropdown-link" data-te-dropdown-item-ref>
+														Deactivate
+													</button>
+												</li>
+												<hr class="dropdown-divider" />
+												<li>
+													<button data-te-target="#deleteModal" data-te-toggle="modal" type="button" class="dropdown-link" data-te-dropdown-item-ref>
+														Delete
+													</button>
+												</li>
+											</ul>
+										</div>
+									</td>
+								</tr>
+								<tr v-for="i in 5">
+									<td class="table-data">
+										<div class="flex items-center gap-2">
+											<div class="uppercase bg-gray-100 text-gray-500 rounded-full w-10 h-10 flex justify-center items-center text-sm font-semibold dark:bg-gray-600 dark:text-gray-300">
+												GS
+											</div>
+											<div>
+												<NuxtLink to="/admin/users/edit-employee" class="font-medium text-gray-800 hover:underline dark:text-white">Gocloud Team</NuxtLink>
+												<p class="text-sm font-normal text-gray-600 dark:text-gray-400">System Administrator</p>
+											</div>
+										</div>
+									</td>
+									<td class="table-data">
+										sys_admin
+									</td>
+									<td class="table-data">
+										College of Business Education
+									</td>
+									<td class="table-data">
+										System Administrator
+									</td>
+									<td class="table-data">
+										<span class="badge badge-danger">Inactive</span>
+									</td>
+
+									<td class="table-data">
+										<div class="relative" data-te-dropdown-ref>
+											<button class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-200 hover:text-gray-500 dark:hover:bg-gray-700" type="button" id="dropdownMenuButton1d" data-te-dropdown-toggle-ref data-te-dropdown-animation="off" aria-expanded="false">
+												<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+													<path d="M5 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+													<path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+													<path d="M19 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+												</svg>
+											</button>
+											<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1d" data-te-dropdown-menu-ref>
+												<li>
+													<NuxtLink to="/admin/users/edit-employee" class="dropdown-link" data-te-dropdown-item-ref>
+														Edit
+													</NuxtLink>
+												</li>
+												<li>
+													<button data-te-target="#changePasswordModal" data-te-toggle="modal" type="button" class="dropdown-link" data-te-dropdown-item-ref>
+														Change Password
+													</button>
+												</li>
+												<hr class="dropdown-divider" />
+												<li>
+													<button data-te-target="#activateModal" data-te-toggle="modal" type="button" class="dropdown-link" data-te-dropdown-item-ref>
+														Activate
+													</button>
+												</li>
+												<hr class="dropdown-divider" />
+												<li>
 													<button data-te-target="#deleteModal" data-te-toggle="modal" type="button" class="dropdown-link" data-te-dropdown-item-ref>
 														Delete
 													</button>
@@ -258,6 +326,8 @@
 
 	<ModalsDelete />
 	<ModalsChangePassword />
+	<ModalsDeactivate />
+	<ModalsActivate />
 </template>
 
 <style scoped></style>
