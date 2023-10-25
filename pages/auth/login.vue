@@ -77,7 +77,7 @@
 					</form>
 					
 					<p class="mt-6 text-sm text-gray-600 dark:text-gray-400">
-						By clicking “Login” above, you acknowledge that you have read and understood, and agree to Our <a href="#" class="text-primary-600 font-medium hover:underline dark:text-white">Term & Conditions</a> and <a href="#" class="text-primary-600 font-medium hover:underline dark:text-white"> Privacy Policy.</a>
+						By clicking “Login” above, you acknowledge that you have read, understood, and agreed to Academe's <a href="#" class="text-primary-600 font-medium hover:underline dark:text-white">Term & Conditions</a> and <a href="#" class="text-primary-600 font-medium hover:underline dark:text-white"> Privacy Policy.</a>
 					</p>
 				</div>
 			</div>

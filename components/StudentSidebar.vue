@@ -61,8 +61,8 @@
 
 <template>
   	<div id="student-aside" ref="asideEl" class="col-span-1 hidden xl:flow-root">
-		<div class="sticky top-20 overflow-y-auto bg-white xl:bg-transparent p-3 xl:p-0 w-72 xl:w-auto dark:bg-gray-800">
-			<ul class="divide-y divide-gray-200 dark:divide-gray-700">
+		<div class="sticky top-20 overflow-y-auto bg-white xl:bg-transparent p-3 xl:p-0 w-72 xl:w-auto dark:bg-gray-800 lg:dark:bg-black">
+			<ul class="divide-y divide-gray-200 dark:divide-gray-700 md:dark:divide-gray-800">
 				<li class="pb-2">
 					<div class="flex items-center gap-3 bg-white/80 backdrop-blur border border-gray-200 shadow-sm p-3 mb-3 rounded-lg dark:bg-gray-700 dark:border-gray-800">
 						<div class="bg-gray-100 rounded-xl p-2 w-12 h-12 text-lg uppercase text-gray-400 font-semibold flex items-center justify-center dark:bg-gray-600">

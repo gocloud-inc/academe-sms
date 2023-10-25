@@ -18,7 +18,7 @@
 						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M10.733 19.79a.75.75 0 0 0 1.034-1.086L5.516 12.75H20.25a.75.75 0 0 0 0-1.5H5.516l6.251-5.955a.75.75 0 0 0-1.034-1.086l-7.42 7.067a.995.995 0 0 0-.3.58a.754.754 0 0 0 .001.289a.995.995 0 0 0 .3.579l7.419 7.067Z"/></svg>
 					</NuxtLink>
 					<h2 class="mt-3 text-2xl font-semibold text-gray-800 capitalize sm:text-3xl dark:text-white">Applicant Type</h2>
-					<p class="mt-3 text-gray-500 dark:text-gray-300">Tell us what type of account you'd be opening.</p>
+					<p class="mt-3 text-gray-500 dark:text-gray-300">Please specify the type of admission you are seeking.</p>
 				</div>
 		
 				<div class="mt-8">
@@ -50,7 +50,7 @@
 					</div>
 					
 					<p class="mt-6 text-sm text-gray-600 dark:text-gray-400">
-						By continuing, you acknowledge that you have read and understood, and agree to Our <a href="#" class="text-primary-600 font-medium hover:underline dark:text-white">Term & Conditions</a> and <a href="#" class="text-primary-600 font-medium hover:underline dark:text-white"> Privacy Policy.</a>
+						By clicking “Login” above, you acknowledge that you have read, understood, and agreed to Academe's <a href="#" class="text-primary-600 font-medium hover:underline dark:text-white">Term & Conditions</a> and <a href="#" class="text-primary-600 font-medium hover:underline dark:text-white"> Privacy Policy.</a>
 					</p>
 				</div>
 			</div>
