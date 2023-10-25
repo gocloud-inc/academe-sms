@@ -74,7 +74,7 @@ export default defineNuxtConfig({
 			name: 'Academe SMS',
 			short_name: 'Academe SMS',
 			description: 'Academe School Information Management System',
-			theme_color: '#793C9D',
+			theme_color: '#1B9AE3',
 			background_color: '#ffffff',
 			icons: [
 				{
