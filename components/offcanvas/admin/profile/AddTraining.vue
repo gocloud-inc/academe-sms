@@ -28,15 +28,15 @@
 			<form class="space-y-6">
 				<div class="form-group">
 					<label for="title" class="form-label">Title of Seminar / Conference / Workshop / Short Courses</label>
-					<input id="title" type="text" placeholder="e.g Web Development" class="form-control" autofocus />
+					<input id="title" type="text" placeholder="e.g Web Development" class="form-control" />
 				</div>
 				<div class="form-group">
 					<label for="date" class="form-label">Inclusive Dates of Attendance</label>
-					<input id="date" type="date" class="form-control" autocomplete="date" autofocus />
+					<input id="date" type="date" class="form-control" autocomplete="date" />
 				</div>
 				<div class="form-group">
 					<label for="conducted" class="form-label">Conducted / Sponsored By</label>
-					<input id="conducted" type="text" class="form-control" autofocus />
+					<input id="conducted" type="text" class="form-control" />
 				</div>
 
 				<div class="offcanvas-action">

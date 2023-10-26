@@ -205,7 +205,7 @@
 						</summary>
 				
 						<div class="space-y-1 px-4">
-							<NuxtLink to="/admin/users/employee" class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700">
+							<NuxtLink to="/admin/employees" class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700">
 								<span class="mx-2 text-sm font-medium">Employees</span>
 							</NuxtLink>
 						</div>

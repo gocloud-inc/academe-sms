@@ -1,14 +1,52 @@
-<script lang="ts">
-	export default {
-		setup() {
-			definePageMeta({
-				layout: "admin",
-			});
+<script setup>
+	import { faker } from '@faker-js/faker';
 
-			useSeoMeta({
-				title: 'Officially Enrolled',
-			});
-		},
+	definePageMeta({
+		layout: "admin",
+	});
+
+	useSeoMeta({
+		title: 'Officially Enrolled',
+	});
+
+	const programs = [
+		'Bachelor of Elementary Education',
+		'Bachelor of Science in Accountancy',
+		'Bachelor of Science in Business Administration',
+		'Bachelor of Science in Computer Science',
+		'Bachelor of Science in Hotel and Restaurant Management',
+		'Professional Education Courses',
+	];
+
+	const years = [
+		'1st Year',
+		'2nd Year',
+		'3rd Year',
+		'4th Year',
+		'5th Year',
+	];
+
+	const generateFakeData = (type) => {
+		switch (type) {
+			case "student":
+			return {
+				id: faker.string.uuid(),
+				studentId: faker.helpers.replaceCreditCardSymbols('SID-1234-[4-9]'),
+				name: faker.person.fullName(),
+				birthdate: faker.date.birthdate({ min: 15, max: 65, mode: 'age' }),
+				program: faker.helpers.arrayElement(programs),
+				year: faker.helpers.arrayElement(years),
+				avatar: faker.image.avatarGitHub(),
+				type: "student",
+			};
+			default:
+			return {};
+		}
+	}
+
+	const fakeStudents = [];
+	for (let i = 0; i < 10; i++) {
+		fakeStudents.push(generateFakeData("student"));
 	}
 </script>
 
@@ -254,29 +292,35 @@
 								</tr>
 							</thead>
 							<tbody class="table-body">
-								<tr v-for="i in 10">
+								<tr v-for="student in fakeStudents.filter((student) => student.type === 'student')" :key="student.id">
 									<td class="table-data">
 										<div class="flex items-center gap-2">
 											<div class="uppercase bg-gray-100 text-gray-500 rounded-full w-10 h-10 flex justify-center items-center text-sm font-semibold dark:bg-gray-600 dark:text-gray-300">
-												CJ
+												<img class="avatar avatar-sm rounded-full" :src="student.avatar" alt="">
 											</div>
 											<div>
-												<NuxtLink to="/admin/student/profile" class="font-medium text-gray-800 hover:underline dark:text-white">Cruz, Juan Dela</NuxtLink>
-												<p class="text-sm font-normal text-gray-600 dark:text-gray-400">#SID-4500-34</p>
+												<NuxtLink to="/admin/student/profile" class="font-medium text-gray-800 hover:underline dark:text-white">
+													{{ student.name }}
+												</NuxtLink>
+												<p class="text-sm font-normal text-gray-600 dark:text-gray-400">
+													{{ student.studentId }}
+												</p>
 											</div>
 										</div>
 									</td>
 									<td class="table-data">
-										1st Year
+										{{ student.year }}
 									</td>
 									<td class="table-data">
 										<div>
-											<h4 class="text-gray-700 dark:text-gray-200">Bachelor of Science in Computer Science</h4>
+											<h4 class="text-gray-700 dark:text-gray-200">
+												{{ student.program }}
+											</h4>
 											<p class="text-gray-500 dark:text-gray-400">Major in Hardware</p>
 										</div>
 									</td>
 									<td class="table-data">
-										October 12, 1996
+										{{ student.birthdate.toLocaleDateString('en-US', { format: 'MM/dd/yyyy' }) }}
 									</td>
 
 									<td class="table-data">
@@ -291,9 +335,9 @@
 											</button>
 											<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1d" data-te-dropdown-menu-ref>
 												<li>
-													<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
+													<NuxtLink to="/admin/student/profile" class="dropdown-link" data-te-dropdown-item-ref>
 														View Profile
-													</a>
+													</NuxtLink>
 												</li>
 												<li>
 													<a class="dropdown-link" href="#" data-te-dropdown-item-ref>

@@ -12,8 +12,10 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@faker-js/faker": "^8.2.0",
     "@nuxt/devtools": "latest",
     "@nuxtjs/color-mode": "^3.3.0",
+    "@samk-dev/nuxt-vcalendar": "^1.0.1",
     "@vite-pwa/assets-generator": "^0.0.10",
     "@vite-pwa/nuxt": "^0.1.1",
     "autoprefixer": "^10.4.16",

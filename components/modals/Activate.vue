@@ -1,5 +1,3 @@
-<script lang="ts" setup></script>
-
 <template>
 	<div data-te-modal-init class="modal" id="activateModal" tabindex="-1" aria-labelledby="activateModalTitle" aria-hidden="true" aria-modal="true" role="dialog">
 		<div data-te-modal-dialog-ref class="modal-container">
@@ -11,7 +9,7 @@
 					Are you sure you want to activate <b>Globe Support Team</b>? This action cannot be undone.
 				</p>
 
-				<form class="mt-4" id="url" action="" method="POST">
+				<form class="mt-4" id="activate-url" action="" method="POST">
 					<div class="modal-action">
 						<button type="button" class="button button-secondary" data-te-modal-dismiss>
 							No, cancel

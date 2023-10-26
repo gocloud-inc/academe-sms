@@ -28,11 +28,11 @@
 			<form class="space-y-6">
 				<div class="form-group">
 					<label for="residential" class="form-label">Residential</label>
-					<textarea id="residential" rows="3" placeholder="Street, Brgy. City, Province" class="form-control" autocomplete="address" autofocus></textarea>
+					<textarea id="residential" rows="3" placeholder="Street, Brgy. City, Province" class="form-control" autocomplete="address"></textarea>
 				</div>
 				<div class="form-group">
 					<label for="permanent" class="form-label">Permanent</label>
-					<textarea id="permanent" rows="3" placeholder="Street, Brgy. City, Province" class="form-control" autocomplete="address" autofocus></textarea>
+					<textarea id="permanent" rows="3" placeholder="Street, Brgy. City, Province" class="form-control" autocomplete="address"></textarea>
 				</div>
 				
 				<div class="offcanvas-action">

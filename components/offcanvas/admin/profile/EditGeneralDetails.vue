@@ -26,15 +26,15 @@
 			<form class="space-y-6">
 				<div class="form-group">
 					<label for="name" class="form-label">Full Name</label>
-					<input id="name" type="text" placeholder="e.g Juan Dela Cruz" class="form-control" autocomplete="name" autofocus />
+					<input id="name" type="text" placeholder="e.g Juan Dela Cruz" class="form-control" autocomplete="name" />
 				</div>
 				<div class="form-group">
 					<label for="birthdate" class="form-label">Date of Birth</label>
-					<input id="birthdate" type="date" class="form-control" autocomplete="birthday" autofocus />
+					<input id="birthdate" type="date" class="form-control" autocomplete="birthday" />
 				</div>
 				<div class="form-group">
 					<label for="birthplace" class="form-label">Place of Birth</label>
-					<input id="birthplace" type="text" placeholder="e.g Metro Manila" class="form-control" autocomplete="address" autofocus />
+					<input id="birthplace" type="text" placeholder="e.g Metro Manila" class="form-control" autocomplete="address" />
 				</div>
 				<div class="form-group">
 					<label for="gender" class="form-label">Gender</label>
@@ -45,7 +45,7 @@
 				</div>
 				<div class="form-group">
 					<label for="nationality" class="form-label">Nationality</label>
-					<input id="nationality" type="text" placeholder="e.g Filipino" class="form-control" autofocus />
+					<input id="nationality" type="text" placeholder="e.g Filipino" class="form-control" />
 				</div>
 				<div class="form-group">
 					<label for="civil_status" class="form-label">Civil Status</label>

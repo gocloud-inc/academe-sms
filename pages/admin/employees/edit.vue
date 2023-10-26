@@ -4,7 +4,7 @@
 	});
 
 	useSeoMeta({
-		title: 'Add New Employee',
+		title: 'Edit Employee',
 	});
 </script>
 
@@ -14,18 +14,18 @@
 			<div class="sm:flex sm:items-center sm:justify-between mb-6">
 				<div>
 					<div class="flex items-center gap-x-3">
-						<h2 class="text-xl font-medium text-gray-800 dark:text-white">Add new employee</h2>
+						<h2 class="text-xl font-medium text-gray-800 dark:text-white">Edit employee</h2>
 					</div>
 			
-					<p class="mt-1 text-sm text-gray-500 dark:text-gray-300">These companies have purchased in the last 12 months.</p>
+					<p class="mt-1 text-sm text-gray-500 dark:text-gray-300">Updated 2 weeks ago</p>
 				</div>
 			
 				<div class="flex items-center mt-4 gap-x-3">
-					<NuxtLink to="/admin/users/employee" class="button button-secondary">
+					<NuxtLink to="/admin/employees" class="button button-secondary">
 						Cancel
 					</NuxtLink>
 					<button type="submit" class="button button-primary">
-						Submit
+						Save changes
 					</button>
 				</div>
 			</div>

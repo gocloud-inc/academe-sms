@@ -28,15 +28,15 @@
 			<form class="space-y-6">
 				<div class="form-group">
 					<label for="degree_course" class="form-label">Degree Course</label>
-					<input id="degree_course" type="text" placeholder="e.g BS in Information Systems" class="form-control" autofocus />
+					<input id="degree_course" type="text" placeholder="e.g BS in Information Systems" class="form-control" />
 				</div>
 				<div class="form-group">
 					<label for="institution" class="form-label">Name of School</label>
-					<input id="institution" type="text" class="form-control" autofocus />
+					<input id="institution" type="text" class="form-control" />
 				</div>
 				<div class="form-group">
 					<label for="graduated" class="form-label">Year Graduated</label>
-					<input id="graduated" type="number" placeholder="e.g 2016" class="form-control" autofocus />
+					<input id="graduated" type="number" placeholder="e.g 2016" class="form-control" />
 				</div>
 
 				<div class="offcanvas-action">

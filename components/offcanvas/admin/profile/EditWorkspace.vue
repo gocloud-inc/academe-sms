@@ -26,7 +26,7 @@
 			<form class="space-y-6">
 				<div class="form-group">
 					<label for="employee_id" class="form-label">Employee ID</label>
-					<input id="employee_id" type="text" class="form-control" placeholder="e.g Juan Dela Cruz" autofocus />
+					<input id="employee_id" type="text" class="form-control" placeholder="e.g Juan Dela Cruz" />
 				</div>
 				<div class="form-group">
 					<label for="account_type" class="form-label">Account Type</label>

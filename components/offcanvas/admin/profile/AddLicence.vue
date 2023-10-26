@@ -28,15 +28,15 @@
 			<form class="space-y-6">
 				<div class="form-group">
 					<label for="licence_name" class="form-label">Licence name</label>
-					<input id="licence_name" type="text" placeholder="e.g Driver Licence" class="form-control" autofocus />
+					<input id="licence_name" type="text" placeholder="e.g Driver Licence" class="form-control" />
 				</div>
 				<div class="form-group">
 					<label for="rating" class="form-label">Rating</label>
-					<input id="rating" type="number" placeholder="e.g 1.5" class="form-control" autofocus />
+					<input id="rating" type="number" placeholder="e.g 1.5" class="form-control" />
 				</div>
 				<div class="form-group">
 					<label for="date_examination" class="form-label">Date of Examination</label>
-					<input id="date_examination" type="date" class="form-control" autofocus />
+					<input id="date_examination" type="date" class="form-control" />
 				</div>
 
 				<div class="offcanvas-action">

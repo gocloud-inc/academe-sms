@@ -28,19 +28,19 @@
 			<form class="space-y-6">
 				<div class="form-group">
 					<label for="position" class="form-label">Title / Position</label>
-					<input id="position" type="text" placeholder="e.g Web Developer" class="form-control" autofocus />
+					<input id="position" type="text" placeholder="e.g Web Developer" class="form-control" />
 				</div>
 				<div class="form-group">
 					<label for="company" class="form-label">Company Name</label>
-					<input id="company" type="text" placeholder="e.g Gocloud Inc." class="form-control" autofocus />
+					<input id="company" type="text" placeholder="e.g Gocloud Inc." class="form-control" />
 				</div>
 				<div class="form-group">
 					<label for="started" class="form-label">Started</label>
-					<input id="started" type="date" class="form-control" autocomplete="date" autofocus />
+					<input id="started" type="date" class="form-control" autocomplete="date" />
 				</div>
 				<div class="form-group">
 					<label for="ended" class="form-label">Ended</label>
-					<input id="ended" type="date" class="form-control" autocomplete="date" autofocus />
+					<input id="ended" type="date" class="form-control" autocomplete="date" />
 				</div>
 
 				<div class="offcanvas-action">

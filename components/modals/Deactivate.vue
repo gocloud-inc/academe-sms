@@ -11,7 +11,7 @@
 					Are you sure you want to deactivate <b>Globe Support Team</b>? This action cannot be undone.
 				</p>
 
-				<form class="mt-4" id="url" action="" method="POST">
+				<form class="mt-4" id="deactivate-url" action="" method="POST">
 					<div class="modal-action">
 						<button type="button" class="button button-secondary" data-te-modal-dismiss>
 							No, cancel

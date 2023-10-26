@@ -92,7 +92,7 @@
 		</nav>
 
 		<main class="py-6">
-			<div class="container">
+			<div class="md:mx-20">
 				<div class="grid grid-cols-1 xl:grid-cols-5 md:grid-cols-5 gap-6">
 					<ClientOnly>
 						<StudentSidebar />

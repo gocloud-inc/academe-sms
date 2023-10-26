@@ -28,19 +28,19 @@
 			<form class="space-y-6">
 				<div class="form-group">
 					<label for="sss_number" class="form-label">SSS Number</label>
-					<input id="sss_number" type="text" class="form-control" autofocus />
+					<input id="sss_number" type="text" class="form-control" />
 				</div>
 				<div class="form-group">
 					<label for="pagibig_number" class="form-label">Pag-ibig Number</label>
-					<input id="pagibig_number" type="text" class="form-control" autofocus />
+					<input id="pagibig_number" type="text" class="form-control" />
 				</div>
 				<div class="form-group">
 					<label for="philhealth_number" class="form-label">PhilHealth Number</label>
-					<input id="philhealth_number" type="text" class="form-control" autofocus />
+					<input id="philhealth_number" type="text" class="form-control" />
 				</div>
 				<div class="form-group">
 					<label for="tin" class="form-label">TIN</label>
-					<input id="tin" type="text" class="form-control" autofocus />
+					<input id="tin" type="text" class="form-control" />
 				</div>
 
 				<div class="offcanvas-action">

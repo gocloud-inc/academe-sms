@@ -11,7 +11,7 @@
 					Are you sure you want to delete this item? This action cannot be undone.
 				</p>
 
-				<form class="mt-4" id="url" action="" method="POST">
+				<form class="mt-4" id="delete-url" action="" method="POST">
 					<div class="modal-action">
 						<button type="button" class="button button-secondary" data-te-modal-dismiss>
 							No, cancel
