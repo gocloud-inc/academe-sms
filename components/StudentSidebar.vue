@@ -60,8 +60,8 @@
 </script>
 
 <template>
-  	<div id="student-aside" ref="asideEl" class="col-span-1 hidden xl:flow-root">
-		<div class="sticky top-20 overflow-y-auto bg-white xl:bg-transparent p-3 xl:p-0 w-72 xl:w-auto dark:bg-gray-800 lg:dark:bg-black">
+  	<aside id="student-aside" ref="asideEl" data-te-perfect-scrollbar-init class="aside flex overflow-hidden h-screen sticky top-0 transition-all duration-300 ease-in-out bg-primary-50 border-l border-r md:w-64 w-60 dark:bg-gray-900 dark:border-gray-800">
+		<div class="relative px-2 py-4 w-60 mx-auto">
 			<ul class="divide-y divide-gray-200 dark:divide-gray-700 md:dark:divide-gray-800">
 				<li class="pb-2">
 					<div class="flex items-center gap-3 bg-white/80 backdrop-blur border border-gray-200 shadow-sm p-3 mb-3 rounded-lg dark:bg-gray-700 dark:border-gray-800">
@@ -162,7 +162,7 @@
 				</li>
 			</ul>
 
-			<div class="p-4 my-4 rounded-lg bg-primary-50 dark:bg-primary-900" role="alert">
+			<div class="p-4 my-4 rounded-lg bg-primary-100 dark:bg-primary-900" role="alert">
 				<div class="flex items-center mb-3">
 					<span class="bg-warning-100 text-warning-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-warning-200 dark:text-warning-900">Notice</span>
 				</div>
@@ -176,7 +176,7 @@
 
 			<p class="text-gray-400 text-xs mt-3">&copy; 2023. Gocloud Inc. All Rights Reserved.</p>
 		</div>
-	</div>
+	</aside>
 </template>
 
 <style lang="postcss" scoped>

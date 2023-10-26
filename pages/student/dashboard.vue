@@ -47,10 +47,10 @@
 </script>
 
 <template>
-	<div class="container">
+	<div class="container px-4 md:px-8 mx-auto">
 		<div class="flex flex-col mb-6">
 			<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
-				<div class="md:col-span-8">
+				<div class="lg:col-span-9 md:col-span-8">
 					<div class="flex items-center overflow-x-auto whitespace-nowrap">
 						<a href="#" class="text-gray-600 dark:text-gray-200 hover:text-blue-600">
 							Dashboard
@@ -58,7 +58,7 @@
 					</div>
 					<h4 class="text-xl lg:text-2xl font-medium text-gray-700 mt-1 dark:text-gray-300">{{ greeting }}! Mark Paul</h4>
 				</div>
-				<div class="md:col-span-4 space-y-6">
+				<div class="lg:col-span-3 md:col-span-4 space-y-6">
 					<div class="flex flex-col items-center justify-center text-center text-sm text-gray-600">
 						<img class="flex-shrink-0 object-cover mx-1 rounded-full w-24 h-24 ring-2 ring-gray-200 dark:ring-gray-600" src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&h=634&q=80" alt="jane avatar">
 						<div class="mt-3">
