@@ -48,9 +48,9 @@
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownAdd" data-te-dropdown-menu-ref>
                             <li>
-                                <a class="dropdown-link" href="#" data-te-dropdown-item-ref>
+                                <NuxtLink to="/admin/student/payment-records/create" class="dropdown-link" data-te-dropdown-item-ref>
                                     Tuition Payment
-                                </a>
+                                </NuxtLink>
                             </li>
                             <li>
                                 <a class="dropdown-link" href="#" data-te-dropdown-item-ref>

@@ -209,7 +209,7 @@
         }
         
         .form-control-icon-end {
-            @apply block w-full py-2 text-gray-700 placeholder-gray-400/70 bg-white border border-gray-200 rounded-md pl-5 pr-11 rtl:pr-5 rtl:pl-11 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-primary-400 dark:focus:border-primary-300 focus:ring-primary-300 focus:outline-none;
+            @apply block w-full py-2 text-sm text-gray-700 placeholder-gray-400/70 placeholder:text-sm bg-white border border-gray-200 rounded-md pl-5 pr-11 rtl:pr-5 rtl:pl-11 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-primary-400 dark:focus:border-primary-300 focus:ring-primary-300 focus:outline-none;
 
             &:disabled {
                 @apply bg-gray-200 hover:bg-gray-300 text-gray-400 cursor-not-allowed dark:bg-gray-600 dark:hover:bg-gray-500;
