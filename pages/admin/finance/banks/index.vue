@@ -44,9 +44,9 @@
 
 			<div class="flex items-center mt-4 gap-x-3">
 				<button type="button" class="button button-primary">
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M11.75 3a.75.75 0 0 1 .743.648l.007.102l.001 7.25h7.253a.75.75 0 0 1 .102 1.493l-.102.007h-7.253l.002 7.25a.75.75 0 0 1-1.493.101l-.007-.102l-.002-7.249H3.752a.75.75 0 0 1-.102-1.493L3.752 11h7.25L11 3.75a.75.75 0 0 1 .75-.75Z"/></svg>
+					<IconsAdd />
 
-					<span>Add bank</span>
+					Add bank
 				</button>
 			</div>
 		</div>
@@ -58,9 +58,7 @@
 					
 					<div class="relative flex items-center">
 						<span class="absolute">
-							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mx-3 text-gray-400 dark:text-gray-600">
-								<path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-							</svg>
+							<IconsSearch class="w-5 h-5 mx-3 text-gray-400 dark:text-gray-600" />
 						</span>
 			
 						<input id="search" type="text" name="q" placeholder="Search bank name, or code" class="form-control-icon-start" />
@@ -125,12 +123,16 @@
 									</td>
 
 									<td class="table-data">
-										<div class="button-group">
+										<div class="button-group rounded-full">
                                             <button class="button-group-link">
+												<IconsEdit />
+
                                                 Edit
                                             </button>
 
-                                            <button class="button-group-link bg-danger-50 !text-danger">
+                                            <button class="button-group-link bg-danger-50 !text-danger dark:bg-transparent dark:!text-danger-400">
+												<IconsDelete />
+
                                                 Delete
                                             </button>
                                         </div>

@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  	<div class="relative bg-white shadow-sm rounded-lg h-fit border dark:bg-gray-900 dark:border-gray-700">
+  	<div class="relative bg-white rounded-lg h-fit border dark:bg-gray-900 dark:border-gray-700">
 		<div class="flex flex-wrap divide-x divide-gray-100 dark:divide-gray-700">
 			<div class="p-5 flex justify-center items-center">
 				<div class="uppercase bg-gray-100 text-gray-500 rounded-full w-32 h-32 p-4 flex justify-center items-center text-5xl font-semibold dark:bg-gray-700 dark:text-gray-400"> 
@@ -119,9 +119,9 @@
 						Grade
 					</a>
 
-					<a href="#" class="inline-flex shrink-0 items-center gap-2 px-1 pb-4 text-sm font-medium text-gray-600 dark:text-gray-400">
+					<NuxtLink to="/admin/student/fees" class="inline-flex shrink-0 items-center gap-2 px-1 pb-4 text-sm font-medium text-gray-600 dark:text-gray-400">
 						Fees
-					</a>
+					</NuxtLink>
 
 					<a href="#" class="inline-flex shrink-0 items-center gap-2 px-1 pb-4 text-sm font-medium text-gray-600 dark:text-gray-400">
 						Clearance

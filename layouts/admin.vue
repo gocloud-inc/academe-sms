@@ -43,8 +43,8 @@
 							<div class="relative" data-te-dropdown-ref>
 								<button type="button" class="relative flex items-center gap-1 xl:gap-2 focus:outline-none" id="dropdownProfile" data-te-dropdown-toggle-ref data-te-dropdown-animation="off" aria-expanded="false" title="Mark Paul Cañeda">
 									<div class="hidden xl:flex flex-col items-end">
-										<div class="text-gray-700 text-xs font-medium leading-none">Mark Paul</div>
-										<span class="text-gray-500 text-xs">Registrar Head</span>
+										<div class="text-gray-700 text-xs font-medium leading-none dark:text-gray-200">Mark Paul</div>
+										<span class="text-gray-500 text-xs dark:text-gray-300">Registrar Head</span>
 									</div>
 
 									<img class="avatar avatar-sm rounded-full ring-2 ring-gray-200 dark:ring-gray-600" src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&h=634&q=80" alt="avatar" />

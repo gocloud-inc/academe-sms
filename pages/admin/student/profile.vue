@@ -16,7 +16,9 @@
 	<div class="container">
 		<div class="flex flex-col mb-6">
 			<div class="flex items-center overflow-x-auto whitespace-nowrap">
-				<NuxtLink to="/admin/registrar/officially-enrolled" class="text-gray-600 dark:text-gray-200 hover:text-blue-600">
+				<NuxtLink to="/admin/registrar/officially-enrolled" class="inline-flex items-center gap-2 -ms-1 text-gray-600 dark:text-gray-200 hover:text-blue-600">
+                    <IconsChevronLeft />
+
 					Officially Enrolled
 				</NuxtLink>
 			</div>

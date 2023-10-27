@@ -283,7 +283,7 @@
             @apply min-w-full divide-y divide-gray-200 dark:divide-gray-700;
 
             .table-caption {
-                @apply p-5 text-lg font-semibold text-left text-gray-900 bg-white dark:text-white dark:bg-gray-900;
+                @apply p-5 text-lg font-semibold text-left text-gray-900 bg-white dark:text-gray-300 dark:bg-gray-900;
             }
         
             .table-head {
@@ -309,7 +309,7 @@
         @apply border block rounded-lg bg-white dark:bg-gray-900 dark:border-gray-700;
         
         .card-body {
-            @apply p-6;
+            @apply p-5;
     
             .card-title {
                 @apply text-xl font-semibold mb-3 text-gray-700 dark:text-gray-300;

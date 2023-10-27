@@ -351,9 +351,9 @@
 												</li>
 												<hr class="dropdown-divider" />
 												<li>
-													<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
+													<NuxtLink to="/admin/student/fees" class="dropdown-link" data-te-dropdown-item-ref>
 														Official Fees
-													</a>
+													</NuxtLink>
 												</li>
 												<li>
 													<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
