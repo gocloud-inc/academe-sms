@@ -156,6 +156,24 @@
 			<img class="w-24" src="https://gocloudgroup.com/media/products/logo-academe-sms.png" alt="">
 			<div class="text-sm text-gray-500">&copy; 2023 Gocloud Inc. All Rights Reserved.</div>
 		</div>
+
+        <div class="flex flex-wrap items-center justify-center gap-4 mt-6 lg:gap-6">
+            <NuxtLink to="/bulletin" class="text-sm text-gray-600 transition-colors duration-300 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400">
+                Bulletin
+            </NuxtLink>
+            
+            <a href="#" class="text-sm text-gray-600 transition-colors duration-300 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400">
+                Careers
+            </a>
+
+            <a href="#" class="text-sm text-gray-600 transition-colors duration-300 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400">
+                Terms
+            </a>
+
+            <a href="#" class="text-sm text-gray-600 transition-colors duration-300 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400">
+                Privacy
+            </a>
+        </div>
 	</div>
 </template>
 
