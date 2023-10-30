@@ -71,7 +71,7 @@
 </script>
 
 <template>
-    <section class="hero-section pb-40 py-48 relative bg-no-repeat bg-cover bg-center" :style="heroBanner">
+    <section class="hero-section pb-40 py-48 relative bg-no-repeat bg-cover bg-center px-3 md:px-0" :style="heroBanner">
         <div class="container">
 
             <div class="grid grid-cols-1 lg:grid-cols-12 lg:gap-12 items-center">
@@ -89,7 +89,7 @@
                             Enroll Now
                         </NuxtLink>
         
-                        <a href="tel:" class="button button-secondary button-lg rounded-full max-sm:w-full bg-transparent">
+                        <a href="tel:" class="button button-secondary button-lg rounded-full max-sm:w-full bg-transparent dark:bg-gray-200 dark:text-gray-700">
                             Contact Us
                         </a>
                     </div>
@@ -101,7 +101,7 @@
         </div>
     </section>
 
-    <section class="py-24 bg-white dark:bg-gray-900">
+    <section class="py-24 px-3 md:px-0 bg-white dark:bg-gray-900">
         <div class="container">
             <div class="text-left">
                 <h2 class="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">Jobs</h2>
@@ -131,7 +131,7 @@
         </div>
     </section>
 
-    <section class="py-24">
+    <section class="py-24 px-3 md:px-0">
         <div class="container">
             <div class="text-left">
                 <h2 class="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">Latest News</h2>
@@ -173,7 +173,7 @@
         </div>
     </section>
 
-    <section class="py-24 bg-white dark:bg-gray-900">
+    <section class="py-24 px-3 md:px-0 bg-white dark:bg-gray-900">
         <div class="container">
             <div class="text-left">
                 <h2 class="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">
@@ -207,7 +207,7 @@
         </div>
     </section>
 
-    <section class="py-24">
+    <section class="py-24 px-3 md:px-0">
         <div class="container">
             <h2 class="text-2xl font-semibold text-gray-800 lg:text-3xl dark:text-white text-center">Frequently asked questions.</h2>
 

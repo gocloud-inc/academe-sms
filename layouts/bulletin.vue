@@ -25,7 +25,7 @@
                 <div class="lg:flex lg:items-center lg:justify-between">
                     <div class="flex items-center justify-between">
                         <a href="#">
-                            <img class="w-auto h-6 sm:h-10 dark:grayscale dark:invert" src="https://gocloudgroup.com/media/products/logo-academe-sms.png" alt="">
+                            <img class="w-auto h-8 sm:h-10 dark:grayscale dark:invert" src="https://gocloudgroup.com/media/products/logo-academe-sms.png" alt="">
                         </a>
                     </div>
 

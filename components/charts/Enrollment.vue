@@ -67,13 +67,6 @@
                 }
             }
         },
-        grid: {
-            show: true,
-            strokeDashArray: 4,
-        },
-        fill: {
-            opacity: 1,
-        }
     });
 
     const fakeEnrollees = Array.from({ length: 2 }, () =>

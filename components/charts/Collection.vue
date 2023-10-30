@@ -65,9 +65,6 @@
             show: true,
             strokeDashArray: 4,
         },
-        fill: {
-            opacity: 1,
-        }
     });
 
     const fakeCollections = Array.from({ length: 12 }, () =>
