@@ -76,11 +76,11 @@
 
             <div class="grid grid-cols-1 lg:grid-cols-12 lg:gap-12 items-center">
                 <div class="lg:col-span-7">
-                    <h1 class="relative text-center md:text-left md:max-w-2xl flex flex-col text-3xl lg:text-5xl md:text-4xl text-gray-700 font-bold">
+                    <h1 class="relative text-center md:text-left md:max-w-2xl flex flex-col text-3xl lg:text-5xl md:text-4xl text-gray-700 font-bold dark:text-gray-100">
                         Stay informed about upcoming events
                     </h1>
         
-                    <p class="relative text-center md:text-left mt-3 md:max-w-xl text-base text-gray-700">
+                    <p class="relative text-center md:text-left mt-3 md:max-w-xl text-base text-gray-700 dark:text-gray-200">
                         The bulletin board is a great place to stay in the loop with what's happening at school. Check it regularly for announcements about upcoming events, important dates, and other news.
                     </p>
         
@@ -101,7 +101,7 @@
         </div>
     </section>
 
-    <section class="py-24 bg-white">
+    <section class="py-24 bg-white dark:bg-gray-900">
         <div class="container">
             <div class="text-left">
                 <h2 class="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">Jobs</h2>
@@ -145,18 +145,18 @@
                         class="h-56 w-full object-cover"
                     />
 
-                    <div class="bg-white p-4 sm:p-6 h-full">
+                    <div class="bg-white p-4 sm:p-6 h-full dark:bg-gray-800">
                         <time datetime="2022-10-10" class="block text-xs text-gray-500">
                             10th Oct 2022
                         </time>
 
                         <a href="#">
-                            <h3 class="mt-0.5 text-lg text-gray-900 font-semibold line-clamp-2 hover:underline">
+                            <h3 class="mt-0.5 text-lg text-gray-900 font-semibold line-clamp-2 hover:underline dark:text-gray-100">
                                 {{ news.title }}
                             </h3>
                         </a>
 
-                        <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                        <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500 dark:text-gray-300">
                             {{ news.description }}
                         </p>
 
@@ -173,7 +173,7 @@
         </div>
     </section>
 
-    <section class="py-24 bg-white">
+    <section class="py-24 bg-white dark:bg-gray-900">
         <div class="container">
             <div class="text-left">
                 <h2 class="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">
@@ -212,8 +212,8 @@
             <h2 class="text-2xl font-semibold text-gray-800 lg:text-3xl dark:text-white text-center">Frequently asked questions.</h2>
 
             <div class="mt-10 space-y-2 lg:max-w-3xl mx-auto">
-                <details v-for="faq in fakeDatum.filter((faq) => faq.type === 'faqs')" :key="faq.id" class="group p-6 border bg-white rounded-xl [&_summary::-webkit-details-marker]:hidden">
-                    <summary class="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
+                <details v-for="faq in fakeDatum.filter((faq) => faq.type === 'faqs')" :key="faq.id" class="group p-6 border bg-white rounded-xl [&_summary::-webkit-details-marker]:hidden dark:bg-gray-800 dark:border-gray-700">
+                    <summary class="flex cursor-pointer items-center justify-between gap-1.5 text-gray-700 dark:text-gray-100">
                         <h3 class="text-base lg:text-lg font-medium">
                             {{ faq.question }}
                         </h3>
@@ -224,7 +224,7 @@
                         </span>
                     </summary>
 
-                    <p class="mt-4 leading-relaxed text-gray-700 text-sm lg:text-base">
+                    <p class="mt-4 leading-relaxed text-gray-700 text-sm lg:text-base dark:text-gray-200">
                         {{ faq.answer }}
                     </p>
                 </details>

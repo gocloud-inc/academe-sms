@@ -1,31 +1,31 @@
 <script setup>
-  let header;
+  let navbar;
 
   setTimeout(() => {
-    header = document.querySelector(".header");
+    navbar = document.querySelector(".navbar");
 
     // Add an event listener to the window for when it is scrolled
     window.addEventListener('scroll', function() {
       // Check if the page has been scrolled more than 20 pixels
       if (window.scrollY > 20) {
-        // Add the "sticky" class to the header
-        header.classList.add("stay-sticky");
+        // Add the "sticky" class to the navbar
+        navbar.classList.add("stay-sticky");
       } else {
-        // Remove the "sticky" class from the header
-        header.classList.remove("stay-sticky");
+        // Remove the "sticky" class from the navbar
+        navbar.classList.remove("stay-sticky");
       }
     });
   }, 0);
 </script>
 
 <template>
-    <header class="header fixed top-0 right-0 left-0 z-10 py-10">
-        <nav class="relative dark:bg-gray-800">
+    <header class="fixed top-0 right-0 left-0 z-10">
+        <nav class="navbar relative py-10">
             <div class="container">
                 <div class="lg:flex lg:items-center lg:justify-between">
                     <div class="flex items-center justify-between">
                         <a href="#">
-                            <img class="w-auto h-6 sm:h-10" src="https://gocloudgroup.com/media/products/logo-academe-sms.png" alt="">
+                            <img class="w-auto h-6 sm:h-10 dark:grayscale dark:invert" src="https://gocloudgroup.com/media/products/logo-academe-sms.png" alt="">
                         </a>
                     </div>
 
@@ -47,7 +47,7 @@
         <slot />
     </main>
 
-    <footer class="bg-white">
+    <footer class="bg-white dark:bg-gray-800">
         <div class="container">
             <div class=" flex flex-col items-center justify-between p-6 space-y-4 sm:space-y-0 sm:flex-row">
                 <div class="flex flex-wrap items-center justify-center gap-4 mt-6 lg:gap-6 lg:mt-0">
@@ -79,7 +79,7 @@
 </template>
 
 <style lang="postcss" scoped>
-    header.stay-sticky {
-        @apply bg-white py-4 shadow-md transition-all duration-300 ease-in-out;
+    nav.stay-sticky {
+        @apply bg-white py-4 shadow-md transition-all duration-300 ease-in-out dark:bg-gray-900;
     }
 </style>

@@ -103,7 +103,7 @@
 
     .hero-section::before {
         content: '';
-        @apply absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-br from-primary-100/60 via-warning-100/40 to-danger-100/30 backdrop-blur-2xl;
+        @apply absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-br from-primary-100/60 via-warning-100/40 to-danger-100/30 backdrop-blur-2xl dark:from-primary-950/90 dark:via-warning-950/90 dark:to-danger-950/90;
     }
 }
 
