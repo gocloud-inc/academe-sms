@@ -1,0 +1,1 @@
+import{_ as o,o as t,c,x as s}from"./entry.0010a716.js";const n={},r={class:"form-control"};function _(e,a){return t(),c("select",r,[s(e.$slots,"default")])}const f=o(n,[["render",_]]);export{f as _};
