@@ -5,7 +5,7 @@
 	})
 
 	useSeoMeta({
-		title: 'Login',
+		title: 'Academe 2.0 School Management System',
 	})
 
 	onMounted(() => {

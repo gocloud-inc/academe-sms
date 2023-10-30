@@ -1,28 +1,20 @@
-<script lang="ts">
-	export default {
-		setup() {
-			definePageMeta({
-				layout: "admin",
-			});
+<script setup>
+	definePageMeta({
+		layout: "admin",
+	});
 
-			useSeoMeta({
-				title: 'Dashboard',
-			});
+	useSeoMeta({
+		title: 'Dashboard',
+	});
 
-			const greetings = {
-				morning: '⛅ Good morning',
-				afternoon: '🌞 Good afternoon',
-				evening: '🌘 Good evening',
-			};
+	const greetings = {
+		morning: '⛅ Good morning',
+		afternoon: '🌞 Good afternoon',
+		evening: '🌘 Good evening',
+	};
 
-			const currentHour = new Date().getHours();
-			const greeting = currentHour < 12 ? greetings.morning : currentHour < 18 ? greetings.afternoon : greetings.evening;
-
-			return {
-				greeting,
-			};
-		},
-	}
+	const currentHour = new Date().getHours();
+	const greeting = currentHour < 12 ? greetings.morning : currentHour < 18 ? greetings.afternoon : greetings.evening;
 </script>
 
 <template>
@@ -35,6 +27,20 @@
 			</div>
 			<h4 class="text-xl lg:text-2xl font-medium text-gray-700 mt-1 dark:text-gray-300">{{ greeting }}! Mark Paul</h4>
 		</div>
+
+		<div class="grid grid-cols-1 gap-6">
+			<div class="col-span-1">
+				<ClientOnly>
+					<ChartsCollection />
+				</ClientOnly>
+			</div>
+			<div class="col-span-1">
+				<ClientOnly>
+					<ChartsEnrollment />
+				</ClientOnly>
+			</div>
+		</div>
+
 	</div>	
 </template>
 

@@ -27,6 +27,8 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "tw-elements": "^1.0.0"
+    "apexcharts": "^3.44.0",
+    "tw-elements": "^1.0.0",
+    "vue3-apexcharts": "^1.4.4"
   }
 }

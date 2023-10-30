@@ -62,6 +62,12 @@ export default defineNuxtConfig({
 			autoprefixer: {},
 		},
 	},
+	plugins : [
+		{
+			src: '~/plugins/apexcharts',
+			mode: 'client'
+		}
+	],
 	modules: [
 		'@nuxtjs/color-mode',
 		'@vite-pwa/nuxt',
@@ -103,6 +109,10 @@ export default defineNuxtConfig({
 			]
 		},
 		registerType: 'autoUpdate',
+		workbox: {
+			globPatterns: ['**/*.{js,css,html,ico,png,svg}'],
+			maximumFileSizeToCacheInBytes: 5000000
+		},
 		devOptions: {
 			enabled: true,
 			type: 'module',
