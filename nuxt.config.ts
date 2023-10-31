@@ -71,7 +71,8 @@ export default defineNuxtConfig({
 	modules: [
 		'@nuxtjs/color-mode',
 		'@vite-pwa/nuxt',
-		'@samk-dev/nuxt-vcalendar'
+		'@samk-dev/nuxt-vcalendar',
+		'nuxt-icon'
 	],
 	colorMode: {
 		classSuffix: ''

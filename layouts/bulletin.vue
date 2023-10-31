@@ -19,23 +19,24 @@
 </script>
 
 <template>
-    <header class="fixed top-0 right-0 left-0 z-10">
-        <nav class="navbar relative py-10">
+    <header class="fixed top-0 z-10 right-0 left-0">
+        <nav class="navbar py-6">
             <div class="container">
                 <div class="lg:flex lg:items-center lg:justify-between">
                     <div class="flex items-center justify-between">
-                        <a href="#">
+                        <NuxtLink to="/bulletin">
                             <img class="w-auto h-8 sm:h-10 dark:grayscale dark:invert" src="https://gocloudgroup.com/media/products/logo-academe-sms.png" alt="">
-                        </a>
+                        </NuxtLink>
                     </div>
-
+    
                     <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
                     <div class="hidden lg:block">
-                        <div class=" flex flex-col -mx-6 lg:flex-row lg:items-center lg:mx-8">
-                            <a href="#" class="px-3 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">News</a>
-                            <a href="#" class="px-3 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Events</a>
-                            <a href="#" class="px-3 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Careers</a>
-                            <a href="#" class="px-3 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Contact Us</a>
+                        <div class=" flex flex-col lg:flex-row lg:items-center gap-3">
+                            <a href="#" class="px-3 py-2 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">News</a>
+                            <a href="#" class="px-3 py-2 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Events</a>
+                            <a href="#" class="px-3 py-2 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Careers</a>
+                            <a href="#" class="px-3 py-2 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Contact Us</a>
+                            <a href="#" class="button button-primary rounded-full">Enroll Now</a>
                         </div>
                     </div>
                 </div>
@@ -80,6 +81,6 @@
 
 <style lang="postcss" scoped>
     nav.stay-sticky {
-        @apply bg-white py-4 shadow-md transition-all duration-300 ease-in-out dark:bg-gray-900;
+        @apply bg-white py-4 shadow-md transition-all duration-300 ease-in-out dark:bg-gray-900/70 backdrop-blur-md;
     }
 </style>

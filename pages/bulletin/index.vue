@@ -150,23 +150,23 @@
                             10th Oct 2022
                         </time>
 
-                        <a href="#">
+                        <NuxtLink to="/bulletin/post-single">
                             <h3 class="mt-0.5 text-lg text-gray-900 font-semibold line-clamp-2 hover:underline dark:text-gray-100">
                                 {{ news.title }}
                             </h3>
-                        </a>
+                        </NuxtLink>
 
                         <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500 dark:text-gray-300">
                             {{ news.description }}
                         </p>
 
-                        <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary-600">
+                        <NuxtLink to="/bulletin/post-single" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary-600">
                             Find out more
 
                             <span aria-hidden="true"  class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
                                 &rarr;
                             </span>
-                        </a>
+                        </NuxtLink>
                     </div>
                 </article>
             </div>
@@ -191,11 +191,11 @@
                                 10th Oct 2022
                             </time>
 
-                            <a href="#">
+                            <NuxtLink to="/bulletin/post-single">
                                 <h3 class="mt-0.5 text-lg text-white font-semibold line-clamp-2">
                                     {{ event.title }}
                                 </h3>
-                            </a>
+                            </NuxtLink>
 
                             <p class="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
                                 {{ event.description }}
@@ -219,8 +219,7 @@
                         </h3>
 
                         <span class="relative h-5 w-5 shrink-0">
-                            <IconsChevronDown class="absolute inset-0 opacity-100 group-open:opacity-0" />
-                            <IconsChevronUp class="absolute inset-0 opacity-0 group-open:opacity-100" />
+                            <IconsChevronDown class="absolute inset-0 shrink-0 transition duration-300 group-open:-rotate-180" />
                         </span>
                     </summary>
 

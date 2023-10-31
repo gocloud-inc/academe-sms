@@ -65,18 +65,8 @@
 
 			<div class="flex items-center mt-4 gap-x-3">
 				<button class="button button-primary">
-					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<g clip-path="url(#clip0_3098_154395)">
-						<path d="M13.3333 13.3332L9.99997 9.9999M9.99997 9.9999L6.66663 13.3332M9.99997 9.9999V17.4999M16.9916 15.3249C17.8044 14.8818 18.4465 14.1806 18.8165 13.3321C19.1866 12.4835 19.2635 11.5359 19.0351 10.6388C18.8068 9.7417 18.2862 8.94616 17.5555 8.37778C16.8248 7.80939 15.9257 7.50052 15 7.4999H13.95C13.6977 6.52427 13.2276 5.61852 12.5749 4.85073C11.9222 4.08295 11.104 3.47311 10.1817 3.06708C9.25943 2.66104 8.25709 2.46937 7.25006 2.50647C6.24304 2.54358 5.25752 2.80849 4.36761 3.28129C3.47771 3.7541 2.70656 4.42249 2.11215 5.23622C1.51774 6.04996 1.11554 6.98785 0.935783 7.9794C0.756025 8.97095 0.803388 9.99035 1.07431 10.961C1.34523 11.9316 1.83267 12.8281 2.49997 13.5832" stroke="currentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
-						</g>
-						<defs>
-						<clipPath id="clip0_3098_154395">
-						<rect width="20" height="20" fill="white"/>
-						</clipPath>
-						</defs>
-					</svg>
-
-					<span>Import</span>
+					<Icon name="fluent:arrow-download-24-regular" size="24" />
+					Export
 				</button>
 			</div>
 		</div>
@@ -88,9 +78,7 @@
 					
 					<div class="relative flex items-center">
 						<span class="absolute">
-							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mx-3 text-gray-400 dark:text-gray-600">
-								<path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-							</svg>
+							<IconsSearch class="mx-3 text-gray-400 dark:text-gray-600" />
 						</span>
 			
 						<input id="search" type="text" name="q" placeholder="Search a student" class="form-control-icon-start" />
@@ -101,10 +89,7 @@
 			<div class="flex flex-wrap items-center gap-2 mt-4 md:mt-0">
 				<div class="relative" data-te-dropdown-ref>
 					<button class="button button-secondary" type="button" id="type" data-te-dropdown-toggle-ref data-te-dropdown-animation="off" aria-expanded="false">
-						<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-							<path d="M6 9l6 6l6 -6"></path>
-						</svg>
+						<IconsChevronDown class="w-4 h-4" />
 						All Type
 					</button>
 					<ul class="dropdown-menu" aria-labelledby="type" data-te-dropdown-menu-ref>
@@ -142,10 +127,7 @@
 				</div>
 				<div class="relative" data-te-dropdown-ref>
 					<button class="button button-secondary" type="button" id="yearLevel" data-te-dropdown-toggle-ref data-te-dropdown-animation="off" aria-expanded="false">
-						<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-							<path d="M6 9l6 6l6 -6"></path>
-						</svg>
+						<IconsChevronDown class="w-4 h-4" />
 						All Year
 					</button>
 					<ul class="dropdown-menu" aria-labelledby="yearLevel" data-te-dropdown-menu-ref>
@@ -178,10 +160,7 @@
 				</div>
 				<div class="relative" data-te-dropdown-ref>
 					<button class="button button-secondary" type="button" id="programCourse" data-te-dropdown-toggle-ref data-te-dropdown-animation="off" aria-expanded="false">
-						<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-							<path d="M6 9l6 6l6 -6"></path>
-						</svg>
+						<IconsChevronDown class="w-4 h-4" />
 						All Programs
 					</button>
 					<ul class="dropdown-menu" aria-labelledby="programCourse" data-te-dropdown-menu-ref>
@@ -219,11 +198,7 @@
 				</div>
 				<div class="relative" data-te-dropdown-ref>
 					<button class="button button-secondary" type="button" id="sortBy" data-te-dropdown-toggle-ref data-te-dropdown-animation="off" aria-expanded="false">
-						<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrows-sort" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-							<path d="M3 9l4 -4l4 4m-4 -4v14"></path>
-							<path d="M21 15l-4 4l-4 -4m4 4v-14"></path>
-						</svg>
+						<IconsArrowSort class="w-4 h-4" />
 						Sort By
 					</button>
 					<ul class="dropdown-menu" aria-labelledby="sortBy" data-te-dropdown-menu-ref>
@@ -326,12 +301,7 @@
 									<td class="table-data">
 										<div class="relative" data-te-dropdown-ref>
 											<button class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-200 hover:text-gray-500 dark:hover:bg-gray-700" type="button" id="dropdownMenuButton1d" data-te-dropdown-toggle-ref data-te-dropdown-animation="off" aria-expanded="false">
-												<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-													<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-													<path d="M5 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-													<path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-													<path d="M19 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-												</svg>
+												<IconsMore />
 											</button>
 											<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1d" data-te-dropdown-menu-ref>
 												<li>

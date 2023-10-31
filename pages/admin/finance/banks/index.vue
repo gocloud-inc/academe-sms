@@ -69,11 +69,7 @@
 			<div class="flex flex-wrap items-center gap-2 mt-4 md:mt-0">
 				<div class="relative" data-te-dropdown-ref>
 					<button class="button button-secondary" type="button" id="sortBy" data-te-dropdown-toggle-ref data-te-dropdown-animation="off" aria-expanded="false">
-						<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrows-sort" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-							<path d="M3 9l4 -4l4 4m-4 -4v14"></path>
-							<path d="M21 15l-4 4l-4 -4m4 4v-14"></path>
-						</svg>
+						<IconsArrowSort />
 						Sort By
 					</button>
 					<ul class="dropdown-menu" aria-labelledby="sortBy" data-te-dropdown-menu-ref>
