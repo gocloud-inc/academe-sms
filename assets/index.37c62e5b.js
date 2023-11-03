@@ -1,0 +1,1 @@
+import{j as r,P as c,u as f,Q as l,R as p}from"./entry.eba5405a.js";function d(t,a){const e=r({});return c(()=>{const s=l(t),{title:n,titleTemplate:o,...u}=s;e.value={title:n,titleTemplate:o,meta:p(u)}}),f(e,a)}export{d as u};

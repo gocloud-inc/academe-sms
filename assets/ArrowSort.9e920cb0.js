@@ -1,0 +1,1 @@
+import n from"./Icon.5dddaf05.js";import{_,o as e,l as r}from"./entry.eba5405a.js";const t={};function c(s,a){const o=n;return e(),r(o,{name:"fluent:arrow-sort-24-regular",size:"24"})}const f=_(t,[["render",c]]);export{f as _};

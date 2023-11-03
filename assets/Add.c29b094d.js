@@ -1,1 +1,0 @@
-import o from"./Icon.692186cf.js";import{_,o as e,h as c}from"./entry.4151713e.js";const t={};function r(s,a){const n=o;return e(),c(n,{name:"fluent:add-24-regular",size:"24"})}const f=_(t,[["render",r]]);export{f as _};

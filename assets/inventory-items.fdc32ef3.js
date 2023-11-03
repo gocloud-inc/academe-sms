@@ -1,0 +1,1 @@
+import{h as r}from"./entry.eba5405a.js";import{f as e}from"./index.e5f22473.js";const m=r("inventoryItems",{state:()=>({inventoryItems:[{code:e.commerce.isbn(10),name:e.commerce.productName(),category:e.helpers.arrayElement(["Textbook","Uniform"]),department:e.helpers.arrayElement(["College","k12"]),size:e.commerce.productMaterial(),stock:e.number.int(100)}]})});export{m as u};

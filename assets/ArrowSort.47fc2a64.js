@@ -1,1 +1,0 @@
-import o from"./Icon.692186cf.js";import{_,o as e,h as c}from"./entry.4151713e.js";const s={};function a(t,r){const n=o;return e(),c(n,{name:"fluent:search-24-regular",size:"24"})}const i=_(s,[["render",a]]),m={};function f(t,r){const n=o;return e(),c(n,{name:"fluent:arrow-sort-24-regular",size:"24"})}const x=_(m,[["render",f]]);export{i as _,x as a};
