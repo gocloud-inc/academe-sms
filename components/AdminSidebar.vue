@@ -99,7 +99,7 @@
 			</div>
 		</div>
 		
-		<div data-te-perfect-scrollbar-init class="relative h-screen px-5 py-4 overflow-hidden bg-primary-50 border-l border-r sm:w-64 w-60 dark:bg-gray-900 dark:border-gray-800">
+		<div data-te-perfect-scrollbar-init class="sidebar-wrapper">
 			<nav class="-mx-3 space-y-2">
 				<div class="space-y-1">
 					<div class="flex items-center gap-3 bg-white/80 backdrop-blur border border-gray-200 shadow-sm p-3 mb-3 rounded-lg dark:bg-gray-700 dark:border-gray-800">
@@ -112,217 +112,112 @@
 						</div>
 					</div>
 
-					<details class="group [&_summary::-webkit-details-marker]:hidden" open>
-						<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-primary-100 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
+					<details class="sidebar-dropdown group" open>
+						<summary class="sidebar-dropdown-button">
 							<div class="flex items-center gap-2">
 								<Icon name="fluent:apps-list-detail-24-regular" size="24" />
-								<span class="px-3 text-sm text-gray-700 font-medium capitalize dark:text-gray-200">Registrar</span>
+								<span class="sidebar-dropdown-button-text">Registrar</span>
 							</div>
-							<Icon name="fluent:chevron-down-24-regular" class="shrink-0 transition duration-300 group-open:-rotate-180" />
+							<Icon name="fluent:chevron-down-24-regular" class="sidebar-dropdown-icon-end" />
 						</summary>
 				
 						<div class="space-y-1 px-4">
-							<NuxtLink to="/admin/registrar/officially-enrolled" class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700">
-								<span class="mx-2 text-sm font-medium">Officially Enrolled</span>
+							<NuxtLink to="/admin/registrar/officially-enrolled" class="sidebar-dropdown-link">
+								<span class="sidebar-dropdown-link-text">Officially Enrolled</span>
 							</NuxtLink>
 						</div>
 					</details>
 				</div>
 
 				<div class="space-y-1">
-					<details class="group [&_summary::-webkit-details-marker]:hidden">
-						<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-primary-100 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
+					<details class="sidebar-dropdown group">
+						<summary class="sidebar-dropdown-button">
 							<div class="flex items-center gap-2">
 								<Icon name="fluent:people-24-regular" size="24" />
-								<span class="px-3 text-sm text-gray-700 font-medium capitalize dark:text-gray-200">User Management</span>
+								<span class="sidebar-dropdown-button-text">User Management</span>
 							</div>
-							<Icon name="fluent:chevron-down-24-regular" class="shrink-0 transition duration-300 group-open:-rotate-180" />
+							<Icon name="fluent:chevron-down-24-regular" class="sidebar-dropdown-icon-end" />
 						</summary>
 				
 						<div class="space-y-1 px-4">
-							<NuxtLink to="/admin/employees" class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700">
-								<span class="mx-2 text-sm font-medium">Employees</span>
+							<NuxtLink to="/admin/employees" class="sidebar-dropdown-link">
+								<span class="sidebar-dropdown-link-text">Employees</span>
 							</NuxtLink>
 						</div>
 					</details>
 				</div>
 
-				<div class="space-y-1 hidden">
-					<details class="group [&_summary::-webkit-details-marker]:hidden">
-						<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-primary-100 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
+				<div class="space-y-1 pb-3">
+					<div class="sidebar-header">
+						Bookstore
+					</div>
+
+					<details class="sidebar-dropdown group">
+						<summary class="sidebar-dropdown-button">
 							<div class="flex items-center gap-2">
-								<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-category-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-									<path d="M14 4h6v6h-6z"></path>
-									<path d="M4 14h6v6h-6z"></path>
-									<path d="M17 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
-									<path d="M7 7m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
-								</svg>
-								<span class="px-3 text-sm text-gray-700 font-medium capitalize dark:text-gray-200">Program</span>
+								<Icon name="fluent:arrow-trending-sparkle-24-regular" size="24" />
+
+								<span class="sidebar-dropdown-button-text">
+									Sales
+								</span>
 							</div>
-							<Icon name="fluent:chevron-down-24-regular" class="shrink-0 transition duration-300 group-open:-rotate-180" />
+							<Icon name="fluent:chevron-down-24-regular" class="sidebar-dropdown-icon-end" />
 						</summary>
 				
 						<div class="space-y-1 px-4">
-							<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-								<span class="mx-2 text-sm font-medium">Year Level Category</span>
-							</a>
+							<nuxt-link to="/admin/bookstore/sales" class="sidebar-dropdown-link">
+								<span class="sidebar-dropdown-link-text">Sales Order</span>
+							</nuxt-link>
+						</div>
+					</details>
 
-							<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-								<span class="mx-2 text-sm font-medium">Year Levels</span>
-							</a>
+					<details class="sidebar-dropdown group">
+						<summary class="sidebar-dropdown-button">
+							<div class="flex items-center gap-2">
+								<Icon name="fluent:calculator-24-regular" size="24" />
 
-							<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-								<span class="mx-2 text-sm font-medium">Program Departments</span>
-							</a>
-
-							<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-								<span class="mx-2 text-sm font-medium">Programs</span>
-							</a>
-
-							<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-								<span class="mx-2 text-sm font-medium">Curriculum</span>
-							</a>
-
-							<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-								<span class="mx-2 text-sm font-medium">Master Courses</span>
-							</a>
+								<span class="sidebar-dropdown-button-text">
+									Inventory
+								</span>
+							</div>
+							<Icon name="fluent:chevron-down-24-regular" class="sidebar-dropdown-icon-end" />
+						</summary>
+				
+						<div class="space-y-1 px-4">
+							<nuxt-link to="/admin/bookstore/inventory/" class="sidebar-dropdown-link">
+								<span class="sidebar-dropdown-link-text">Items</span>
+							</nuxt-link>
+							<nuxt-link to="/admin/bookstore/inventory/purchase-delivery" class="sidebar-dropdown-link">
+								<span class="sidebar-dropdown-link-text">Purchase Delivery</span>
+							</nuxt-link>
 						</div>
 					</details>
 				</div>
 
-				<div class="space-y-1 hidden">
-					<details class="group [&_summary::-webkit-details-marker]:hidden">
-						<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-primary-100 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
-							<div class="flex items-center gap-2">
-								<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-address-book" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-									<path d="M20 6v12a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2z"></path>
-									<path d="M10 16h6"></path>
-									<path d="M13 11m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-									<path d="M4 8h3"></path>
-									<path d="M4 12h3"></path>
-									<path d="M4 16h3"></path>
-								</svg>
-								<span class="px-3 text-sm text-gray-700 font-medium capitalize dark:text-gray-200">Admission</span>
-							</div>
-							<Icon name="fluent:chevron-down-24-regular" class="shrink-0 transition duration-300 group-open:-rotate-180" />
-						</summary>
-				
-						<div class="space-y-1 px-4">
-							<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-								<span class="mx-2 text-sm font-medium">Open Admission</span>
-							</a>
-
-							<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-								<span class="mx-2 text-sm font-medium">Applicants</span>
-							</a>
-						</div>
-					</details>
-				</div>
-
-				<div class="space-y-1 hidden">
-					<details class="group [&_summary::-webkit-details-marker]:hidden">
-						<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-primary-100 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
-							<div class="flex items-center gap-2">
-								<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-id-badge" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-									<path d="M5 3m0 3a3 3 0 0 1 3 -3h8a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-8a3 3 0 0 1 -3 -3z"></path>
-									<path d="M12 13m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-									<path d="M10 6h4"></path>
-									<path d="M9 18h6"></path>
-								</svg>
-								<span class="px-3 text-sm text-gray-700 font-medium capitalize dark:text-gray-200">Enrollment</span>
-							</div>
-							<Icon name="fluent:chevron-down-24-regular" class="shrink-0 transition duration-300 group-open:-rotate-180" />
-						</summary>
-				
-						<div class="space-y-1 px-4">
-							<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-								<span class="mx-2 text-sm font-medium">Open Enrollment</span>
-							</a>
-
-							<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-								<span class="mx-2 text-sm font-medium">Enrollment Settings</span>
-							</a>
-
-							<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-								<span class="mx-2 text-sm font-medium">Block Sections</span>
-							</a>
-
-							<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-								<span class="mx-2 text-sm font-medium">Course Schedules</span>
-							</a>
-
-							<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-								<span class="mx-2 text-sm font-medium">Rooms</span>
-							</a>
-						</div>
-					</details>
-				</div>
-	
 				<div class="space-y-1">
-					<details class="group [&_summary::-webkit-details-marker]:hidden">
-						<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-primary-100 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
+					<div class="sidebar-header">
+						Cashier
+					</div>
+
+					<details class="sidebar-dropdown group">
+						<summary class="sidebar-dropdown-button">
 							<div class="flex items-center gap-2">
 								<Icon name="fluent:receipt-money-24-regular" size="24" />
-								<span class="px-3 text-sm text-gray-700 font-medium capitalize dark:text-gray-200">Finance</span>
+								<span class="sidebar-dropdown-button-text">
+									Finance
+								</span>
 							</div>
-							<Icon name="fluent:chevron-down-24-regular" class="shrink-0 transition duration-300 group-open:-rotate-180" />
+							<Icon name="fluent:chevron-down-24-regular" class="sidebar-dropdown-icon-end" />
 						</summary>
 				
 						<div class="space-y-1 px-4">
-							<NuxtLink to="/admin/finance/banks" class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700">
-								<span class="mx-2 text-sm font-medium">Banks</span>
+							<NuxtLink to="/admin/finance/banks" class="sidebar-dropdown-link">
+								<span class="sidebar-dropdown-link-text">Banks</span>
 							</NuxtLink>
 						</div>
 					</details>
 				</div>
 
-				<div class="space-y-1 hidden">
-					<details class="group [&_summary::-webkit-details-marker]:hidden">
-						<summary class="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-primary-100 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100">
-							<div class="flex items-center gap-2">
-								<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-analytics" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-									<path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
-									<path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"></path>
-									<path d="M9 17l0 -5"></path>
-									<path d="M12 17l0 -1"></path>
-									<path d="M15 17l0 -3"></path>
-								</svg>
-								<span class="px-3 text-sm text-gray-700 font-medium capitalize dark:text-gray-200">Reports</span>
-							</div>
-							<Icon name="fluent:chevron-down-24-regular" class="shrink-0 transition duration-300 group-open:-rotate-180" />
-						</summary>
-				
-						<div class="space-y-1 px-4">
-							<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-								<span class="mx-2 text-sm font-medium">Classlist Report</span>
-							</a>
-
-							<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-								<span class="mx-2 text-sm font-medium">Download Student Profile</span>
-							</a>
-
-							<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-								<span class="mx-2 text-sm font-medium">Enrollment List</span>
-							</a>
-
-							<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-								<span class="mx-2 text-sm font-medium">Exam Permit Report</span>
-							</a>
-
-							<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-								<span class="mx-2 text-sm font-medium">GWA Reports</span>
-							</a>
-
-							<a class="flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" href="#">
-								<span class="mx-2 text-sm font-medium">List of Transferees</span>
-							</a>
-						</div>
-					</details>
-				</div>
 			</nav>
 		</div>
 	</aside>
@@ -331,5 +226,37 @@
 <style lang="postcss" scoped>
 [aria-current="page"] {
 	@apply bg-primary-100 text-gray-700 dark:bg-gray-800 dark:text-gray-100;
+}
+
+.sidebar-wrapper {
+	@apply relative h-screen px-5 py-4 overflow-hidden bg-primary-50 border-l border-r sm:w-64 w-60 dark:bg-gray-900 dark:border-gray-800;
+}
+
+.sidebar-header {
+	@apply text-sm text-gray-600 font-medium px-2 py-2 dark:text-gray-300;
+}
+
+.sidebar-dropdown {
+	@apply [&_summary::-webkit-details-marker]:hidden;
+}
+
+.sidebar-dropdown-button {
+	@apply flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-500 hover:bg-primary-100 hover:text-gray-700 dark:hover:bg-gray-800 dark:text-gray-200 dark:hover:text-gray-100;
+}
+
+.sidebar-dropdown-button-text {
+	@apply px-3 text-sm text-gray-700 font-medium capitalize dark:text-gray-200;
+}
+
+.sidebar-dropdown-link {
+	@apply flex items-center pl-7 py-1.5 text-sm text-gray-500 font-normal transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700;
+}
+
+.sidebar-dropdown-link-text {
+	@apply mx-2 text-sm font-medium;
+}
+
+.sidebar-dropdown-icon-end {
+	@apply shrink-0 transition duration-300 group-open:-rotate-180;
 }
 </style>

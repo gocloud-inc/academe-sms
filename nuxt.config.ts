@@ -72,6 +72,7 @@ export default defineNuxtConfig({
 		'@nuxtjs/color-mode',
 		'@vite-pwa/nuxt',
 		'@samk-dev/nuxt-vcalendar',
+		'@pinia/nuxt',
 		'nuxt-icon'
 	],
 	colorMode: {
@@ -118,5 +119,11 @@ export default defineNuxtConfig({
 			enabled: true,
 			type: 'module',
 		},
-	}
+	},
+	pinia: {
+		storesDirs: [
+			'./stores/**', 
+			'./bookstore/stores/**'
+		],
+	},
 })
