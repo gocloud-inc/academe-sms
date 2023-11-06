@@ -1,1 +1,0 @@
-import n from"./Icon.4e6b1e4f.js";import{_ as o,o as _,g as c}from"./entry.5bbf70ff.js";const t={};function r(s,a){const e=n;return _(),c(e,{name:"fluent:delete-24-regular",size:"24",class:"w-5 h-5"})}const f=o(t,[["render",r]]);export{f as _};
