@@ -94,7 +94,7 @@
 	
 			<div class="flex flex-col items-center mt-4 space-y-4">
 				<button class="inline-flex items-center justify-center text-primary-100 transition-colors duration-300 transform dark:text-gray-200 dark:hover:text-gray-400 focus:text-gray-700 dark:focus:text-gray-400 focus:outline-none" data-te-toggle="tooltip" title="Help Center">
-					<Icon name="fluent:question-circle-24-regular" size="24" />
+					<Icon name="fluent:question-circle-24-regular" size="24" class="w-5 h-5" />
 				</button>
 			</div>
 		</div>
@@ -115,7 +115,7 @@
 					<details class="sidebar-dropdown group" open>
 						<summary class="sidebar-dropdown-button">
 							<div class="flex items-center gap-2">
-								<Icon name="fluent:apps-list-detail-24-regular" size="24" />
+								<Icon name="fluent:apps-list-detail-24-regular" size="24" class="w-5 h-5" />
 								<span class="sidebar-dropdown-button-text">Registrar</span>
 							</div>
 							<Icon name="fluent:chevron-down-24-regular" class="sidebar-dropdown-icon-end" />
@@ -133,7 +133,7 @@
 					<details class="sidebar-dropdown group">
 						<summary class="sidebar-dropdown-button">
 							<div class="flex items-center gap-2">
-								<Icon name="fluent:people-24-regular" size="24" />
+								<Icon name="fluent:people-24-regular" size="24" class="w-5 h-5" />
 								<span class="sidebar-dropdown-button-text">User Management</span>
 							</div>
 							<Icon name="fluent:chevron-down-24-regular" class="sidebar-dropdown-icon-end" />
@@ -155,7 +155,7 @@
 					<details class="sidebar-dropdown group">
 						<summary class="sidebar-dropdown-button">
 							<div class="flex items-center gap-2">
-								<Icon name="fluent:arrow-trending-sparkle-24-regular" size="24" />
+								<Icon name="fluent:arrow-trending-sparkle-24-regular" size="24" class="w-5 h-5" />
 
 								<span class="sidebar-dropdown-button-text">
 									Sales
@@ -174,7 +174,7 @@
 					<details class="sidebar-dropdown group">
 						<summary class="sidebar-dropdown-button">
 							<div class="flex items-center gap-2">
-								<Icon name="fluent:calculator-24-regular" size="24" />
+								<Icon name="fluent:calculator-24-regular" size="24" class="w-5 h-5" />
 
 								<span class="sidebar-dropdown-button-text">
 									Inventory
@@ -202,7 +202,7 @@
 					<details class="sidebar-dropdown group">
 						<summary class="sidebar-dropdown-button">
 							<div class="flex items-center gap-2">
-								<Icon name="fluent:receipt-money-24-regular" size="24" />
+								<Icon name="fluent:receipt-money-24-regular" size="24" class="w-5 h-5" />
 								<span class="sidebar-dropdown-button-text">
 									Finance
 								</span>

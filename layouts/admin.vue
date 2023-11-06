@@ -8,10 +8,6 @@
   	<div id="app">
 		<ClientOnly>
 			<AdminSidebar />
-
-			<template #fallback>
-				<SkeletonAdminSidebar />
-			</template>
 		</ClientOnly>
 
 		<header class="header sticky top-0 z-10">
@@ -62,25 +58,25 @@
 									<hr class="dropdown-divider" />
 									<li>
 										<NuxtLink to="/admin/manage-account/profile" class="dropdown-link" data-te-dropdown-item-ref>
-											<Icon name="fluent:person-24-regular" size="24" class="text-gray-500 dark:text-gray-400" />
+											<Icon name="fluent:person-24-regular" size="24" class="w-5 h-5 text-gray-500 dark:text-gray-400" />
 											Profile
 										</NuxtLink>
 									</li>
 									<li>
 										<NuxtLink to="/admin/manage-account/preferences" class="dropdown-link" data-te-dropdown-item-ref>
-											<Icon name="fluent:paint-brush-24-regular" size="24" class="text-gray-500 dark:text-gray-400" />
+											<Icon name="fluent:paint-brush-24-regular" size="24" class="w-5 h-5 text-gray-500 dark:text-gray-400" />
 											Preferences
 										</NuxtLink>
 									</li>
 									<li>
 										<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
-											<Icon name="fluent:settings-24-regular" size="24" class="text-gray-500 dark:text-gray-400" />
+											<Icon name="fluent:settings-24-regular" size="24" class="w-5 h-5 text-gray-500 dark:text-gray-400" />
 											Account Settings
 										</a>
 									</li>
 									<li>
 										<button type="button" @click.prevent="logout" class="dropdown-link" data-te-dropdown-item-ref>
-											<Icon name="fluent:sign-out-24-regular" size="24" class="text-gray-500 dark:text-gray-400" />
+											<Icon name="fluent:sign-out-24-regular" size="24" class="w-5 h-5 text-gray-500 dark:text-gray-400" />
 											Sign out
 										</button>
 									</li>
