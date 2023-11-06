@@ -112,8 +112,12 @@ export default defineNuxtConfig({
 		},
 		registerType: 'autoUpdate',
 		workbox: {
-			globPatterns: ['**/*.{js,css,html,ico,png,svg}'],
-			maximumFileSizeToCacheInBytes: 5000000
+			navigateFallback: '/',
+			maximumFileSizeToCacheInBytes: 5000000,
+			sourcemap: true
+		},
+		injectManifest: {
+			globPatterns: ['**/*.{js,css,html}'],
 		},
 		devOptions: {
 			enabled: true,

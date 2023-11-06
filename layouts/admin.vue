@@ -8,6 +8,10 @@
   	<div id="app">
 		<ClientOnly>
 			<AdminSidebar />
+
+			<template #fallback>
+				<SkeletonAdminSidebar />
+			</template>
 		</ClientOnly>
 
 		<header class="header sticky top-0 z-10">
