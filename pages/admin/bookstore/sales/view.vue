@@ -128,7 +128,7 @@
                                         </div>
 									</td>
 								</tr>
-                                <tr class="bg-gray-50"> 
+                                <tr> 
                                     <td class="table-data text-gray-600 font-bold text-end" colspan="5">
                                         Total Amount
                                     </td>
