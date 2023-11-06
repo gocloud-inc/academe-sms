@@ -1,1 +1,0 @@
-import n from"./Icon.e574ff1b.js";import{_,o as e,g as r}from"./entry.c27bb86e.js";const t={};function c(s,a){const o=n;return e(),r(o,{name:"fluent:arrow-sort-24-regular",size:"24"})}const f=_(t,[["render",c]]);export{f as _};
