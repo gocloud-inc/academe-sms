@@ -184,7 +184,7 @@
 						</summary>
 				
 						<div class="space-y-1 px-4">
-							<nuxt-link to="/admin/bookstore/inventory/" class="sidebar-dropdown-link">
+							<nuxt-link to="/admin/bookstore/inventory/items" class="sidebar-dropdown-link">
 								<span class="sidebar-dropdown-link-text">Items</span>
 							</nuxt-link>
 							<nuxt-link to="/admin/bookstore/inventory/purchase-delivery" class="sidebar-dropdown-link">

@@ -1,6 +1,5 @@
 <script setup>
-    import { storeToRefs } from 'pinia'
-    import { useInventoryItemsStore } from '@/stores/bookstore/stores/inventory-items'
+    import { faker } from '@faker-js/faker';
 
     definePageMeta({
         layout: 'admin'
@@ -10,8 +9,24 @@
       	title: 'Purchase Delivery - Inventory Bookstore'
     })
 
-    const store = useInventoryItemsStore()
-    const { inventoryItems } = storeToRefs(store)
+    const generateFakeData = (type) => {
+		switch (type) {
+			case "purchase_delivery":
+			return {
+				id: faker.string.uuid(),
+				code: faker.commerce.isbn(10),
+				name: faker.commerce.productName(),
+				type: "purchase_delivery",
+			};
+			default:
+			return {};
+		}
+	}
+
+	const fakePurchaseDeliveries = [];
+	for (let i = 0; i < 10; i++) {
+		fakePurchaseDeliveries.push(generateFakeData("purchase_delivery"));
+	}
 </script>
 
 <template>
@@ -34,7 +49,7 @@
 					Print
 				</button>
 
-				<NuxtLink to="/admin/employees/create" class="button button-primary">
+				<NuxtLink to="/admin/bookstore/inventory/purchase-delivery/create" class="button button-primary">
 					<IconsAdd />
 
 					Add new item
@@ -60,8 +75,8 @@
 			<div class="flex flex-wrap items-center gap-2 mt-4 md:mt-0">
 				<div class="relative" data-te-dropdown-ref>
 					<button class="button button-secondary" type="button" id="yearLevel" data-te-dropdown-toggle-ref data-te-dropdown-animation="off" aria-expanded="false">
-						<IconsChevronDown class="w-4 h-4" />
-						All Department
+						<IconsArrowSort class="w-4 h-4" />
+						Sort By
 					</button>
 					<ul class="dropdown-menu" aria-labelledby="yearLevel" data-te-dropdown-menu-ref>
 						<li>
@@ -71,27 +86,12 @@
 						</li>
 						<li>
 							<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
-								1st Year
+								Latest
 							</a>
 						</li>
 						<li>
 							<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
-								2nd Year
-							</a>
-						</li>
-						<li>
-							<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
-								3rd Year
-							</a>
-						</li>
-						<li>
-							<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
-								4th Year
-							</a>
-						</li>
-						<li>
-							<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
-								PEC
+								Oldest
 							</a>
 						</li>
 					</ul>
@@ -114,15 +114,28 @@
 									<th scope="col" class="table-header">
 										D.R No.
 									</th>
+
+									<th scope="col" class="relative py-3.5 px-4 w-1/6">
+										<span class="sr-only">Action</span>
+									</th>
 								</tr>
 							</thead>
 							<tbody class="table-body">
-								<tr>
+								<tr v-for="data in fakePurchaseDeliveries.filter((data) => data.type === 'purchase_delivery')" :key="data.id">
 									<td class="table-data">
-										PD-0001
+										{{ data.code }}
 									</td>
 									<td class="table-data">
-										Bandolin Enterprise 090535
+										{{ data.name }}
+									</td>
+									<td class="table-data">
+										<div class="button-group rounded-full">
+                                            <nuxt-link to="/admin/bookstore/inventory/purchase-delivery/edit" class="button-group-link">
+												<IconsEyeShow />
+
+												View Items
+                                            </nuxt-link>
+                                        </div>
 									</td>
 								</tr>
 							</tbody>

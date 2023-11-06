@@ -1,6 +1,5 @@
 <script setup>
-    import { storeToRefs } from 'pinia'
-    import { useInventoryItemsStore } from '@/stores/bookstore/stores/inventory-items'
+    import { faker } from '@faker-js/faker';
 
     definePageMeta({
         layout: 'admin'
@@ -10,8 +9,27 @@
       	title: 'Sales Order - Bookstore'
     })
 
-    const store = useInventoryItemsStore()
-    const { inventoryItems } = storeToRefs(store)
+    const generateFakeData = (type) => {
+		switch (type) {
+			case "sale":
+			return {
+				id: faker.string.uuid(),
+				orderNo: faker.helpers.replaceCreditCardSymbols('SO-122-[4-9]'),
+				name: faker.person.fullName(),
+				avatar: faker.image.avatarGitHub(),
+				amount: faker.commerce.price(),
+				status: faker.helpers.arrayElement(['Released', 'Paid', 'Pending']),
+				type: "sale",
+			};
+			default:
+			return {};
+		}
+	}
+
+	const fakeSales = [];
+	for (let i = 0; i < 10; i++) {
+		fakeSales.push(generateFakeData("sale"));
+	}
 </script>
 
 <template>
@@ -34,7 +52,7 @@
 					Print
 				</button>
 
-				<NuxtLink to="/admin/employees/create" class="button button-primary">
+				<NuxtLink to="/admin/bookstore/sales/create" class="button button-primary">
 					<IconsAdd />
 
 					Add new order
@@ -101,17 +119,17 @@
 								</tr>
 							</thead>
 							<tbody class="table-body">
-								<tr>
+								<tr v-for="data in fakeSales.filter((data) => data.type === 'sale')" :key="data.id">
 									<td class="table-data">
-										SO-08934
+										{{ data.orderNo }}
 									</td>
 									<td class="table-data">
 										<div class="flex items-center gap-2">
 											<div class="uppercase bg-gray-100 text-gray-500 rounded-full w-8 h-8 flex justify-center items-center text-sm font-semibold dark:bg-gray-600 dark:text-gray-300">
-												JD
+												<img class="avatar avatar-sm rounded-full" :src="data.avatar" :alt="data.name">
 											</div>
-											<NuxtLink to="/admin/student/profile" class="font-medium text-gray-800 capitalize hover:underline dark:text-white">
-												Juan Dela Cruz
+											<NuxtLink to="/admin/bookstore/sales/view" class="font-medium text-gray-800 capitalize hover:underline dark:text-white">
+												{{ data.name }}
 											</NuxtLink>
 										</div>
 									</td>
@@ -119,14 +137,20 @@
 										Nov. 03, 2023
 									</td>
 									<td class="table-data">
-										250
+										{{ data.amount }}
 									</td>
                                     <td class="table-data">
 										-
 									</td>
 									<td class="table-data">
-										<span class="badge badge-success">
+										<span class="badge badge-primary" v-if="data.status == 'Released'">
+											Released
+										</span>
+										<span class="badge badge-success" v-else-if="data.status == 'Paid'">
 											Paid
+										</span>
+										<span class="badge badge-warning" v-else>
+											Pending
 										</span>
 									</td>
 								</tr>

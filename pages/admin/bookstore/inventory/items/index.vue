@@ -1,6 +1,5 @@
 <script setup>
-    import { storeToRefs } from 'pinia'
-    import { useInventoryItemsStore } from '@/stores/bookstore/stores/inventory-items'
+    import { faker } from '@faker-js/faker';
 
     definePageMeta({
         layout: 'admin'
@@ -10,8 +9,28 @@
       	title: 'Items - Inventory Bookstore'
     })
 
-    const store = useInventoryItemsStore()
-    const { inventoryItems } = storeToRefs(store)
+    const generateFakeData = (type) => {
+		switch (type) {
+			case "inventory":
+			return {
+				id: faker.string.uuid(),
+				code: faker.commerce.isbn(10),
+				name: faker.commerce.productName(),
+				category: faker.helpers.arrayElement(['Textbook', 'Uniform']),
+				department: faker.helpers.arrayElement(['College', 'k12']),
+				size: faker.commerce.productMaterial(),
+				stock: faker.number.int(100),
+				type: "inventory",
+			};
+			default:
+			return {};
+		}
+	}
+
+	const fakeInventories = [];
+	for (let i = 0; i < 10; i++) {
+		fakeInventories.push(generateFakeData("inventory"));
+	}
 </script>
 
 <template>
@@ -34,7 +53,7 @@
 					Print
 				</button>
 
-				<NuxtLink to="/admin/employees/create" class="button button-primary">
+				<NuxtLink to="/admin/bookstore/inventory/items/create" class="button button-primary">
 					<IconsAdd />
 
 					Add new items
@@ -127,44 +146,6 @@
 						</li>
 					</ul>
 				</div>
-				<div class="relative" data-te-dropdown-ref>
-					<button class="button button-secondary" type="button" id="yearLevel" data-te-dropdown-toggle-ref data-te-dropdown-animation="off" aria-expanded="false">
-						<IconsChevronDown class="w-4 h-4" />
-						All Department
-					</button>
-					<ul class="dropdown-menu" aria-labelledby="yearLevel" data-te-dropdown-menu-ref>
-						<li>
-							<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
-								All
-							</a>
-						</li>
-						<li>
-							<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
-								1st Year
-							</a>
-						</li>
-						<li>
-							<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
-								2nd Year
-							</a>
-						</li>
-						<li>
-							<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
-								3rd Year
-							</a>
-						</li>
-						<li>
-							<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
-								4th Year
-							</a>
-						</li>
-						<li>
-							<a class="dropdown-link" href="#" data-te-dropdown-item-ref>
-								PEC
-							</a>
-						</li>
-					</ul>
-				</div>
 			</div>
 
 		</div>
@@ -195,10 +176,14 @@
 									<th scope="col" class="table-header">
 										Stock
 									</th>
+
+									<th scope="col" class="relative py-3.5 px-4" width="7%">
+										<span class="sr-only">Action</span>
+									</th>
 								</tr>
 							</thead>
 							<tbody class="table-body">
-								<tr v-for="item in inventoryItems" :key="item.code">
+								<tr v-for="item in fakeInventories.filter((item) => item.type === 'inventory')" :key="item.id">
 									<td class="table-data">
 										{{ item.code }}
 									</td>
@@ -216,6 +201,36 @@
 											{{ item.stock }}
 										</span>
 									</td>
+									<td class="table-data">
+										<div class="relative" data-te-dropdown-ref>
+											<button class="inline-flex items-center gap-2 px-1 py-1 text-sm text-gray-500 transition-colors duration-200 rounded-lg dark:text-gray-300 hover:bg-gray-200 hover:text-gray-500 dark:hover:bg-gray-700" type="button" id="dropdownMenuButton1d" data-te-dropdown-toggle-ref data-te-dropdown-animation="off" aria-expanded="false">
+												<IconsMore />
+											</button>
+											<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1d" data-te-dropdown-menu-ref>
+												<li>
+													<NuxtLink to="/admin/employees/edit" class="dropdown-link" data-te-dropdown-item-ref>
+														Edit
+													</NuxtLink>
+												</li>
+												<li>
+													<button type="button" class="dropdown-link" data-te-dropdown-item-ref>
+														Inventory Summary
+													</button>
+												</li>
+												<li>
+													<button type="button" class="dropdown-link" data-te-dropdown-item-ref>
+														Recompute Inventory
+													</button>
+												</li>
+												<hr class="dropdown-divider" />
+												<li>
+													<button data-te-target="#deleteModal" data-te-toggle="modal" type="button" class="dropdown-link" data-te-dropdown-item-ref>
+														Delete
+													</button>
+												</li>
+											</ul>
+										</div>
+									</td>
 								</tr>
 							</tbody>
 						</table>
@@ -224,4 +239,6 @@
 			</div>
 		</div>
 	</div>
+
+	<ModalsDelete />
 </template>
