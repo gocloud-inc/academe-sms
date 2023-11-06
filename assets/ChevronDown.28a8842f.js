@@ -1,0 +1,1 @@
+import o from"./Icon.a380a374.js";import{_,o as e,g as c}from"./entry.743d3880.js";const t={};function r(s,a){const n=o;return e(),c(n,{name:"fluent:chevron-down-24-regular",size:"24"})}const f=_(t,[["render",r]]);export{f as _};
